@@ -1,0 +1,278 @@
+{
+ "nr": "009",
+ "titel": "Treibhausgase seit 1990",
+ "reel": {
+  "frage": "Wie viele Treibhausgase verursacht Deutschland?"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Schaubild Nr. 009",
+   "zahl": "649 Mio.",
+   "headline": "Tonnen Klimagase im Jahr 2025",
+   "text": [
+    "48,2 Prozent weniger Treibhausgase als 1990 und der niedrigste Wert der Reihe."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 600,
+    "ymax": 1400,
+    "reihen": [
+     {
+      "von": 1990,
+      "werte": [
+       1253.129,
+       1206.393,
+       1157.978,
+       1148.484,
+       1130.816,
+       1123.406,
+       1140.203,
+       1104.787,
+       1079.988,
+       1045.544,
+       1043.006,
+       1057.095,
+       1036.671,
+       1030.551,
+       1010.689,
+       988.959,
+       1002.011,
+       963.522,
+       964.936,
+       901.296,
+       933.262,
+       907.628,
+       916.959,
+       936.625,
+       895.247,
+       898.622,
+       899.047,
+       886.299,
+       850.157,
+       798.021,
+       730.993,
+       762.801,
+       749.299,
+       669.613,
+       649.806,
+       648.903
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1990,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2025,
+      "text": ""
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Treibhausgas-Emissionen · 1990 bis 2025",
+   "headline": "Seit 1990 fast halbiert",
+   "text": [
+    "1990 sind es <em>1 253 Millionen Tonnen</em>, 2025 noch 649. Gegenüber 2024 sinkt der Ausstoß nur um 0,1 Prozent."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 1400,
+    "reihen": [
+     {
+      "von": 1990,
+      "werte": [
+       1253.129,
+       1206.393,
+       1157.978,
+       1148.484,
+       1130.816,
+       1123.406,
+       1140.203,
+       1104.787,
+       1079.988,
+       1045.544,
+       1043.006,
+       1057.095,
+       1036.671,
+       1030.551,
+       1010.689,
+       988.959,
+       1002.011,
+       963.522,
+       964.936,
+       901.296,
+       933.262,
+       907.628,
+       916.959,
+       936.625,
+       895.247,
+       898.622,
+       899.047,
+       886.299,
+       850.157,
+       798.021,
+       730.993,
+       762.801,
+       749.299,
+       669.613,
+       649.806,
+       648.903
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1990,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 400,
+      "text": "400 Mio. t"
+     },
+     {
+      "wert": 800,
+      "text": "800 Mio. t"
+     },
+     {
+      "wert": 1200,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1990,
+      "text": "1990: 1 253 Mio. t",
+      "anker": "start"
+     },
+     {
+      "jahr": 2009,
+      "text": "2009: 901 Mio. t",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2025,
+      "text": "2025: 649 Mio. t",
+      "seite": "unten",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "In CO₂-Äquivalenten, ohne Landnutzung und Forstwirtschaft. Wert für 2025 vorläufig."
+  },
+  {
+   "typ": "balken",
+   "kicker": "2025 nach Sektoren · in Millionen Tonnen",
+   "headline": "Energie vor Verkehr",
+   "text": [
+    "Die Energiewirtschaft verursacht <em>29 Prozent</em> des Ausstoßes. Verkehr und Industrie liegen fast gleichauf."
+   ],
+   "balken": [
+    {
+     "wert": 189.1,
+     "anzeige": "189,1",
+     "name": "Energiewirtschaft",
+     "akzent": true
+    },
+    {
+     "wert": 146.3,
+     "anzeige": "146,3",
+     "name": "Verkehr",
+     "akzent": false
+    },
+    {
+     "wert": 144.1,
+     "anzeige": "144,1",
+     "name": "Industrie",
+     "akzent": false
+    },
+    {
+     "wert": 103.4,
+     "anzeige": "103,4",
+     "name": "Gebäude",
+     "akzent": false
+    },
+    {
+     "wert": 66.0,
+     "anzeige": "66,0",
+     "name": "Übrige: Landwirtschaft, Abfall"
+    }
+   ],
+   "fuss": "Nach Klimaschutzgesetz, vorläufig. Übrige als Rest berechnet."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Stand und Ziel",
+   "headline": "Das Ziel für 2030",
+   "punkte": [
+    {
+     "wert": "−48,2 %",
+     "name": "seit 1990",
+     "zusatz": "604 Millionen Tonnen weniger als 1990"
+    },
+    {
+     "wert": "−0,1 %",
+     "name": "gegenüber 2024",
+     "zusatz": "0,9 Millionen Tonnen weniger als im Vorjahr"
+    },
+    {
+     "wert": "−65 %",
+     "name": "Ziel für 2030",
+     "zusatz": "gegenüber 1990, laut Klimaschutzgesetz"
+    }
+   ],
+   "fuss": "Dafür müsste der Ausstoß ab 2026 jedes Jahr um rund 42 Millionen Tonnen sinken."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Umweltbundesamt: Emissionen von direkten und indirekten Treibhausgasen, Nationale Treibhausgas-Inventare 1990 bis 2024 (Stand 3/2026), 2025 vorläufig (Stand 18.3.2026)",
+  "Umweltbundesamt / Bundesumweltministerium: Pressemitteilung Nr. 08/2026 vom 14.3.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "649 Millionen Tonnen Treibhausgase stößt Deutschland 2025 aus – 48,2 Prozent weniger als 1990, aber nur 0,1 Prozent weniger als 2024.",
+  "Das Klimaschutzgesetz verlangt bis 2030 ein Minus von 65 Prozent gegenüber 1990. Der Wert für 2025 ist vorläufig.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen",
+  "klima",
+  "klimaschutz",
+  "treibhausgase",
+  "emissionen"
+ ]
+}
