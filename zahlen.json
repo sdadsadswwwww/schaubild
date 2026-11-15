@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-14T17:11",
+  "stand": "2026-11-15T06:09",
   "konto": {
     "follower": 2,
-    "beitraege": 3
+    "beitraege": 4
   },
   "medien": [
     {
@@ -26,6 +26,14 @@
       "art": "reel",
       "datum": "2026-11-14",
       "likes": 1,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "003-wuppertaler-schwebebahn",
+      "art": "carousel",
+      "datum": "2026-11-14",
+      "likes": 0,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
