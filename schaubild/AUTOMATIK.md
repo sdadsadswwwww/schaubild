@@ -52,7 +52,7 @@ Die Posts sind damit vorab freigegeben: Niemand sieht sie vor der Veröffentlich
    ```
    Danach die Gegenprobe, ob Instagram die Bilder abrufen kann:
    ```powershell
-   $env:IMAGE_BASE_URL = 'https://raw.githubusercontent.com/sdadsadswwwww/bauriss/main/schaubild'
+   $env:IMAGE_BASE_URL = 'https://raw.githubusercontent.com/sdadsadswwwww/schaubild/main/schaubild'
    python tools/publish.py --probelauf --post <post>
    ```
    Schlägt das direkt nach dem Übertragen fehl, zwei Minuten später einmal wiederholen.

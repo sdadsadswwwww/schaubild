@@ -24,7 +24,7 @@ Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag.
 
 ## 2. GitHub
 
-Schaubild liegt als Ordner `schaubild/` im öffentlichen Repository https://github.com/sdadsadswwwww/bauriss und hat dort einen eigenen Workflow („Schaubild veröffentlichen"). Ein eigenes Repository ist nicht nötig.
+Schaubild liegt als Ordner `schaubild/` im öffentlichen Repository https://github.com/sdadsadswwwww/schaubild und hat dort einen eigenen Workflow („Schaubild veröffentlichen"). Ein eigenes Repository ist nicht nötig.
 
 ## 3. Zugang für die Schnittstelle
 
@@ -32,7 +32,7 @@ Wie bei Bauriss (dort `KONTO.md`, Abschnitt 2), mit diesen Unterschieden:
 
 1. In der vorhandenen Meta-App unter „API setup with Unified login" `das.schaubild` als weiteren Instagram-Tester einladen.
 2. Einladung auf instagram.com als `das.schaubild` annehmen: Einstellungen → Website-Berechtigungen → Apps und Websites → Tester-Einladungen.
-3. Token für dieses Konto erzeugen und unter https://github.com/sdadsadswwwww/bauriss/settings/secrets/actions/new speichern. Name: `IG_ACCESS_TOKEN_SCHAUBILD`. Das Token gehört nicht in den Chat.
+3. Token für dieses Konto erzeugen und unter https://github.com/sdadsadswwwww/schaubild/settings/secrets/actions/new speichern. Name: `IG_ACCESS_TOKEN_SCHAUBILD`. Das Token gehört nicht in den Chat.
 4. Die Konto-ID trage ich danach in `config.json` ein (`konto_id` ist noch leer).
 
 ## Danach

@@ -18,7 +18,7 @@ import publish  # noqa: E402
 
 ROOT = publish.ROOT
 SOLL = 7
-NAMEN = {'der.bauriss': 'Bauriss', 'das.kassenbuch': 'Kassenbuch', 'das.schaubild': 'Schaubild'}
+NAMEN = {'der.bauriss': 'Bauriss', 'das.schaubild': 'Schaubild'}
 
 
 def main():
