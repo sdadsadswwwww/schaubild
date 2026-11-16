@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-15T06:31",
+  "stand": "2026-11-16T18:38",
   "konto": {
-    "follower": 2,
-    "beitraege": 2
+    "follower": 3,
+    "beitraege": 3
   },
   "medien": [
     {
@@ -17,7 +17,15 @@
       "post": "001-geburten",
       "art": "reel",
       "datum": "2026-11-14",
-      "likes": 1,
+      "likes": 2,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "002-oekostrom",
+      "art": "reel",
+      "datum": "2026-11-15",
+      "likes": 0,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
