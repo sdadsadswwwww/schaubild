@@ -9,7 +9,7 @@
   { "thema": "Fertiggestellte Wohnungen", "bereich": "Wohnen", "quelle": "Destatis 31121", "post": "007-wohnungsbau" },
   { "thema": "Verkehrstote", "bereich": "Verkehr", "quelle": "Destatis 46241" },
   { "thema": "Treibhausgasemissionen", "bereich": "Umwelt", "quelle": "Umweltbundesamt", "post": "009-treibhausgase" },
-  { "thema": "Studierende", "bereich": "Bildung", "quelle": "Destatis 21311" },
+  { "thema": "Studierende", "bereich": "Bildung", "quelle": "Destatis 21311", "post": "010-studierende" },
   { "thema": "Erwerbstätige", "bereich": "Arbeit", "quelle": "Destatis 13321" },
   { "thema": "Lebenserwartung bei Geburt", "bereich": "Bevölkerung", "quelle": "Destatis 12621" },
   { "thema": "Jahresmitteltemperatur", "bereich": "Umwelt", "quelle": "Deutscher Wetterdienst" },

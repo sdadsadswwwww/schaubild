@@ -1,0 +1,380 @@
+{
+ "nr": "010",
+ "titel": "Studierende seit 1990",
+ "reel": {
+  "frage": "Wie viele Menschen studieren in Deutschland?"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Schaubild Nr. 010",
+   "zahl": "2,86 Mio.",
+   "headline": "Studierende an Hochschulen",
+   "text": [
+    "Im Wintersemester 2025/26 sind es rund 80 000 weniger als beim Höchststand fünf Jahre zuvor."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 600,
+    "ymax": 3500000,
+    "reihen": [
+     {
+      "von": 1990,
+      "werte": [
+       1712608,
+       1775661,
+       1834341,
+       1867264,
+       1872490,
+       1857906,
+       1838099,
+       1824107,
+       1800651,
+       1770489,
+       1798863,
+       1868331,
+       1938811,
+       2019465,
+       1963108,
+       1985765,
+       1979043,
+       1941405,
+       2025307,
+       2121178,
+       2217294,
+       2380974,
+       2499409,
+       2616881,
+       2698910,
+       2757799,
+       2807010,
+       2844978,
+       2868222,
+       2891049,
+       2944145,
+       2941915,
+       2920263,
+       2868311,
+       2864122,
+       2864160
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1990,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2025,
+      "text": ""
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Studierende · 1990 bis 2025",
+   "headline": "Der Gipfel liegt im Jahr 2020",
+   "text": [
+    "Von 2007 bis 2020 kommt eine Million Studierende hinzu. Seitdem liegt die Zahl darunter, zuletzt bei <em>2,86 Millionen</em>."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 3500000,
+    "reihen": [
+     {
+      "von": 1990,
+      "werte": [
+       1712608,
+       1775661,
+       1834341,
+       1867264,
+       1872490,
+       1857906,
+       1838099,
+       1824107,
+       1800651,
+       1770489,
+       1798863,
+       1868331,
+       1938811,
+       2019465,
+       1963108,
+       1985765,
+       1979043,
+       1941405,
+       2025307,
+       2121178,
+       2217294,
+       2380974,
+       2499409,
+       2616881,
+       2698910,
+       2757799,
+       2807010,
+       2844978,
+       2868222,
+       2891049,
+       2944145,
+       2941915,
+       2920263,
+       2868311,
+       2864122,
+       2864160
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1990,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 1000000,
+      "text": "1 Mio."
+     },
+     {
+      "wert": 2000000,
+      "text": ""
+     },
+     {
+      "wert": 3000000,
+      "text": "3 Mio."
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1990,
+      "text": "1990: 1,71 Mio.",
+      "seite": "unten",
+      "anker": "start"
+     },
+     {
+      "jahr": 2007,
+      "text": "2007: 1,94 Mio.",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2020,
+      "text": "2020: 2,94 Mio.",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Studierende an Hochschulen in Deutschland, jeweils im Wintersemester (2025 = Winter 2025/26)."
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Frauen und Männer · 1990 bis 2025",
+   "headline": "Seit 2021 mehr Frauen",
+   "text": [
+    "1990 sind 39 Prozent der Studierenden Frauen. Seit dem Wintersemester 2021/22 sind sie <em>in der Mehrheit</em>."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 1750000,
+    "reihen": [
+     {
+      "von": 1990,
+      "werte": [
+       1046727,
+       1080220,
+       1105491,
+       1116144,
+       1107724,
+       1083273,
+       1054684,
+       1029640,
+       999724,
+       967638,
+       969922,
+       995293,
+       1020423,
+       1061544,
+       1026199,
+       1037143,
+       1032663,
+       1014761,
+       1057806,
+       1106450,
+       1157485,
+       1255372,
+       1314017,
+       1371640,
+       1408534,
+       1434126,
+       1453625,
+       1464643,
+       1465978,
+       1464867,
+       1476366,
+       1466282,
+       1444125,
+       1407830,
+       1398631,
+       1396130
+      ],
+      "name": "Männer",
+      "nameBei": {
+       "jahr": 2001,
+       "dy": -30
+      }
+     },
+     {
+      "von": 1990,
+      "werte": [
+       665881,
+       695441,
+       728850,
+       751120,
+       764766,
+       774633,
+       783415,
+       794467,
+       800927,
+       802851,
+       828941,
+       873038,
+       918388,
+       957921,
+       936909,
+       948622,
+       946380,
+       926644,
+       967501,
+       1014728,
+       1059809,
+       1125602,
+       1185392,
+       1245241,
+       1290376,
+       1323673,
+       1353385,
+       1380335,
+       1402244,
+       1426182,
+       1467779,
+       1475633,
+       1476138,
+       1460481,
+       1465491,
+       1468030
+      ],
+      "akzent": true,
+      "name": "Frauen",
+      "nameBei": {
+       "jahr": 2001,
+       "dy": 56
+      }
+     }
+    ],
+    "jahre": [
+     1990,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 500000,
+      "text": "0,5 Mio."
+     },
+     {
+      "wert": 1000000,
+      "text": "1,0 Mio."
+     },
+     {
+      "wert": 1500000,
+      "text": "1,5 Mio."
+     }
+    ],
+    "marken": [
+     {
+      "reihe": 1,
+      "jahr": 2021,
+      "text": "2021",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Wintersemester 2025/26: 1 468 030 Frauen und 1 396 130 Männer."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Das Wintersemester 2025/26",
+   "headline": "Das Studium in drei Zahlen",
+   "punkte": [
+    {
+     "wert": "57,3 %",
+     "name": "an Universitäten",
+     "zusatz": "1 642 500 Studierende"
+    },
+    {
+     "wert": "38,4 %",
+     "name": "an Fachhochschulen",
+     "zusatz": "1 100 477 Studierende"
+    },
+    {
+     "wert": "18,0 %",
+     "name": "ohne deutschen Pass",
+     "zusatz": "516 820 ausländische Studierende"
+    }
+   ],
+   "fuss": "Gut 4 Prozent studieren an Verwaltungs-, Kunst-, Pädagogischen und Theologischen Hochschulen."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Studierende insgesamt und Studierende Deutsche nach Geschlecht, Lange Reihe ab 1975, Statistik 21311, Stand 13.8.2026",
+  "Destatis: Studierende nach Bundesländern und Hochschularten, Wintersemester 2025/2026, Stand 13.8.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "2 864 160 Studierende sind im Wintersemester 2025/26 an deutschen Hochschulen eingeschrieben. Der Höchststand liegt fünf Jahre zurück: 2 944 145 im Winter 2020/21.",
+  "1990 waren es 1,71 Millionen. Seit 2021 studieren mehr Frauen als Männer.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "studium",
+  "hochschule",
+  "studierende",
+  "bildung",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}

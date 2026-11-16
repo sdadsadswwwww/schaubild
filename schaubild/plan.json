@@ -10,6 +10,7 @@
     { "datum": "2026-11-19", "post": "006-pkw", "freigabe": true, "erstellt": "2026-11-14T15:54" },
     { "datum": "2026-11-20", "post": "007-wohnungsbau", "freigabe": true, "erstellt": "2026-11-14T15:56" },
     { "datum": "2026-11-21", "post": "008-hochzeiten", "freigabe": true, "erstellt": "2026-11-14T15:57" },
-    { "datum": "2026-11-22", "post": "009-treibhausgase", "freigabe": true, "erstellt": "2026-11-15T05:55" }
+    { "datum": "2026-11-22", "post": "009-treibhausgase", "freigabe": true, "erstellt": "2026-11-15T05:55" },
+    { "datum": "2026-11-23", "post": "010-studierende", "freigabe": true, "erstellt": "2026-11-16T18:50" }
   ]
 }
