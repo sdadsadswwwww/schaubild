@@ -1,0 +1,386 @@
+{
+ "nr": "011",
+ "titel": "Erwerbstätige seit 1991",
+ "reel": {
+  "frage": "Wie viele Menschen sind erwerbstätig?"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Schaubild Nr. 011",
+   "zahl": "46 Mio.",
+   "headline": "Erwerbstätige im Jahr 2025",
+   "text": [
+    "Im Schnitt 45,88 Millionen, 82 000 weniger als im Rekordjahr 2024. Es ist das erste Minus seit 2020."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 600,
+    "ymin": 35000,
+    "ymax": 47500,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       38873,
+       38362,
+       37865,
+       37881,
+       38046,
+       38062,
+       38045,
+       38500,
+       39125,
+       39976,
+       39865,
+       39674,
+       39246,
+       39370,
+       39322,
+       39608,
+       40281,
+       40851,
+       40903,
+       41099,
+       41570,
+       42065,
+       42378,
+       42756,
+       43137,
+       43686,
+       44290,
+       44878,
+       45291,
+       44966,
+       45041,
+       45622,
+       45909,
+       45960,
+       45878
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 35000,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2025,
+      "text": ""
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Erwerbstätige · 1991 bis 2025",
+   "headline": "Acht Millionen mehr seit 1993",
+   "text": [
+    "1993 arbeiten 37,87 Millionen Menschen, so wenige wie nie seit 1991. Den Höchststand gibt es 2024 mit <em>45,96 Millionen</em>."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymin": 35000,
+    "ymax": 48000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       38873,
+       38362,
+       37865,
+       37881,
+       38046,
+       38062,
+       38045,
+       38500,
+       39125,
+       39976,
+       39865,
+       39674,
+       39246,
+       39370,
+       39322,
+       39608,
+       40281,
+       40851,
+       40903,
+       41099,
+       41570,
+       42065,
+       42378,
+       42756,
+       43137,
+       43686,
+       44290,
+       44878,
+       45291,
+       44966,
+       45041,
+       45622,
+       45909,
+       45960,
+       45878
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 35000,
+      "text": "35 Mio."
+     },
+     {
+      "wert": 40000,
+      "text": "40 Mio."
+     },
+     {
+      "wert": 45000,
+      "text": "45 Mio."
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1993,
+      "text": "1993: 37,9 Mio.",
+      "seite": "unten",
+      "anker": "start"
+     },
+     {
+      "jahr": 2024,
+      "text": "2024: 46,0 Mio.",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Erwerbstätige mit Arbeitsort in Deutschland, Jahresdurchschnitt. Die Achse beginnt bei 35 Millionen."
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Anteile nach Sektoren · 1991 bis 2025",
+   "headline": "Drei Viertel in Dienstleistungen",
+   "text": [
+    "Der Anteil der Dienstleistungen steigt von 61,3 auf <em>75,9 Prozent</em>. Im Produzierenden Gewerbe sind es noch 22,9 Prozent."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 90,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       61.3,
+       63.0,
+       64.2,
+       65.2,
+       65.9,
+       66.9,
+       67.6,
+       68.2,
+       69.0,
+       69.7,
+       70.2,
+       70.9,
+       71.5,
+       72.0,
+       72.6,
+       73.1,
+       73.2,
+       73.1,
+       73.6,
+       74.0,
+       73.8,
+       73.8,
+       73.9,
+       74.0,
+       74.2,
+       74.4,
+       74.5,
+       74.5,
+       74.5,
+       74.7,
+       75.0,
+       75.2,
+       75.3,
+       75.5,
+       75.9
+      ],
+      "akzent": true,
+      "name": "Dienstleistungen",
+      "nameBei": {
+       "jahr": 2008,
+       "dy": -30
+      }
+     },
+     {
+      "von": 1991,
+      "werte": [
+       35.6,
+       34.3,
+       33.2,
+       32.4,
+       31.9,
+       31.0,
+       30.3,
+       29.8,
+       29.1,
+       28.4,
+       28.0,
+       27.3,
+       26.7,
+       26.2,
+       25.7,
+       25.2,
+       25.2,
+       25.3,
+       24.8,
+       24.4,
+       24.6,
+       24.7,
+       24.6,
+       24.5,
+       24.4,
+       24.2,
+       24.1,
+       24.2,
+       24.1,
+       24.0,
+       23.7,
+       23.5,
+       23.4,
+       23.2,
+       22.9
+      ],
+      "name": "Produzierendes Gewerbe",
+      "nameBei": {
+       "jahr": 2008,
+       "dy": -30
+      }
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0 %"
+     },
+     {
+      "wert": 25,
+      "text": "25 %"
+     },
+     {
+      "wert": 50,
+      "text": ""
+     },
+     {
+      "wert": 75,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "61,3 %",
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "75,9 %",
+      "anker": "end"
+     },
+     {
+      "reihe": 1,
+      "jahr": 1991,
+      "text": "35,6 %",
+      "anker": "start"
+     },
+     {
+      "reihe": 1,
+      "jahr": 2025,
+      "text": "22,9 %",
+      "anker": "end",
+      "seite": "unten"
+     }
+    ]
+   },
+   "fuss": "Anteil an allen Erwerbstätigen. Land- und Forstwirtschaft, Fischerei: 1991 3,0 %, 2025 1,2 %."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Der Arbeitsmarkt 2025",
+   "headline": "Die Arbeit in drei Zahlen",
+   "punkte": [
+    {
+     "wert": "+18,0 %",
+     "name": "mehr als 1991",
+     "zusatz": "1991: 38,87 Mio. · 2025: 45,88 Mio."
+    },
+    {
+     "wert": "−82 000",
+     "name": "weniger als 2024",
+     "zusatz": "erster Rückgang seit 2020"
+    },
+    {
+     "wert": "1,2 %",
+     "name": "in der Landwirtschaft",
+     "zusatz": "1991 waren es 3,0 Prozent"
+    }
+   ],
+   "fuss": "Seit 1991 gibt es neun Jahre mit weniger Erwerbstätigen als im Vorjahr, zuletzt 2020 und 2025."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Erwerbstätigenrechnung, Erwerbstätige im Inland nach Wirtschaftssektoren, Lange Reihe, Stand 30.9.2026",
+  "Destatis: Erwerbstätige in Deutschland, Jahresdurchschnitte nach Inländer- und Inlandskonzept, Stand 31.7.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "45,88 Millionen Menschen arbeiten 2025 im Jahresdurchschnitt in Deutschland, 82 000 weniger als im Rekordjahr 2024.",
+  "1991 waren es 38,87 Millionen. Heute arbeiten drei von vier Erwerbstätigen im Dienstleistungsbereich.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "arbeitsmarkt",
+  "arbeit",
+  "beschäftigung",
+  "wirtschaft",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}
