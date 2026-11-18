@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-17T06:37",
+  "stand": "2026-11-18T06:39",
   "konto": {
-    "follower": 2,
-    "beitraege": 5
+    "follower": 3,
+    "beitraege": 7
   },
   "medien": [
     {
@@ -42,6 +42,22 @@
       "art": "carousel",
       "datum": "2026-11-16",
       "likes": 1,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "004-arbeitslose",
+      "art": "reel",
+      "datum": "2026-11-17",
+      "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "004-arbeitslose",
+      "art": "carousel",
+      "datum": "2026-11-17",
+      "likes": 0,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
