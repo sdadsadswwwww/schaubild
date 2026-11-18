@@ -13,7 +13,7 @@
   { "thema": "Erwerbstätige", "bereich": "Arbeit", "quelle": "Destatis 13321", "post": "011-erwerbstaetige" },
   { "thema": "Lebenserwartung bei Geburt", "bereich": "Bevölkerung", "quelle": "Destatis 12621" },
   { "thema": "Jahresmitteltemperatur", "bereich": "Umwelt", "quelle": "Deutscher Wetterdienst" },
-  { "thema": "Staatsschulden", "bereich": "Finanzen", "quelle": "Destatis 71321 / Bundesbank" },
+  { "thema": "Staatsschulden", "bereich": "Finanzen", "quelle": "Destatis 71321 / Bundesbank", "post": "012-staatsschulden" },
   { "thema": "Fluggäste", "bereich": "Verkehr", "quelle": "Destatis 46421" },
   { "thema": "Ehescheidungen", "bereich": "Bevölkerung", "quelle": "Destatis 12631" },
   { "thema": "Übernachtungen im Tourismus", "bereich": "Wirtschaft", "quelle": "Destatis 45412" },

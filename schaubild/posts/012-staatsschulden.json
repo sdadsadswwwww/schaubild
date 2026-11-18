@@ -1,0 +1,318 @@
+{
+ "nr": "012",
+ "titel": "Staatsschulden seit 1995",
+ "reel": {
+  "frage": "Wie hoch sind die Schulden des Staates?"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Schaubild Nr. 012",
+   "zahl": "2,8 Bio.",
+   "headline": "Euro Schulden des Staates",
+   "text": [
+    "Bund, Länder, Gemeinden und Sozialversicherungen schulden Ende 2025 zusammen 2 846 Milliarden Euro."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 600,
+    "ymax": 3200,
+    "reihen": [
+     {
+      "von": 1995,
+      "werte": [
+       1082.7,
+       1118.5,
+       1145.2,
+       1202.0,
+       1253.6,
+       1261.6,
+       1274.8,
+       1330.1,
+       1419.4,
+       1489.7,
+       1561.0,
+       1610.9,
+       1619.1,
+       1687.4,
+       1804.7,
+       2119.2,
+       2155.9,
+       2234.8,
+       2220.3,
+       2224.6,
+       2197.5,
+       2182.4,
+       2132.8,
+       2086.4,
+       2075.8,
+       2348.0,
+       2501.7,
+       2569.7,
+       2630.8,
+       2694.3,
+       2846.0
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1995,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2025,
+      "text": ""
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Schuldenstand · 1995 bis 2025",
+   "headline": "Seit 1995 mehr als verdoppelt",
+   "text": [
+    "1995 sind es 1 083 Milliarden Euro. Den größten Sprung gibt es 2010 mit <em>315 Milliarden</em> mehr als im Vorjahr."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 3200,
+    "reihen": [
+     {
+      "von": 1995,
+      "werte": [
+       1082.7,
+       1118.5,
+       1145.2,
+       1202.0,
+       1253.6,
+       1261.6,
+       1274.8,
+       1330.1,
+       1419.4,
+       1489.7,
+       1561.0,
+       1610.9,
+       1619.1,
+       1687.4,
+       1804.7,
+       2119.2,
+       2155.9,
+       2234.8,
+       2220.3,
+       2224.6,
+       2197.5,
+       2182.4,
+       2132.8,
+       2086.4,
+       2075.8,
+       2348.0,
+       2501.7,
+       2569.7,
+       2630.8,
+       2694.3,
+       2846.0
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1995,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 1000,
+      "text": ""
+     },
+     {
+      "wert": 2000,
+      "text": "2 Bio."
+     },
+     {
+      "wert": 3000,
+      "text": "3 Bio."
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1995,
+      "text": "1995: 1 083 Mrd.",
+      "anker": "start",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2025,
+      "text": "2025: 2 846 Mrd.",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Bruttoschuldenstand des Staates in Euro, jeweils zum Jahresende. Staat: Bund, Länder, Gemeinden, Sozialversicherungen."
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Schuldenquote · 1995 bis 2025",
+   "headline": "Gipfel der Quote im Jahr 2010",
+   "text": [
+    "Gemessen am Bruttoinlandsprodukt liegen die Schulden 2010 bei <em>81,0 Prozent</em>. 2019 sind es 58,3, 2025 dann 62,8 Prozent."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 100,
+    "reihen": [
+     {
+      "von": 1995,
+      "werte": [
+       54.9,
+       57.7,
+       58.8,
+       59.4,
+       60.3,
+       59.2,
+       58.1,
+       59.8,
+       63.3,
+       65.0,
+       67.1,
+       66.4,
+       63.7,
+       65.2,
+       72.4,
+       81.0,
+       78.5,
+       79.8,
+       77.4,
+       74.4,
+       71.0,
+       68.1,
+       63.7,
+       60.5,
+       58.3,
+       67.5,
+       67.4,
+       64.1,
+       61.8,
+       61.4,
+       62.8
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1995,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0 %"
+     },
+     {
+      "wert": 25,
+      "text": "25 %"
+     },
+     {
+      "wert": 50,
+      "text": "50 %"
+     },
+     {
+      "wert": 75,
+      "text": "75 %"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2010,
+      "text": "2010: 81,0 %"
+     },
+     {
+      "jahr": 2019,
+      "text": "2019: 58,3 %",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2025,
+      "text": "62,8 %",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Bruttoschuldenstand des Staates in Prozent des Bruttoinlandsprodukts."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Die Schulden in drei Zahlen",
+   "headline": "Was sich seit 1995 tut",
+   "punkte": [
+    {
+     "wert": "+163 %",
+     "name": "mehr als 1995",
+     "zusatz": "1995: 1 083 Mrd. · 2025: 2 846 Mrd."
+    },
+    {
+     "wert": "+5,6 %",
+     "name": "mehr als 2024",
+     "zusatz": "ein Plus von 152 Milliarden Euro"
+    },
+    {
+     "wert": "6",
+     "name": "Jahre mit weniger Schulden",
+     "zusatz": "2013 und von 2015 bis 2019"
+    }
+   ],
+   "fuss": "Von 2015 bis 2019 sinkt der Schuldenstand fünf Jahre in Folge, seit 2020 steigt er jedes Jahr."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Eurostat: Defizit/Überschuss, Schuldenstand des Staates und damit zusammenhängende Daten, Tabelle gov_10dd_edpt1, Deutschland, Stand 21.10.2026",
+  "Deutsche Bundesbank: Pressemitteilung zu den Staatsschulden 2025, 31.3.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "Der deutsche Staat hat Ende 2025 Schulden von 2 846 Milliarden Euro, 152 Milliarden mehr als ein Jahr zuvor.",
+  "1995 waren es 1 083 Milliarden Euro. Gemessen an der Wirtschaftsleistung liegt die Quote 2025 bei 62,8 Prozent, 2010 waren es 81,0 Prozent.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "staatsschulden",
+  "schulden",
+  "finanzen",
+  "haushalt",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}
