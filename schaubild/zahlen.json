@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-18T06:39",
+  "stand": "2026-11-19T06:38",
   "konto": {
     "follower": 3,
-    "beitraege": 7
+    "beitraege": 9
   },
   "medien": [
     {
@@ -58,6 +58,22 @@
       "art": "carousel",
       "datum": "2026-11-17",
       "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "005-bier",
+      "art": "reel",
+      "datum": "2026-11-18",
+      "likes": 2,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "005-bier",
+      "art": "carousel",
+      "datum": "2026-11-18",
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
