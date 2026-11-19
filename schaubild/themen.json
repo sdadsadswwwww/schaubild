@@ -7,7 +7,7 @@
   { "thema": "Eheschließungen", "bereich": "Bevölkerung", "quelle": "Destatis 12611", "post": "008-hochzeiten" },
   { "thema": "Zugelassene Pkw", "bereich": "Verkehr", "quelle": "Kraftfahrt-Bundesamt, Bestand", "post": "006-pkw" },
   { "thema": "Fertiggestellte Wohnungen", "bereich": "Wohnen", "quelle": "Destatis 31121", "post": "007-wohnungsbau" },
-  { "thema": "Verkehrstote", "bereich": "Verkehr", "quelle": "Destatis 46241" },
+  { "thema": "Verkehrstote", "bereich": "Verkehr", "quelle": "Destatis 46241", "post": "013-verkehrstote" },
   { "thema": "Treibhausgasemissionen", "bereich": "Umwelt", "quelle": "Umweltbundesamt", "post": "009-treibhausgase" },
   { "thema": "Studierende", "bereich": "Bildung", "quelle": "Destatis 21311", "post": "010-studierende" },
   { "thema": "Erwerbstätige", "bereich": "Arbeit", "quelle": "Destatis 13321", "post": "011-erwerbstaetige" },

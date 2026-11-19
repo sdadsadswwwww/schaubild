@@ -1,0 +1,269 @@
+{
+ "nr": "013",
+ "titel": "Verkehrstote seit 1991",
+ "reel": {
+  "frage": "Wie viele Menschen sterben im Verkehr?",
+  "stimmung": "ernst"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Schaubild Nr. 013",
+   "zahl": "2 832",
+   "headline": "Verkehrstote im Jahr 2025",
+   "text": [
+    "Auf deutschen Straßen sterben im Schnitt knapp acht Menschen am Tag."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 600,
+    "ymax": 12500,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       11300,
+       10631,
+       9949,
+       9814,
+       9454,
+       8758,
+       8549,
+       7792,
+       7772,
+       7503,
+       6977,
+       6842,
+       6613,
+       5842,
+       5361,
+       5091,
+       4949,
+       4477,
+       4152,
+       3648,
+       4009,
+       3600,
+       3339,
+       3377,
+       3459,
+       3206,
+       3180,
+       3275,
+       3046,
+       2719,
+       2562,
+       2788,
+       2839,
+       2770,
+       2832
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2025,
+      "text": ""
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Verkehrstote · 1991 bis 2025",
+   "headline": "Drei Viertel weniger als 1991",
+   "text": [
+    "1991 sterben 11 300 Menschen im Straßenverkehr. Am wenigsten sind es 2021 mit <em>2 562</em>. Seit 2022 liegt die Zahl zwischen 2 770 und 2 839."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 14000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       11300,
+       10631,
+       9949,
+       9814,
+       9454,
+       8758,
+       8549,
+       7792,
+       7772,
+       7503,
+       6977,
+       6842,
+       6613,
+       5842,
+       5361,
+       5091,
+       4949,
+       4477,
+       4152,
+       3648,
+       4009,
+       3600,
+       3339,
+       3377,
+       3459,
+       3206,
+       3180,
+       3275,
+       3046,
+       2719,
+       2562,
+       2788,
+       2839,
+       2770,
+       2832
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 5000,
+      "text": "5 000"
+     },
+     {
+      "wert": 10000,
+      "text": "10 000"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "1991: 11 300",
+      "anker": "start"
+     },
+     {
+      "jahr": 2021,
+      "text": "2021: 2 562",
+      "anker": "end",
+      "seite": "unten"
+     }
+    ]
+   },
+   "fuss": "Bei Straßenverkehrsunfällen getötete Menschen in Deutschland, von der Polizei erfasst."
+  },
+  {
+   "typ": "balken",
+   "kicker": "Getötete 2025 nach Verkehrsmittel",
+   "headline": "Vier von zehn im Pkw",
+   "text": [
+    "1 210 Getötete sind mit dem Pkw unterwegs. Mit dem Fahrrad sterben 462 Menschen, davon <em>214</em> auf einem Pedelec."
+   ],
+   "balken": [
+    {
+     "wert": 1210,
+     "anzeige": "1 210",
+     "name": "Pkw",
+     "akzent": true
+    },
+    {
+     "wert": 481,
+     "anzeige": "481",
+     "name": "Motorrad",
+     "akzent": false
+    },
+    {
+     "wert": 462,
+     "anzeige": "462",
+     "name": "Fahrrad · mit Pedelecs",
+     "akzent": false
+    },
+    {
+     "wert": 415,
+     "anzeige": "415",
+     "name": "zu Fuß",
+     "akzent": false
+    },
+    {
+     "wert": 115,
+     "anzeige": "115",
+     "name": "Güterkraftfahrzeug",
+     "akzent": false
+    }
+   ],
+   "fuss": "Fahrer und Mitfahrer. Motorrad: Krafträder mit amtlichem Kennzeichen."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Die Verkehrstoten in drei Zahlen",
+   "headline": "Was sich seit 1991 tut",
+   "punkte": [
+    {
+     "wert": "−75 %",
+     "name": "weniger als 1991",
+     "zusatz": "1991: 11 300 · 2025: 2 832"
+    },
+    {
+     "wert": "+62",
+     "name": "mehr als 2024",
+     "zusatz": "2024: 2 770 Getötete"
+    },
+    {
+     "wert": "34",
+     "name": "je Million Einwohner",
+     "zusatz": "Verkehrstote im Jahr 2025"
+    }
+   ],
+   "fuss": "Seit 2020 liegt die Zahl der Verkehrstoten jedes Jahr unter 3 000."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Statistischer Bericht Verkehrsunfälle Zeitreihen 2025, Statistik 46241, Tabellen 46241-01, 46241-11 und 46241-28, Stand 13.7.2026",
+  "Destatis: Tabelle Polizeilich erfasste Unfälle, Unfälle und Verunglückte im Straßenverkehr, Stand 7.7.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "2 832 Menschen sterben 2025 im Straßenverkehr in Deutschland, 62 mehr als im Jahr davor.",
+  "1991 waren es 11 300, rund viermal so viele. Den niedrigsten Stand gab es 2021 mit 2 562 Getöteten.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "verkehr",
+  "verkehrstote",
+  "verkehrssicherheit",
+  "strassenverkehr",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}
