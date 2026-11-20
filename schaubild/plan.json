@@ -14,6 +14,7 @@
     { "datum": "2026-11-23", "post": "010-studierende", "freigabe": true, "erstellt": "2026-11-16T18:50" },
     { "datum": "2026-11-24", "post": "011-erwerbstaetige", "freigabe": true, "erstellt": "2026-11-17T05:44" },
     { "datum": "2026-11-25", "post": "012-staatsschulden", "freigabe": true, "erstellt": "2026-11-18T05:43" },
-    { "datum": "2026-11-26", "post": "013-verkehrstote", "freigabe": true, "erstellt": "2026-11-19T05:44" }
+    { "datum": "2026-11-26", "post": "013-verkehrstote", "freigabe": true, "erstellt": "2026-11-19T05:44" },
+    { "datum": "2026-11-27", "post": "014-energieverbrauch", "freigabe": true, "erstellt": "2026-11-20T05:45" }
   ]
 }

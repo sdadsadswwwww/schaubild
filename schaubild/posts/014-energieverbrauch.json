@@ -1,0 +1,274 @@
+{
+ "nr": "014",
+ "titel": "Energieverbrauch seit 1990",
+ "reel": {
+  "frage": "Wie viel Energie verbraucht Deutschland?"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Schaubild Nr. 014",
+   "zahl": "10 628",
+   "headline": "Petajoule Energie im Jahr 2025",
+   "text": [
+    "So viel Primärenergie verbraucht Deutschland 2025, knapp 29 Prozent weniger als 1990."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 600,
+    "ymax": 16500,
+    "reihen": [
+     {
+      "von": 1990,
+      "werte": [
+       14905,
+       14610,
+       14319,
+       14309,
+       14185,
+       14269,
+       14746,
+       14614,
+       14521,
+       14323,
+       14401,
+       14679,
+       14427,
+       14594,
+       14579,
+       14508,
+       14855,
+       14202,
+       14386,
+       13518,
+       14142,
+       13530,
+       13638,
+       13923,
+       13254,
+       13393,
+       13519,
+       13538,
+       13202,
+       12833,
+       11905,
+       12477,
+       11711,
+       10658,
+       10571,
+       10628
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1990,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2025,
+      "text": ""
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Energieverbrauch · 1990 bis 2025",
+   "headline": "Bis 2008 stabil, dann abwärts",
+   "text": [
+    "Bis 2008 liegt der Verbrauch jedes Jahr über 14 000 Petajoule. Am niedrigsten ist er 2024 mit <em>10 571</em>, 2025 sind es 10 628."
+   ],
+   "figur": {
+    "fn": "linie",
+    "hoehe": 640,
+    "ymax": 18000,
+    "reihen": [
+     {
+      "von": 1990,
+      "werte": [
+       14905,
+       14610,
+       14319,
+       14309,
+       14185,
+       14269,
+       14746,
+       14614,
+       14521,
+       14323,
+       14401,
+       14679,
+       14427,
+       14594,
+       14579,
+       14508,
+       14855,
+       14202,
+       14386,
+       13518,
+       14142,
+       13530,
+       13638,
+       13923,
+       13254,
+       13393,
+       13519,
+       13538,
+       13202,
+       12833,
+       11905,
+       12477,
+       11711,
+       10658,
+       10571,
+       10628
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1990,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 5000,
+      "text": "5 000"
+     },
+     {
+      "wert": 10000,
+      "text": "10 000 PJ"
+     },
+     {
+      "wert": 15000,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1990,
+      "text": "1990: 14 905",
+      "anker": "start"
+     },
+     {
+      "jahr": 2024,
+      "text": "2024: 10 571",
+      "anker": "end",
+      "seite": "unten"
+     }
+    ]
+   },
+   "fuss": "Primärenergieverbrauch in Petajoule (PJ), Deutschland. Wert für 2025 vorläufig."
+  },
+  {
+   "typ": "balken",
+   "kicker": "Primärenergie 2025 nach Trägern",
+   "headline": "Öl liegt vorn, Gas folgt",
+   "text": [
+    "Mineralöl und Erdgas decken zusammen <em>63 Prozent</em> des Verbrauchs. Erneuerbare kommen auf gut ein Fünftel."
+   ],
+   "balken": [
+    {
+     "wert": 36.4,
+     "anzeige": "36,4 %",
+     "name": "Mineralöl",
+     "akzent": true
+    },
+    {
+     "wert": 26.4,
+     "anzeige": "26,4 %",
+     "name": "Erdgas",
+     "akzent": false
+    },
+    {
+     "wert": 20.8,
+     "anzeige": "20,8 %",
+     "name": "Erneuerbare",
+     "akzent": false
+    },
+    {
+     "wert": 7.1,
+     "anzeige": "7,1 %",
+     "name": "Braunkohle",
+     "akzent": false
+    },
+    {
+     "wert": 6.8,
+     "anzeige": "6,8 %",
+     "name": "Steinkohle",
+     "akzent": false
+    }
+   ],
+   "fuss": "Anteile am Primärenergieverbrauch 2025, vorläufig. Rest: sonstige Träger und Stromsaldo."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Der Energiemix in drei Zahlen",
+   "headline": "Was sich seit 1990 ändert",
+   "punkte": [
+    {
+     "wert": "−29 %",
+     "name": "Verbrauch insgesamt",
+     "zusatz": "1990: 14 905 PJ · 2025: 10 628 PJ"
+    },
+    {
+     "wert": "11-mal",
+     "name": "so viel Erneuerbare",
+     "zusatz": "1990: 196 PJ · 2025: 2 206 PJ"
+    },
+    {
+     "wert": "−73 %",
+     "name": "Stein- und Braunkohle",
+     "zusatz": "1990: 5 507 PJ · 2025: 1 472 PJ"
+    }
+   ],
+   "fuss": "Kernenergie trägt seit 2024 nichts mehr bei, 1990 waren es 11,2 Prozent."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Arbeitsgemeinschaft Energiebilanzen: Auswertungstabellen zur Energiebilanz Deutschland 1990 bis 2025, Tabelle 2.1, Stand 9/2026 (2025 vorläufig)",
+  "AG Energiebilanzen: Energieflussbild Deutschland 2025 in Petajoule, Stand 9/2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "10 628 Petajoule Primärenergie verbraucht Deutschland 2025, 0,5 Prozent mehr als im Jahr davor. Nur 2024 lag der Wert seit 1990 niedriger.",
+  "Gegenüber 1990 sinkt der Verbrauch um knapp 29 Prozent. Erneuerbare decken 2025 einen Anteil von 20,8 Prozent.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "energie",
+  "energieverbrauch",
+  "energiewende",
+  "erneuerbareenergien",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}

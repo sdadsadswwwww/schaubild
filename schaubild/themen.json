@@ -18,7 +18,7 @@
   { "thema": "Ehescheidungen", "bereich": "Bevölkerung", "quelle": "Destatis 12631" },
   { "thema": "Übernachtungen im Tourismus", "bereich": "Wirtschaft", "quelle": "Destatis 45412" },
   { "thema": "Neu zugelassene Elektroautos", "bereich": "Verkehr", "quelle": "Kraftfahrt-Bundesamt, Neuzulassungen" },
-  { "thema": "Primärenergieverbrauch", "bereich": "Energie", "quelle": "AG Energiebilanzen" },
+  { "thema": "Primärenergieverbrauch", "bereich": "Energie", "quelle": "AG Energiebilanzen", "post": "014-energieverbrauch" },
   { "thema": "Durchschnittsalter der Bevölkerung", "bereich": "Bevölkerung", "quelle": "Destatis 12411" },
   { "thema": "Landwirtschaftliche Betriebe", "bereich": "Landwirtschaft", "quelle": "Destatis 41141" },
   { "thema": "Auszubildende", "bereich": "Bildung", "quelle": "Destatis 21211" },
