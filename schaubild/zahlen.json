@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-19T06:38",
+  "stand": "2026-11-20T06:39",
   "konto": {
     "follower": 3,
-    "beitraege": 9
+    "beitraege": 11
   },
   "medien": [
     {
@@ -74,6 +74,22 @@
       "art": "carousel",
       "datum": "2026-11-18",
       "likes": 1,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "006-pkw",
+      "art": "reel",
+      "datum": "2026-11-19",
+      "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "006-pkw",
+      "art": "carousel",
+      "datum": "2026-11-19",
+      "likes": 0,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
