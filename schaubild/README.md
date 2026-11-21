@@ -5,7 +5,7 @@ Automatisierter Instagram-Kanal: Deutschland in Grafiken. Jeder Post ist ein Car
 ## Ablauf
 
 1. **Post schreiben:** eine JSON-Datei in `posts/` (Texte, Zahlenreihen, Quellen).
-2. **Rendern:** `python tools/render.py` erzeugt die Blätter als JPEG in `out/<post>/` und eine `uebersicht.jpg` zum Durchsehen.
+2. **Rendern:** `python tools/render.py` erzeugt die Blätter als JPEG in `out/<post>/` und eine `uebersicht.jpg` zum Durchsehen, `python tools/reel.py <post>` die Vorschau des Reels und das Bild der Story. `python tools/pruefen.py <post>` prüft den Post gegen die Regeln aus `AUTOMATIK.md` (Pflichtfelder, Längen, Mindestschrift, Überlauf); ein Post mit Fehlern gilt nicht als fertig.
 3. **Einplanen:** Eintrag in `plan.json` mit Datum. Neue Einträge stehen auf `"freigabe": false`.
 4. **Freigeben:** nach der Durchsicht `"freigabe": true` setzen und ins Repo übertragen.
 5. **Veröffentlichen:** GitHub Actions ruft täglich um 18:30 Uhr `tools/publish.py` auf. Das Skript postet den für heute freigegebenen Post und trägt ihn in `veroeffentlicht.json` ein.
@@ -18,13 +18,13 @@ Ohne Freigabe wird nichts veröffentlicht. Ein Post, der in `veroeffentlicht.jso
 
 | `typ` | Inhalt |
 |---|---|
-| `cover` | große Zahl, Überschrift, optional Diagramm |
+| `cover` | Thema, Kernzahl, Überschrift mit der Aussage, Satz mit der amtlichen Zahl, Diagramm mit Anfangs- und Endwert in großer Schrift |
 | `diagramm` | Überschrift, Text, Diagramm (`figur`), Fußzeile |
 | `balken` | waagerechte Balken, Länge nach dem größten Wert |
 | `punkte` | drei Kennzahlen untereinander |
 | `outro` | Marke, Konto, Quellen |
 
-Diagramme (`figur.fn`) liegen in `render/charts.js`: `linie` (eine oder mehrere Reihen über Jahre, mit Marken) und `saeulen`.
+Diagramme (`figur.fn`) liegen in `render/charts.js`: `linie` (eine oder mehrere Reihen über Jahre, mit Marken) und `saeulen`. Sie werden in den echten Pixeln ihres Feldes gezeichnet; kein Text ist im Blatt kleiner als 30 px und im Reel kleiner als 40 px.
 
 ## Regeln für Zahlen
 
@@ -38,6 +38,7 @@ Diagramme (`figur.fn`) liegen in `render/charts.js`: `linie` (eine oder mehrere 
 | `posts/` | Inhalte der Posts |
 | `render/` | Vorlage: `slide.html`, `style.css`, Diagramme in `charts.js` |
 | `tools/render.py` | Rendert Posts über einen lokalen Chrome ohne Fenster |
+| `tools/pruefen.py` | Prüft einen Post gegen die Regeln: Format und gerendertes Bild |
 | `tools/publish.py` | Veröffentlicht über die Instagram Graph API |
 | `plan.json` | Zeitplan und Freigaben |
 | `veroeffentlicht.json` | Protokoll, wird vom Workflow geschrieben |
