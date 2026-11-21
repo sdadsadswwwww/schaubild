@@ -2,7 +2,9 @@
 function render(post, nr) {
   const sl = post.slides[nr - 1];
   const zwei = n => String(n).padStart(2, '0');
-  const figur = sl.figur ? `<div class="figur">${Diagramm[sl.figur.fn](sl.figur)}</div>` : '';
+  // Das Feld des Diagramms kommt zuerst leer aufs Blatt. Gezeichnet wird ganz unten, wenn feststeht,
+  // wie groß das Feld ist; so behalten die Beschriftungen ihre Größe in Pixeln (siehe charts.js).
+  const figur = sl.figur ? '<div class="figur"></div>' : '';
   const absaetze = (sl.text || []).map(p => `<p>${p}</p>`).join('');
   const kicker = sl.kicker ? `<div class="kicker">${sl.kicker}</div>` : '';
   const kopf = `${kicker}<h2>${sl.headline}</h2>${absaetze}`;
@@ -30,8 +32,16 @@ function render(post, nr) {
     inhalt = `${kopf}${figur}${fuss}`;
   }
 
+  // Die Leiste zeigt den Titel des Posts und die Blattnummer. Die Nummer des Posts steht dort nicht mehr:
+  // In der Mindestschrift von 30 px passt sonst nicht alles in eine Zeile.
   document.getElementById('sheet').innerHTML =
     `<div class="inhalt ${sl.typ}">${inhalt}</div>` +
     `<div class="leiste"><div>${Diagramm.marke()}<span class="name">Schaubild</span></div>` +
-    `<div class="thema">Nr. ${post.nr} · ${post.titel}</div><div class="blatt">${zwei(nr)}/${zwei(post.slides.length)}</div></div>`;
+    `<div class="thema">${post.titel}</div><div class="blatt">${zwei(nr)}/${zwei(post.slides.length)}</div></div>`;
+
+  if (sl.figur) {
+    const feld = document.querySelector('#sheet .figur');
+    feld.innerHTML = Diagramm[sl.figur.fn]({ ...sl.figur, breite: feld.clientWidth, hoehe: feld.clientHeight });
+  }
+  window.bereit = true;   // tools/pruefen.py wartet darauf
 }
