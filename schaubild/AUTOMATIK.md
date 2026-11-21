@@ -65,6 +65,8 @@ Lies zuerst `themenwahl.md`, falls die Datei existiert: Dort hält der Wochenber
 
 **Themen mit festem Tag.** Prüfe für jeden Tag, den du füllst, ob an genau diesem Tag eine amtliche Zahl neu erscheint (Veröffentlichungskalender von Destatis und der anderen Behörden) oder sich etwas jährt, das zu einer Reihe passt. Wenn ja und die Reihe ist sauber zu holen, bekommt dieser Tag dieses Thema; in `themen.json` beim Eintrag zusätzlich `"anlass": "<Tag und Grund>"` vermerken. Sonst gilt die Liste.
 
+**Teilen als Ziel (seit 21.11.2026).** Instagram zeigt Beiträge vor allem dann Menschen, die dem Kanal noch nicht folgen, wenn Leser sie jemandem weiterschicken. Frage deshalb bei jedem Thema und Aufmacher: Wem würde man diese Zahl schicken? Unter gleichwertigen Themen der Liste haben Vorrang: Zahlen aus dem Alltag (Geld, Wohnen, Familie, Arbeit, Verkehr, Essen und Trinken), Zahlen mit Anlass und Vergleiche, über die man spricht. Die Regeln für Zahlen und Quellen bleiben unberührt.
+
 `themen.json` ist die Liste; Einträge mit `"post"` sind erschienen oder eingeplant. Nimm das erste offene Thema, für das die Quelle erreichbar ist und eine Reihe über mindestens 15 Jahre liefert. Kein Thema erscheint zweimal; ein verwandtes Thema frühestens nach sieben Tagen (nicht zweimal hintereinander Energie, nicht zweimal hintereinander Bevölkerung). Sind weniger als 15 Themen offen, die Liste im selben Lauf um mindestens 30 ergänzen (gleiche Felder, Bereiche mischen).
 
 Was ein Thema braucht: **eine** Zahl, die für sich steht (aktuellster Jahreswert), eine lange amtliche Zeitreihe dazu und eine Entwicklung, die man in einem Satz sagen kann („so wenige wie nie seit 1950", „verdoppelt seit 2010").
