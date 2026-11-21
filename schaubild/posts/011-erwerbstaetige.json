@@ -2,22 +2,45 @@
  "nr": "011",
  "titel": "Erwerbstätige seit 1991",
  "reel": {
-  "frage": "Wie viele Menschen sind erwerbstätig?"
+  "frage": "Wie viele Erwerbstätige kamen seit 1991 dazu?",
+  "unter": "mehr als 1991",
+  "lauf": {
+   "was": "Erwerbstätige im Jahr",
+   "teiler": 1000,
+   "stellen": 2,
+   "nach": "Mio."
+  },
+  "figur": {
+   "ymin": 0,
+   "ymax": 48000,
+   "achse": [
+    {
+     "wert": 0,
+     "text": "0"
+    },
+    {
+     "wert": 20000,
+     "text": "20 Mio."
+    },
+    {
+     "wert": 40000,
+     "text": "40 Mio."
+    }
+   ]
+  }
  },
  "slides": [
   {
    "typ": "cover",
-   "kicker": "Schaubild Nr. 011",
-   "zahl": "46 Mio.",
-   "headline": "Erwerbstätige im Jahr 2025",
+   "kicker": "Erwerbstätige in Deutschland",
+   "zahl": "7,0 Mio.",
+   "headline": "mehr Menschen arbeiten als 1991",
    "text": [
-    "Im Schnitt 45,88 Millionen, 82 000 weniger als im Rekordjahr 2024. Es ist das erste Minus seit 2020."
+    "2025 sind es <em>45,88 Millionen</em> Erwerbstätige, 1991 waren es 38,87 Millionen – ein Plus von 18 Prozent."
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 600,
-    "ymin": 35000,
-    "ymax": 47500,
+    "ymax": 47000,
     "reihen": [
      {
       "von": 1991,
@@ -68,14 +91,23 @@
     ],
     "achse": [
      {
-      "wert": 35000,
+      "wert": 0,
       "text": ""
      }
     ],
     "marken": [
      {
+      "jahr": 1991,
+      "text": "38,87 Mio.",
+      "gross": true,
+      "anker": "start"
+     },
+     {
       "jahr": 2025,
-      "text": ""
+      "text": "45,88 Mio.",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
      }
     ]
    }
@@ -89,7 +121,6 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
     "ymin": 35000,
     "ymax": 48000,
     "reihen": [
@@ -171,7 +202,7 @@
      }
     ]
    },
-   "fuss": "Erwerbstätige mit Arbeitsort in Deutschland, Jahresdurchschnitt. Die Achse beginnt bei 35 Millionen."
+   "fuss": "Erwerbstätige im Inland, Jahresdurchschnitt. Die Achse beginnt bei 35 Millionen."
   },
   {
    "typ": "diagramm",
@@ -182,7 +213,6 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
     "ymax": 90,
     "reihen": [
      {
@@ -338,7 +368,7 @@
     {
      "wert": "+18,0 %",
      "name": "mehr als 1991",
-     "zusatz": "1991: 38,87 Mio. · 2025: 45,88 Mio."
+     "zusatz": "1991: 38,87 · 2025: 45,88 Mio."
     },
     {
      "wert": "−82 000",

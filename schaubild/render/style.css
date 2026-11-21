@@ -14,6 +14,8 @@ html, body { overflow: hidden; }
   --acc: #f5b82e;
   --rot: #e5382d;
   --acc-hell: rgba(245, 184, 46, 0.16);
+  /* Mindestschrift: 30 px im Blatt sind knapp 11 px am Handy (390 px breit). Kein Text im Blatt ist kleiner. */
+  --klein: 30px;
 }
 
 /* Blatt: 1080 x 1350 */
@@ -27,7 +29,7 @@ html, body { overflow: hidden; }
   font-family: var(--f-text);
 }
 
-/* Leiste unten */
+/* Leiste unten: Marke, Titel des Posts, Blattnummer */
 .leiste {
   position: absolute;
   left: 60px; right: 60px; bottom: 44px;
@@ -36,16 +38,16 @@ html, body { overflow: hidden; }
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 26px;
   font-family: var(--f-mono);
-  font-size: 22px;
-  letter-spacing: 0.06em;
+  font-size: var(--klein);
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 .leiste > div { display: flex; align-items: center; gap: 14px; white-space: nowrap; }
 .leiste .name { font-family: var(--f-kopf); font-size: 40px; font-weight: 700; letter-spacing: 0.06em; }
 .leiste .marke { width: 46px; height: 46px; flex: none; }
-.leiste .thema { color: var(--leise); overflow: hidden; }
+.leiste .thema { color: var(--leise); overflow: hidden; display: block; text-overflow: ellipsis; }
 
 .inhalt {
   position: absolute;
@@ -55,25 +57,31 @@ html, body { overflow: hidden; }
 }
 .kicker {
   font-family: var(--f-mono);
-  font-size: 24px;
+  font-size: var(--klein);
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--acc);
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  white-space: nowrap;
 }
 h1, h2 { font-family: var(--f-kopf); font-weight: 700; text-transform: uppercase; letter-spacing: 0.005em; }
 h2 { font-size: 92px; line-height: 0.96; }
 p { font-size: 36px; line-height: 1.36; margin-top: 24px; }
 p em { font-style: normal; font-weight: 600; color: var(--acc); }
 .figur { flex: 1; min-height: 0; position: relative; margin-top: 26px; }
-.figur > svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.fuss { font-family: var(--f-mono); font-size: 23px; line-height: 1.45; color: var(--leise); margin-top: 18px; }
+.figur > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.fuss { font-family: var(--f-mono); font-size: var(--klein); line-height: 1.35; color: var(--leise); margin-top: 16px; }
 
-/* Titelblatt */
+/* Titelblatt: oben das Thema, dann Kernzahl und Aussage, der Satz mit der amtlichen Zahl, das Diagramm mit
+   Anfangs- und Endwert in großer Schrift. Ein fuss steht nur, wenn die Achse nicht bei null beginnt. */
+.cover .kicker { font-size: 36px; margin-bottom: 14px; }
 .cover .zahl { font-family: var(--f-kopf); font-weight: 700; font-size: 250px; line-height: 0.86; letter-spacing: -0.01em; margin-left: -6px; white-space: nowrap; color: var(--acc); }
+.cover .zahl.tief { margin-bottom: 0.13em; }   /* Platz für Unterlängen wie in "Knapp 8" */
 .cover h1 { font-size: 104px; line-height: 0.94; margin-top: 14px; }
-.cover p { font-size: 38px; }
+.cover p { font-size: 40px; line-height: 1.32; margin-top: 20px; }
+.cover .figur { margin-top: 14px; }
+.cover .fuss { margin-top: 10px; }
 
 /* Balken */
 .balkenfeld { margin-top: 26px; }
@@ -87,21 +95,22 @@ p em { font-style: normal; font-weight: 600; color: var(--acc); }
 .reihe.akz .bahn i { background: var(--acc); }
 .balken .fuss, .punkte .fuss { margin-top: auto; }
 
-/* Kennzahlen untereinander */
+/* Kennzahlen untereinander. Die Wertspalte ist 360 px breit, damit der Zusatz in 30 px Platz hat (31 Zeichen je Zeile). */
 .kennzahlen { margin-top: 34px; }
-.punkt { display: grid; grid-template-columns: 400px 1fr; align-items: center; column-gap: 30px; padding: 50px 0; border-top: 2px solid var(--netz); }
+.punkt { display: grid; grid-template-columns: 360px 1fr; align-items: center; column-gap: 26px; padding: 44px 0; border-top: 2px solid var(--netz); }
 .punkt .wert { font-family: var(--f-kopf); font-size: 108px; font-weight: 700; line-height: 0.9; white-space: nowrap; }
 .punkt:first-child .wert { color: var(--acc); }
 .punkt .wer { font-size: 38px; font-weight: 600; line-height: 1.2; }
-.punkt .zusatz { font-family: var(--f-mono); font-size: 23px; line-height: 1.4; color: var(--leise); margin-top: 10px; }
+.punkt .zusatz { font-family: var(--f-mono); font-size: var(--klein); line-height: 1.3; color: var(--leise); margin-top: 8px; }
 
 /* Schlussblatt */
 .inhalt.outro { justify-content: center; }
-.inhalt.outro > .marke { width: 260px; height: 260px; flex: none; margin: auto 0 44px; }
-.outro .konto { font-family: var(--f-mono); font-size: 38px; font-weight: 500; color: var(--acc); margin-top: 34px; }
-.outro .quellen { font-family: var(--f-mono); font-size: 22px; line-height: 1.5; color: var(--leise); margin-top: auto; }
+.inhalt.outro > .marke { width: 220px; height: 220px; flex: none; margin: auto 0 36px; }
+.outro .konto { font-family: var(--f-mono); font-size: 38px; font-weight: 500; color: var(--acc); margin-top: 30px; }
+.outro .quellen { font-family: var(--f-mono); font-size: var(--klein); line-height: 1.35; color: var(--leise); margin-top: auto; padding-top: 30px; }
 
-/* Diagramme */
+/* Diagramme. Die Schriftgrößen setzt charts.js je Text in echten Pixeln (style="font-size"),
+   weil das Diagramm in der Größe seines Feldes gezeichnet wird und nichts skaliert. */
 .fig .netz { fill: none; stroke: var(--netz); stroke-width: 2; }
 .fig .grund { fill: none; stroke: var(--ink); stroke-width: 3; }
 .fig .kurve { fill: none; stroke: var(--neben); stroke-width: 6; stroke-linejoin: round; stroke-linecap: round; }
@@ -109,16 +118,17 @@ p em { font-style: normal; font-weight: 600; color: var(--acc); }
 .fig .flaeche { fill: var(--acc-hell); stroke: none; }
 .fig .punkt { fill: var(--bg); stroke: var(--neben); stroke-width: 6; }
 .fig .punkt.akz { stroke: var(--rot); }
+.fig .spitze { fill: var(--ink); stroke: var(--bg); stroke-width: 5; }
 .fig .saeule { fill: var(--ink); }
 .fig .saeule.akz { fill: var(--acc); }
-.fig text { font-family: var(--f-mono); font-size: 24px; fill: var(--ink); }
+.fig text { font-family: var(--f-mono); font-size: 30px; fill: var(--ink); }
 .fig text.achse { fill: var(--leise); }
-.fig text.achse.y { paint-order: stroke; stroke: var(--bg); stroke-width: 7px; stroke-linejoin: round; }
-.fig text.marke { font-family: var(--f-text); font-size: 30px; font-weight: 600; paint-order: stroke; stroke: var(--bg); stroke-width: 8px; stroke-linejoin: round; }
-.fig text.marke.leise { font-family: var(--f-mono); font-size: 23px; font-weight: 400; fill: var(--leise); }
-.fig text.reihe { font-family: var(--f-text); font-size: 30px; font-weight: 600; fill: var(--neben); paint-order: stroke; stroke: var(--bg); stroke-width: 8px; stroke-linejoin: round; }
+.fig text.achse.y { paint-order: stroke; stroke: var(--bg); stroke-width: 8px; stroke-linejoin: round; }
+.fig text.marke { font-family: var(--f-text); font-weight: 600; paint-order: stroke; stroke: var(--bg); stroke-width: 9px; stroke-linejoin: round; }
+.fig text.marke.leise { font-family: var(--f-mono); font-weight: 400; fill: var(--leise); }
+.fig text.reihe { font-family: var(--f-text); font-weight: 600; fill: var(--neben); paint-order: stroke; stroke: var(--bg); stroke-width: 9px; stroke-linejoin: round; }
 .fig text.reihe.akz { fill: var(--acc); }
-.fig text.wert { font-family: var(--f-kopf); font-size: 52px; font-weight: 700; }
+.fig text.wert { font-family: var(--f-kopf); font-weight: 700; paint-order: stroke; stroke: var(--bg); stroke-width: 10px; stroke-linejoin: round; }
 .fig text.wert.akz { fill: var(--acc); }
 
 /* Marke: drei steigende Säulen in Schwarz, Rot, Gold auf einer Grundlinie */
