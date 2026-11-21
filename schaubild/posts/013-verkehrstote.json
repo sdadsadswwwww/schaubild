@@ -2,21 +2,24 @@
  "nr": "013",
  "titel": "Verkehrstote seit 1991",
  "reel": {
-  "frage": "Wie viele Menschen sterben im Verkehr?",
+  "frage": "Wie viele Menschen sterben jeden Tag im Verkehr?",
+  "unter": "Menschen am Tag",
+  "lauf": {
+   "was": "Verkehrstote im Jahr"
+  },
   "stimmung": "ernst"
  },
  "slides": [
   {
    "typ": "cover",
-   "kicker": "Schaubild Nr. 013",
-   "zahl": "2 832",
-   "headline": "Verkehrstote im Jahr 2025",
+   "kicker": "Verkehrstote in Deutschland",
+   "zahl": "Knapp 8",
+   "headline": "Menschen sterben jeden Tag im Verkehr",
    "text": [
-    "Auf deutschen Straßen sterben im Schnitt knapp acht Menschen am Tag."
+    "Das ist der Schnitt aus <em>2 832</em> Verkehrstoten im Jahr 2025 – drei Viertel weniger als 1991."
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 600,
     "ymax": 12500,
     "reihen": [
      {
@@ -74,8 +77,17 @@
     ],
     "marken": [
      {
+      "jahr": 1991,
+      "text": "11 300",
+      "gross": true,
+      "anker": "start"
+     },
+     {
       "jahr": 2025,
-      "text": ""
+      "text": "2 832",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
      }
     ]
    }
@@ -89,8 +101,7 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
-    "ymax": 14000,
+    "ymax": 12000,
     "reihen": [
      {
       "von": 1991,
@@ -170,7 +181,7 @@
      }
     ]
    },
-   "fuss": "Bei Straßenverkehrsunfällen getötete Menschen in Deutschland, von der Polizei erfasst."
+   "fuss": "Im Straßenverkehr Getötete, von der Polizei erfasst. 2 832 : 365 Tage = 7,76 am Tag."
   },
   {
    "typ": "balken",

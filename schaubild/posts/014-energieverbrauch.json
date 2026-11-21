@@ -2,21 +2,24 @@
  "nr": "014",
  "titel": "Energieverbrauch seit 1990",
  "reel": {
-  "frage": "Wie viel Energie verbraucht Deutschland?"
+  "frage": "Wie viel weniger Energie verbraucht Deutschland?",
+  "unter": "weniger als 1990",
+  "lauf": {
+   "was": "Petajoule im Jahr"
+  }
  },
  "slides": [
   {
    "typ": "cover",
-   "kicker": "Schaubild Nr. 014",
-   "zahl": "10 628",
-   "headline": "Petajoule Energie im Jahr 2025",
+   "kicker": "Primärenergie in Deutschland",
+   "zahl": "28,7 %",
+   "headline": "weniger Energie verbraucht als 1990",
    "text": [
-    "So viel Primärenergie verbraucht Deutschland 2025, knapp 29 Prozent weniger als 1990."
+    "2025 verbraucht Deutschland <em>10 628 Petajoule</em> Primärenergie, 1990 waren es 14 905."
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 600,
-    "ymax": 16500,
+    "ymax": 15000,
     "reihen": [
      {
       "von": 1990,
@@ -74,8 +77,17 @@
     ],
     "marken": [
      {
+      "jahr": 1990,
+      "text": "14 905 PJ",
+      "gross": true,
+      "anker": "start"
+     },
+     {
       "jahr": 2025,
-      "text": ""
+      "text": "10 628 PJ",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
      }
     ]
    }
@@ -89,8 +101,7 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
-    "ymax": 18000,
+    "ymax": 16000,
     "reihen": [
      {
       "von": 1990,
@@ -175,7 +186,7 @@
      }
     ]
    },
-   "fuss": "Primärenergieverbrauch in Petajoule (PJ), Deutschland. Wert für 2025 vorläufig."
+   "fuss": "Primärenergieverbrauch in Petajoule (PJ). 2025 vorläufig. 10 628 : 14 905 = 71,3 %, also −28,7 %."
   },
   {
    "typ": "balken",
@@ -224,9 +235,9 @@
    "headline": "Was sich seit 1990 ändert",
    "punkte": [
     {
-     "wert": "−29 %",
+     "wert": "−28,7 %",
      "name": "Verbrauch insgesamt",
-     "zusatz": "1990: 14 905 PJ · 2025: 10 628 PJ"
+     "zusatz": "1990: 14 905 · 2025: 10 628 PJ"
     },
     {
      "wert": "11-mal",

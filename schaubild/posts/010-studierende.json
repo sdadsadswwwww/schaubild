@@ -2,21 +2,27 @@
  "nr": "010",
  "titel": "Studierende seit 1990",
  "reel": {
-  "frage": "Wie viele Menschen studieren in Deutschland?"
+  "frage": "Wie viele Studierende sind es mehr als 1990?",
+  "unter": "mehr als 1990",
+  "lauf": {
+   "was": "Studierende",
+   "teiler": 1000000,
+   "stellen": 2,
+   "nach": "Mio."
+  }
  },
  "slides": [
   {
    "typ": "cover",
-   "kicker": "Schaubild Nr. 010",
-   "zahl": "2,86 Mio.",
-   "headline": "Studierende an Hochschulen",
+   "kicker": "Studierende in Deutschland",
+   "zahl": "1,15 Mio.",
+   "headline": "mehr Menschen studieren als 1990",
    "text": [
-    "Im Wintersemester 2025/26 sind es rund 80 000 weniger als beim Höchststand fünf Jahre zuvor."
+    "Im Wintersemester 2025/26 sind <em>2,86 Millionen</em> eingeschrieben, 1990 waren es 1,71 Millionen."
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 600,
-    "ymax": 3500000,
+    "ymax": 3000000,
     "reihen": [
      {
       "von": 1990,
@@ -74,8 +80,17 @@
     ],
     "marken": [
      {
+      "jahr": 1990,
+      "text": "1,71 Mio.",
+      "gross": true,
+      "anker": "start"
+     },
+     {
       "jahr": 2025,
-      "text": ""
+      "text": "2,86 Mio.",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
      }
     ]
    }
@@ -89,8 +104,7 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
-    "ymax": 3500000,
+    "ymax": 3000000,
     "reihen": [
      {
       "von": 1990,
@@ -191,7 +205,6 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
     "ymax": 1750000,
     "reihen": [
      {

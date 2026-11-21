@@ -2,21 +2,26 @@
  "nr": "012",
  "titel": "Staatsschulden seit 1995",
  "reel": {
-  "frage": "Wie hoch sind die Schulden des Staates?"
+  "frage": "Wie stark wachsen die Schulden pro Tag?",
+  "unter": "Euro pro Tag",
+  "lauf": {
+   "was": "Schulden des Staates in Euro",
+   "stellen": 0,
+   "nach": "Mrd."
+  }
  },
  "slides": [
   {
    "typ": "cover",
-   "kicker": "Schaubild Nr. 012",
-   "zahl": "2,8 Bio.",
-   "headline": "Euro Schulden des Staates",
+   "kicker": "Staatsschulden in Deutschland",
+   "zahl": "416 Mio.",
+   "headline": "Euro mehr Schulden pro Tag",
    "text": [
-    "Bund, Länder, Gemeinden und Sozialversicherungen schulden Ende 2025 zusammen 2 846 Milliarden Euro."
+    "Im Schnitt des Jahres 2025: Der Schuldenstand steigt um 152 Milliarden auf <em>2 846 Milliarden</em> Euro."
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 600,
-    "ymax": 3200,
+    "ymax": 3000,
     "reihen": [
      {
       "von": 1995,
@@ -69,8 +74,17 @@
     ],
     "marken": [
      {
+      "jahr": 1995,
+      "text": "1 083 Mrd.",
+      "gross": true,
+      "anker": "start"
+     },
+     {
       "jahr": 2025,
-      "text": ""
+      "text": "2 846 Mrd.",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
      }
     ]
    }
@@ -84,8 +98,7 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
-    "ymax": 3200,
+    "ymax": 3000,
     "reihen": [
      {
       "von": 1995,
@@ -165,7 +178,7 @@
      }
     ]
    },
-   "fuss": "Bruttoschuldenstand des Staates in Euro, jeweils zum Jahresende. Staat: Bund, Länder, Gemeinden, Sozialversicherungen."
+   "fuss": "Bruttoschulden des Staates zum Jahresende. 152 Mrd. Euro : 365 Tage = 416 Mio. Euro pro Tag."
   },
   {
    "typ": "diagramm",
@@ -176,7 +189,6 @@
    ],
    "figur": {
     "fn": "linie",
-    "hoehe": 640,
     "ymax": 100,
     "reihen": [
      {
@@ -260,7 +272,7 @@
      }
     ]
    },
-   "fuss": "Bruttoschuldenstand des Staates in Prozent des Bruttoinlandsprodukts."
+   "fuss": "Schulden in Prozent des Bruttoinlandsprodukts. Staat: Bund, Länder, Gemeinden, Sozialversicherungen."
   },
   {
    "typ": "punkte",
@@ -270,12 +282,12 @@
     {
      "wert": "+163 %",
      "name": "mehr als 1995",
-     "zusatz": "1995: 1 083 Mrd. · 2025: 2 846 Mrd."
+     "zusatz": "1995: 1 083 · 2025: 2 846 Mrd."
     },
     {
      "wert": "+5,6 %",
      "name": "mehr als 2024",
-     "zusatz": "ein Plus von 152 Milliarden Euro"
+     "zusatz": "ein Plus von 152 Mrd. Euro"
     },
     {
      "wert": "6",
