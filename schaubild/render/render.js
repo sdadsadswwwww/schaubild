@@ -12,7 +12,10 @@ function render(post, nr) {
   let inhalt;
 
   if (sl.typ === 'cover') {
-    inhalt = `${kicker}<div class="zahl">${sl.zahl}</div><h1>${sl.headline}</h1>${absaetze}${figur}`;
+    // Titelblatt: Thema, Kernzahl, Aussage, Satz mit der amtlichen Zahl, Diagramm; fuss nur für den Hinweis zur Achse.
+    // Steht in der Kernzahl ein Wort mit Unterlänge ("Knapp 8"), braucht sie mehr Abstand zur Überschrift.
+    const tief = /[gjpqy]/.test(sl.zahl) ? ' tief' : '';
+    inhalt = `${kicker}<div class="zahl${tief}">${sl.zahl}</div><h1>${sl.headline}</h1>${absaetze}${figur}${fuss}`;
   } else if (sl.typ === 'balken') {
     // Die Länge richtet sich nach dem größten Wert.
     const max = Math.max(...sl.balken.map(b => b.wert));
