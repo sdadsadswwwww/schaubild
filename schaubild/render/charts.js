@@ -68,7 +68,8 @@
   // o.marken:  [{ reihe, jahr, text, zeile2, seite: 'oben' | 'unten', anker: 'start' | 'middle' | 'end',
   //               gross: true, akzent: true }]   gross = Wert in großer Schrift (Titelblatt), akzent = golden
   //            Eine Marke bleibt im Feld und weicht der Kurve und anderen Texten aus (andere Seite); findet
-  //            sie keinen Platz, entfällt ihr Text (am SVG steht dann data-entfallen, tools/pruefen.py meldet es).
+  //            sie keinen Platz, entfällt ihr Text (am SVG steht dann data-entfallen). Muss sie weit weg von ihrem
+  //            Punkt stehen, etwa über einem Gipfel daneben, steht am SVG data-fern. tools/pruefen.py meldet beides.
   // o.breite, o.hoehe: Größe des Feldes in Pixeln (setzt render.js bzw. reel.html)
   // o.schrift: { achse, marke, wert }  Schriftgrößen in Pixeln
   function linie(o) {
@@ -76,7 +77,7 @@
     const grund = H - unten;
     let body = '', oben = '';
     const belegt = [];       // Flächen schon gesetzter Texte
-    const entfallen = [];
+    const entfallen = [], fern = [];
 
     // Liegt eine Kurve in diesem Rechteck? Geprüft werden die Jahrespunkte und Zwischenpunkte der Strecken.
     const kurveIn = k => o.reihen.some(s => s.werte.some((v, i) => {
@@ -157,16 +158,21 @@
         const y1 = seite === 'unten' ? Math.max(y, ...hoehen) + 24 + gr * 0.74 : Math.min(y, ...hoehen) - 24 - z2;
         const k = kasten(tx, y1, b, gr, anker);
         k[3] += z2;
-        return { y1, k, passt: k[2] >= 0 && k[3] <= grund - 4 && frei(k) };
+        const abstand = seite === 'unten' ? k[2] - y : y - k[3];   // Abstand zwischen Punkt und Text
+        return { y1, k, abstand, passt: k[2] >= 0 && k[3] <= grund - 4 && frei(k) };
       };
       const wunsch = m.seite === 'unten' ? 'unten' : 'oben';
+      const anders = lage(wunsch === 'unten' ? 'oben' : 'unten');
       let p = lage(wunsch);
       if (!p.passt) {
-        const anders = lage(wunsch === 'unten' ? 'oben' : 'unten');
         // Kein freier Platz auf beiden Seiten: Ein großer Wert (Titelblatt) bleibt stehen, eine gewöhnliche Marke entfällt.
         if (anders.passt) p = anders;
         else if (!(m.gross && p.k[2] >= 0 && p.k[3] <= grund - 4)) { entfallen.push(m.text); continue; }
+      } else if (p.abstand > 90 && anders.passt && anders.abstand < p.abstand) {
+        // Müsste der Text weit weg von seinem Punkt stehen (über einem Gipfel daneben), steht er auf der anderen Seite.
+        p = anders;
       }
+      if (p.abstand > 90) fern.push(m.text);   // steht weit weg von seinem Punkt: tools/pruefen.py meldet es
       belegt.push(p.k);
       punkteSvg += text(tx, p.y1, m.text, cls, gr, `text-anchor="${anker}"`);
       if (m.zeile2) punkteSvg += text(tx, p.y1 + z2, m.zeile2, 'marke leise', fs.achse, `text-anchor="${anker}"`);
@@ -183,7 +189,8 @@
       belegt.push(nachRechts ? re : li);
       oben += nachRechts ? text(W - rechts, y, a.text, 'achse y', fs.achse, 'text-anchor="end"') : text(l, y, a.text, 'achse y', fs.achse);
     }
-    return svg(W, H, body + oben + punkteSvg, entfallen.length ? `data-entfallen="${entfallen.join(' | ').replace(/"/g, '')}"` : '');
+    const merk = (name, liste) => (liste.length ? ` data-${name}="${liste.join(' | ').replace(/"/g, '')}"` : '');
+    return svg(W, H, body + oben + punkteSvg, merk('entfallen', entfallen) + merk('fern', fern));
   }
 
   // Säulen nebeneinander. o.saeulen: [{ wert, anzeige, name, akzent }]

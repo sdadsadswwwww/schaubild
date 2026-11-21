@@ -6,9 +6,10 @@ Aufruf:  python tools/musik.py 002-oekostrom              -> out/002-oekostrom/m
 Die Musik wird aus Sinustönen berechnet und gehört damit vollständig dem Kanal: keine Lizenz, keine
 Rechte Dritter. Sie folgt dem Ablauf des Reels (render/reel.html, Konstante ZEIT):
 
-  0,0 – 1,0 s   ein leiser Flächenklang, während die Frage steht
-  1,0 – 7,0 s   gezupfte Töne, die lauter werden, während sich die Kurve zeichnet
-  7,2 s         ein Glockenakkord, wenn die Zahl erscheint
+  0,0 – 0,2 s   ein leiser Flächenklang setzt ein, die Frage steht
+  0,2 – 4,2 s   gezupfte Töne, die lauter werden, während sich die Kurve zeichnet
+  4,5 s         ein Glockenakkord, wenn die Zahl erscheint
+  8,2 s         ein einzelner leiser Ton, wenn "Jeden Tag eine Zahl" erscheint
   danach        der Akkord klingt aus
 
 Tonart und Muster hängen von der Nummer des Posts ab, damit nicht jedes Reel gleich klingt.
@@ -25,7 +26,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 RATE = 44100
-ZEIT = {'start': 1.0, 'ende': 7.0, 'zahl': 7.2}   # wie in render/reel.html
+ZEIT = {'start': 0.2, 'ende': 4.2, 'zahl': 4.5, 'folgen': 8.2}   # wie in render/reel.html
 STIMMUNGEN = ('neutral', 'ernst')
 
 GRUNDTOENE = (57, 55, 59, 52)                      # A, G, H, E (MIDI), nach Nummer des Posts
@@ -104,8 +105,9 @@ def erzeuge(pfad, dauer=11.0, nr=1, stimmung='neutral'):
         akkord_flaeche(ZEIT['start'] + k * abschnitt, abschnitt + 0.7, akkord, 0.13)
     akkord_flaeche(ZEIT['ende'], dauer - ZEIT['ende'], schluss, 0.16)
 
-    # Gezupfte Töne, während sich die Kurve zeichnet: werden lauter
-    schritte = 3 if ernst else 6
+    # Gezupfte Töne, während sich die Kurve zeichnet: werden lauter. Vier Töne je Akkord (bei "ernst" zwei):
+    # Bei einem Akkord je Sekunde bleibt das Tempo so wie früher mit sechs Tönen in anderthalb Sekunden.
+    schritte = 2 if ernst else 4
     zupfton = [(1, 1.0), (2, 0.35), (3, 0.12)]
     for k, akkord in enumerate(folge):
         toene = (*akkord, akkord[0] + 12)
@@ -125,6 +127,8 @@ def erzeuge(pfad, dauer=11.0, nr=1, stimmung='neutral'):
         for k, halbton in enumerate(schluss):
             melodie.ton(ZEIT['zahl'] + k * 0.06, hz(grund + 24 + halbton), 3.4, 0.17, glockenton, glocke,
                         links=0.6 + 0.4 * (k % 2), rechts=1.0 - 0.4 * (k % 2))
+    # Wenn der Grund zu folgen erscheint: ein einzelner leiser Ton aus dem Schlussakkord
+    melodie.ton(ZEIT['folgen'], hz(grund + 12 + schluss[0]), 2.4, 0.09 if ernst else 0.11, zupfton, glocke)
     melodie.echo(0.375, 0.28)
 
     # Mischen, ein- und ausblenden, auf festen Spitzenwert bringen

@@ -6,26 +6,48 @@
 <link rel="stylesheet" href="fonts.css">
 <link rel="stylesheet" href="style.css">
 <style>
-  /* Reel: 1080 x 1920. Oben 230 px und unten 330 px bleiben frei, dort liegt die Bedienung von Instagram. */
+  /* Reel: 1080 x 1920, bildfüllend.
+     - Inhalt von y 160 bis 1536. Die unteren 20 % (ab 1536) gehören der Bedienung von Instagram; dort steht
+       nur die Markenzeile, auf die es nicht ankommt.
+     - Ab dem Diagramm bleibt rechts ein Streifen von 160 px frei (Knöpfe von Instagram); Frage und Antwort
+       oben dürfen bis 1020 laufen.
+     - Keine Schrift unter 40 px. Was nicht passt, wird kleiner, aber nie kleiner als 40 px (Funktion passe). */
   #sheet { height: 1920px; }
-  .reel { position: absolute; left: 60px; right: 60px; top: 240px; bottom: 330px; display: flex; flex-direction: column; }
-  .reel > * { flex: none; }
-  .reel .frage { font-family: var(--f-kopf); font-weight: 700; text-transform: uppercase; font-size: 88px; line-height: 0.98; min-height: 172px; }
-  .reel .figur { flex: none; height: 540px; margin-top: 20px; }
-  .reel .buehne { position: relative; height: 300px; margin-top: 10px; }
+  .reel { position: absolute; left: 60px; right: 60px; top: 160px; height: 1376px; }
+  .reel > div { position: absolute; left: 0; }
+  .reel .kicker { top: 0; right: 0; margin: 0; font-size: 40px; letter-spacing: 0.06em; }
+
+  /* Kopf: erst die Frage, ab ZEIT.zahl an derselben Stelle die Antwort (y 262 bis 607) */
+  .reel .kopf { top: 102px; right: 0; height: 345px; }
+  .reel .kopf > div { position: absolute; left: 0; right: 0; top: 0; }
+  .reel .frage { font-family: var(--f-kopf); font-weight: 700; text-transform: uppercase; font-size: 118px; line-height: 0.96; }
+  .reel .antwort .zahl { font-family: var(--f-kopf); font-weight: 700; font-size: 220px; line-height: 0.86; letter-spacing: -0.01em; color: var(--acc); white-space: nowrap; margin-left: -6px; transform-origin: left bottom; }
+  .reel .antwort .zahl.tief { margin-bottom: 0.13em; }   /* Platz für Unterlängen wie in "Knapp 8" */
+  .reel .antwort .unter { font-family: var(--f-kopf); font-weight: 700; text-transform: uppercase; font-size: 118px; line-height: 0.96; margin-top: 4px; white-space: nowrap; }
+
+  /* Diagramm: 860 x 663 (y 625 bis 1288) */
+  .reel .figur { top: 465px; width: 860px; height: 663px; margin: 0; flex: none; }
+
+  /* Bühne unter dem Diagramm (y 1306 bis 1536): mitlaufendes Jahr und Wert, dann der Satz, zuletzt der Grund zu folgen */
+  .reel .buehne { top: 1146px; width: 860px; height: 230px; }
   .reel .buehne > div { position: absolute; left: 0; right: 0; top: 0; }
-  .reel .jahr { font-family: var(--f-kopf); font-weight: 700; font-size: 200px; line-height: 0.9; color: var(--netz); letter-spacing: -0.01em; }
-  .reel .zahl { font-family: var(--f-kopf); font-weight: 700; font-size: 200px; line-height: 0.9; color: var(--acc); white-space: nowrap; margin-left: -6px; transform-origin: left bottom; }
-  .reel .unter { font-family: var(--f-kopf); font-weight: 700; text-transform: uppercase; font-size: 72px; line-height: 0.96; margin-top: 12px; }
-  .reel .satz { font-size: 38px; line-height: 1.34; min-height: 110px; margin-top: 10px; }
-  .reel .satz em { font-style: normal; }
-  /* Nur im Story-Bild (tools/reel.py setzt die Klasse "story"): Hinweis auf den neuen Beitrag */
-  .reel .neu { display: none; margin-top: 16px; font-family: var(--f-mono); font-weight: 500; font-size: 30px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--acc); }
+  .reel .lauf .zeile { display: flex; align-items: baseline; gap: 38px; font-family: var(--f-kopf); font-weight: 700; font-size: 160px; line-height: 0.9; white-space: nowrap; }
+  .reel .lauf .wert { color: var(--acc); }
+  .reel .lauf .was { font-family: var(--f-mono); font-size: 40px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink); margin-top: 14px; white-space: nowrap; }
+  .reel .satz { font-size: 50px; line-height: 1.28; margin: 0; }
+  .reel .satz em { font-style: normal; font-weight: 600; color: var(--acc); }
+  .reel .gross { font-family: var(--f-kopf); font-weight: 700; text-transform: uppercase; font-size: 104px; line-height: 0.95; color: var(--acc); white-space: nowrap; }
+  .reel .konto { font-family: var(--f-mono); font-weight: 500; font-size: 46px; margin-top: 20px; white-space: nowrap; }
+  /* Nur im Story-Bild (tools/reel.py setzt die Klasse "story"): Hinweis auf den neuen Beitrag statt "Folgen" */
+  .reel .neu { display: none; }
   #sheet.story .reel .neu { display: block; }
-  .reel .marke-zeile { margin-top: auto; border-top: 4px solid var(--rot); padding-top: 22px; display: flex; align-items: center; gap: 16px;
-    font-family: var(--f-mono); font-size: 26px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--leise); white-space: nowrap; }
-  .reel .marke-zeile .marke { width: 54px; height: 54px; flex: none; }
-  .reel .marke-zeile .name { font-family: var(--f-kopf); font-size: 48px; font-weight: 700; letter-spacing: 0.06em; color: var(--ink); margin-right: 14px; }
+  #sheet.story .reel .folgen { display: none; }
+
+  /* Markenzeile in den unteren 20 %: schmückt, trägt aber nichts Wichtiges */
+  .reel-marke { position: absolute; left: 60px; right: 60px; top: 1600px; border-top: 4px solid var(--rot); padding-top: 24px; display: flex; align-items: center; gap: 18px;
+    font-family: var(--f-mono); font-size: 40px; color: var(--leise); white-space: nowrap; }
+  .reel-marke .marke { width: 58px; height: 58px; flex: none; }
+  .reel-marke .name { font-family: var(--f-kopf); font-size: 54px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink); margin-right: 14px; }
 </style>
 </head>
 <body>
@@ -34,28 +56,103 @@
 <script>
   // Aufruf über tools/reel.py: reel.html?post=<name>&konto=<handle>
   // Die Seite läuft nicht von selbst ab. tools/reel.py ruft für jedes Bild window.zeige(sekunde) auf.
+  // Zum Ansehen einzelner Bilder: &t=<sekunde>, für das Story-Bild zusätzlich &story=1.
+  //
+  // Felder unter "reel" im Post (AUTOMATIK.md, Abschnitt "Aufbau eines Posts"):
+  //   frage   die Frage oben                          Pflicht
+  //   unter   kurze Zeile unter der Kernzahl          Pflicht, höchstens 16 Zeichen ("Menschen am Tag")
+  //   lauf    { was, teiler, stellen, nach }          Pflicht: was der mitlaufende Wert zählt; teiler, stellen und
+  //                                                   nach formen Rohwerte um (2864160 -> "2,86 Mio.")
+  //   thema, zahl, satz    sonst gelten kicker, zahl und text des Titelblatts
+  //   figur   ersetzt Angaben des Diagramms von Blatt 2, z. B. ymax oder marken
+  //   stimmung "ernst"     für die Musik (tools/musik.py)
+  // Fehlen die neuen Felder (ältere Posts), gelten Rückfallwerte: der Titel des Posts als Thema und als
+  // Beschriftung des laufenden Werts, die Überschrift des Titelblatts unter der Kernzahl (verkleinert,
+  // bis sie passt), Rohwerte mit ihren Nachkommastellen.
   const q = new URLSearchParams(location.search);
   const schriften = ['600 10px "Barlow Condensed"', '700 10px "Barlow Condensed"', '400 10px Barlow', '600 10px Barlow',
     '400 10px "IBM Plex Mono"', '500 10px "IBM Plex Mono"'];
-  const ZEIT = { start: 1.0, ende: 7.0, zahl: 7.2, satz: 8.0, dauer: 11.0 };
+  // Die Kurve startet sofort und ist nach 4,2 s fertig, die Antwort steht ab 5,0 s vollständig, der Satz ab 5,6 s,
+  // ab 8,2 s der Grund zu folgen. tools/musik.py (ZEIT) folgt denselben Zeiten.
+  const ZEIT = { start: 0.2, ende: 4.2, zahl: 4.5, satz: 5.2, folgen: 8.2, dauer: 11.0 };
+  const FELD = { breite: 860, hoehe: 663, schrift: { achse: 40, marke: 46, wert: 84 } };
+  const KLEINSTE = 40;   // px, Mindestschrift im Reel
   const grenze = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
   const weich = x => x * x * (3 - 2 * x);
 
+  // Verkleinert die Schrift eines Elements in Schritten, bis es passt, aber nie unter die Mindestschrift.
+  // Am Element steht dann data-geschrumpft; tools/pruefen.py meldet das bei neuen Posts als Fehler.
+  function passe(el, passt, min = KLEINSTE) {
+    const start = parseFloat(getComputedStyle(el).fontSize);
+    let gr = start;
+    while (!passt(el) && gr > min) {
+      gr = Math.max(min, gr - 2);
+      el.style.fontSize = gr + 'px';
+    }
+    if (gr < start) el.dataset.geschrumpft = gr;
+  }
+  const inBreite = el => el.scrollWidth <= el.clientWidth;
+
   function baue(post) {
-    const titel = post.slides[0];
+    const titel = post.slides[0], reel = post.reel || {}, lauf = reel.lauf || {};
     const blatt = post.slides.find(s => s.typ === 'diagramm' && s.figur && s.figur.fn === 'linie') || titel;
-    const figur = { ...blatt.figur, hoehe: 540 };
-    const frage = (post.reel && post.reel.frage) || titel.headline;
+    const basis = { ...blatt.figur, ...(reel.figur || {}) };
+    const nrHaupt = Math.max(0, basis.reihen.findIndex(s => s.akzent));
+    const haupt = basis.reihen[nrHaupt];
+    const letztes = haupt.von + haupt.werte.length - 1;
+
+    // Wert der Reihe als Text: Tausender mit Leerzeichen, Komma als Dezimalzeichen
+    const dezimalen = Math.min(2, Math.max(...haupt.werte.map(v => (String(v).split('.')[1] || '').length)));
+    const stellen = lauf.stellen ?? (lauf.teiler ? 1 : dezimalen);
+    const wertText = v => {
+      const [ganz, rest] = (v / (lauf.teiler || 1)).toFixed(stellen).split('.');
+      return ganz.replace(/\B(?=(\d{3})+(?!\d))/g, ' ') + (rest ? ',' + rest : '') + (lauf.nach ? ' ' + lauf.nach : '');
+    };
+    // Marken im Reel: Anfang und Ende der Reihe in derselben Schreibweise wie der laufende Wert,
+    // außer der Post gibt unter reel.figur.marken eigene vor.
+    const marken = (reel.figur && reel.figur.marken) || [
+      { reihe: nrHaupt, jahr: haupt.von, text: `${haupt.von}: ${wertText(haupt.werte[0])}`, anker: 'start' },
+      { reihe: nrHaupt, jahr: letztes, text: `${letztes}: ${wertText(haupt.werte[haupt.werte.length - 1])}`, anker: 'end' }];
+    const figur = { ...basis, marken, ...FELD };
+
+    const alt = /^\s*Schaubild Nr/.test(titel.kicker || '');   // Titelblatt im alten Format
+    const thema = reel.thema || (alt ? post.titel : titel.kicker) || post.titel;
+    const zahlText = reel.zahl || titel.zahl;
     document.getElementById('sheet').innerHTML =
-      `<div class="reel"><div class="kicker">${titel.kicker}</div><div class="frage">${frage}</div>` +
+      `<div class="reel"><div class="kicker">${thema}</div>` +
+      `<div class="kopf"><div class="frage">${reel.frage || titel.headline}</div>` +
+      `<div class="antwort"><div class="zahl${/[gjpqy]/.test(zahlText) ? ' tief' : ''}">${zahlText}</div><div class="unter">${reel.unter || titel.headline}</div></div></div>` +
       `<div class="figur">${Diagramm.linie(figur)}</div>` +
-      `<div class="buehne"><div class="jahr"></div><div class="ergebnis"><div class="zahl">${titel.zahl}</div><div class="unter">${titel.headline}</div></div></div>` +
-      `<div class="satz">${(titel.text || [''])[0]}</div>` +
-      `<div class="neu">Neu im Profil: alle Zahlen zum Wischen</div>` +
-      `<div class="marke-zeile">${Diagramm.marke()}<span class="name">Schaubild</span><span>${post.konto} · jeden Tag eine Zahl</span></div></div>`;
+      `<div class="buehne"><div class="lauf"><div class="zeile"><span class="jahr"></span><span class="wert"></span></div><div class="was">${lauf.was || post.titel}</div></div>` +
+      `<div class="satz">${reel.satz || (titel.text || [''])[0]}</div>` +
+      `<div class="folgen"><div class="gross">Jeden Tag eine Zahl</div><div class="konto">Folgen: ${post.konto}</div></div>` +
+      `<div class="neu"><div class="gross">Neu im Profil</div><div class="konto">Alle Zahlen zum Wischen</div></div></div></div>` +
+      `<div class="reel-marke">${Diagramm.marke()}<span class="name">Schaubild</span><span>Deutschland in Grafiken</span></div>`;
+
+    const sel = s => document.querySelector(s);
+    const frage = sel('.frage'), antwort = sel('.antwort'), zahl = sel('.antwort .zahl');
+    const laufEl = sel('.lauf'), jahrEl = sel('.lauf .jahr'), wertEl = sel('.lauf .wert');
+    const satz = sel('.satz'), folgen = sel('.folgen'), neu = sel('.neu');
+
+    // Alles muss in sein Feld passen: Frage in drei Zeilen, Kernzahl und Zeile darunter in je eine,
+    // der laufende Wert auch mit seiner längsten Zahl, der Satz in die Bühne.
+    const kopfHoehe = sel('.kopf').clientHeight, buehneHoehe = sel('.buehne').clientHeight;
+    passe(frage, el => el.offsetHeight <= kopfHoehe && inBreite(el), 60);
+    passe(zahl, inBreite, 120);
+    passe(sel('.antwort .unter'), el => inBreite(el) && antwort.offsetHeight <= kopfHoehe, 56);
+    const zeile = sel('.lauf .zeile');
+    jahrEl.textContent = letztes;
+    let breiteste = '', weite = 0;
+    for (const v of haupt.werte) {
+      wertEl.textContent = wertText(v);
+      if (zeile.scrollWidth > weite) { weite = zeile.scrollWidth; breiteste = wertEl.textContent; }
+    }
+    wertEl.textContent = breiteste;
+    passe(zeile, inBreite, 80);
+    passe(satz, el => el.offsetHeight <= buehneHoehe);
 
     // Kurven und Flächen hinter eine wandernde Kante legen, Marken einzeln einblenden
-    const svg = document.querySelector('.figur svg');
+    const svg = sel('.figur svg');
     const ns = 'http://www.w3.org/2000/svg';
     const clip = document.createElementNS(ns, 'clipPath');
     clip.id = 'kante';
@@ -64,34 +161,49 @@
     clip.appendChild(feld);
     svg.insertBefore(clip, svg.firstChild);
     svg.querySelectorAll('.kurve, .flaeche, text.reihe').forEach(e => e.setAttribute('clip-path', 'url(#kante)'));
-    const marken = [];
+    const punkte = [];
     svg.querySelectorAll('circle.punkt').forEach(kreis => {
       const teile = [kreis];
-      for (let n = kreis.nextElementSibling; n && n.matches('text.marke'); n = n.nextElementSibling) teile.push(n);
-      marken.push({ x: +kreis.getAttribute('cx'), teile });
+      for (let n = kreis.nextElementSibling; n && n.matches('text.marke, text.wert'); n = n.nextElementSibling) teile.push(n);
+      punkte.push({ x: +kreis.getAttribute('cx'), teile });
     });
-    const von = Math.min(...figur.reihen.map(s => s.von));
-    const bis = Math.max(...figur.reihen.map(s => s.von + s.werte.length - 1));
-    const jahr = document.querySelector('.jahr'), ergebnis = document.querySelector('.ergebnis');
-    const zahl = document.querySelector('.zahl'), satz = document.querySelector('.satz');
+    // Punkt an der Spitze der Kurve, der mit dem laufenden Wert wandert
+    const spitze = document.createElementNS(ns, 'circle');
+    spitze.setAttribute('class', 'spitze'); spitze.setAttribute('r', '14');
+    svg.appendChild(spitze);
+    const g = Diagramm.geo(figur);
 
     window.zeige = t => {
       const p = weich(grenze((t - ZEIT.start) / (ZEIT.ende - ZEIT.start)));
-      const x = 20 + p * 850;   // Zeichenfläche der Diagramme: 20 bis 870
+      const j = g.von + p * (g.bis - g.von);          // Jahr als Kommazahl
+      const x = g.X(j);
       feld.setAttribute('width', String(x + 1));
-      marken.forEach(m => {
+      punkte.forEach(m => {
         const a = grenze((x - m.x) / 12 + 1);
         m.teile.forEach(e => { e.style.opacity = a; });
       });
-      jahr.textContent = Math.round(von + p * (bis - von));
+      // Punkt an der Spitze: zwischen den beiden Nachbarjahren geradlinig, wie die Kurve
+      const jj = grenze(j, haupt.von, letztes);
+      const i = Math.max(0, Math.min(Math.floor(jj) - haupt.von, haupt.werte.length - 2));
+      const v = haupt.werte[i] + ((haupt.werte[i + 1] ?? haupt.werte[i]) - haupt.werte[i]) * (jj - haupt.von - i);
+      spitze.setAttribute('cx', g.X(jj)); spitze.setAttribute('cy', g.Y(v));
+      spitze.style.opacity = 1 - grenze((t - ZEIT.ende) / 0.3);
+      // Die Anzeige nennt nur Werte, die in der Reihe stehen: das Jahr wird gerundet, nichts interpoliert
+      const jahr = Math.round(jj);
+      jahrEl.textContent = jahr;
+      wertEl.textContent = wertText(haupt.werte[jahr - haupt.von]);
+
       const z = grenze((t - ZEIT.zahl) / 0.5);
-      jahr.style.opacity = 1 - grenze((t - ZEIT.zahl + 0.2) / 0.3);
-      ergebnis.style.opacity = z;
+      frage.style.opacity = 1 - grenze((t - ZEIT.zahl + 0.3) / 0.3);
+      antwort.style.opacity = z;
       zahl.style.transform = `scale(${0.86 + 0.14 * weich(z)})`;
-      satz.style.opacity = grenze((t - ZEIT.satz) / 0.6);
+      laufEl.style.opacity = 1 - grenze((t - ZEIT.satz + 0.35) / 0.3);
+      satz.style.opacity = grenze((t - ZEIT.satz) / 0.4) * (1 - grenze((t - ZEIT.folgen + 0.4) / 0.3));
+      folgen.style.opacity = neu.style.opacity = grenze((t - ZEIT.folgen) / 0.5);
     };
     window.zeige(0);
     window.dauer = ZEIT.dauer;
+    window.zeiten = ZEIT;
     window.bereit = true;
   }
 
@@ -99,6 +211,7 @@
     .then(r => r.json())
     .then(post => Promise.all([post, ...schriften.map(s => document.fonts.load(s))]))
     .then(([post]) => {
+      if (q.has('story')) document.getElementById('sheet').classList.add('story');
       baue({ ...post, konto: '@' + q.get('konto') });
       if (q.has('t')) window.zeige(+q.get('t'));
     });

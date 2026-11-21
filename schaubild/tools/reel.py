@@ -32,7 +32,8 @@ from render import CONFIG, ROOT, finde_chrome, starte_server  # noqa: E402
 import musik  # noqa: E402
 
 BREITE, HOEHE, BILDER_JE_SEKUNDE = 1080, 1920, 30
-VORSCHAU_ZEITEN = (0.0, 4.0, 7.8, 10.5)
+# Standbilder der Vorschau: Frage, laufende Kurve, Antwort mit Satz, Schlussbild (Zeiten wie ZEIT in render/reel.html)
+VORSCHAU_ZEITEN = (0.0, 3.0, 6.0, 10.5)
 
 
 class Fernsteuerung:
