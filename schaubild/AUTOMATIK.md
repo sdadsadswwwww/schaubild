@@ -9,9 +9,9 @@ Der Betreiber des Kanals `@das.schaubild` („Deutschland in Grafiken") hat am 1
 - **Jeden Tag** erscheint ein Thema, Montag bis Sonntag, ohne Enddatum, in drei Formen: um 12:45 Uhr das **Reel** (die Kurve zeichnet sich), um 18:30 Uhr der **Post** (Carousel), fünf Minuten später die **Story** (Schlussbild des Reels mit Hinweis auf den Post).
 - **Vorrat:** Für die nächsten **7 Tage** ab morgen soll immer ein fertiger Post im Plan stehen. **Jeder Lauf prüft beim Start, ob der Vorrat bei 7 Tagen steht, und erstellt im selben Lauf alles, was fehlt** (Regel des Betreibers vom 14.11.2026; keine Obergrenze je Lauf).
 - Sinkt der Vorrat unter 3 Tage, steht das als Warnung im Bericht. Ist er leer, wiederholt der Zeitplan von selbst einen älteren Beitrag (`tools/zeitplan.py`); dafür ist hier nichts zu tun.
-- Stil und Aufbau bleiben wie bei den Posts 001 bis 005.
+- Stil und Aufbau: wie im Abschnitt „Aufbau eines Posts" beschrieben (Format seit 21.11.2026: Titelblatt mit Aussage, bildfüllendes Reel, Mindestschrift). Vorlagen sind die Posts 010 bis 014; die Posts 001 bis 009 haben das frühere Format.
 
-Die Posts sind damit vorab freigegeben: Niemand sieht sie vor der Veröffentlichung durch. Die Durchsicht in Schritt 6 ist die einzige Kontrolle und darf nicht abgekürzt werden. Lieber bleibt ein Tag leer, als dass ein Post mit falschen Zahlen oder kaputten Blättern erscheint.
+Die Posts sind damit vorab freigegeben: Niemand sieht sie vor der Veröffentlichung durch. Die Durchsicht in Schritt 6 und die Prüfung in Schritt 7 sind die einzige Kontrolle und dürfen nicht abgekürzt werden. Lieber bleibt ein Tag leer, als dass ein Post mit falschen Zahlen oder kaputten Blättern erscheint.
 
 ## Feste Regeln
 
@@ -37,7 +37,7 @@ Die Posts sind damit vorab freigegeben: Niemand sieht sie vor der Veröffentlich
 4. **Post schreiben:** `posts/<nr>-<kurzname>.json` (Abschnitt „Aufbau eines Posts").
 5. **Rendern:** `python tools/render.py <post>`, danach `python tools/reel.py <post>` für die Vorschau des Reels (vier Standbilder in `out/<post>/reel-vorschau.jpg`) und das Bild der Story (`out/<post>/story.jpg`). Die Meldung „kein ffmpeg gefunden" ist in Ordnung: Das Video rendert der Workflow „Schaubild Reel rendern" auf GitHub, sobald der Post übertragen ist.
 6. **Durchsehen:** `out/<post>/uebersicht.jpg`, jedes Blatt `out/<post>/01.jpg` …, `out/<post>/reel-vorschau.jpg` und `out/<post>/story.jpg` mit dem Read-Werkzeug ansehen (Abschnitt „Durchsicht"). Nachbessern und neu rendern, bis kein Punkt der Liste mehr zutrifft.
-7. **Prüfen:** `python tools/publish.py --probelauf --post <post>`.
+7. **Prüfen:** `python tools/pruefen.py <post>` muss mit „in Ordnung" enden. Das Skript prüft Pflichtfelder und Längen, den Hinweis bei einer Achse, die nicht bei null beginnt, und misst im aufgebauten Blatt und Reel die kleinste Schrift und jeden Überlauf. Jeden gemeldeten Fehler im Post beheben (nie im Werkzeug), neu rendern, erneut durchsehen und prüfen. **Ein Post mit Fehlern ist nicht fertig und wird nicht eingeplant.** Danach `python tools/publish.py --probelauf --post <post>`.
 8. **Einplanen:** in `plan.json` am Ende der Liste `posts` eine Zeile ergänzen, im selben Format wie die übrigen:
    `{ "datum": "JJJJ-MM-TT", "post": "<post>", "freigabe": true, "erstellt": "JJJJ-MM-TTTHH:MM" }`
    `datum` ist der Tag der Veröffentlichung, `erstellt` der Zeitpunkt jetzt (Berliner Zeit). Die Liste bleibt nach `datum` sortiert.
@@ -85,20 +85,49 @@ Erlaubte Quellen: Statistisches Bundesamt (destatis.de, GENESIS-Tabellen), Umwel
 
 ## Aufbau eines Posts
 
-Vor dem Schreiben lesen: `posts/003-inflation.json` (eine Reihe, Rangliste, Kennzahlen), `posts/002-oekostrom.json` (Anteile), `posts/001-geburten.json` (zwei Reihen, sechs Blätter). `render/charts.js` beschreibt im Kopf jeder Funktion die Optionen der Diagramme.
+Vor dem Schreiben lesen: `posts/013-verkehrstote.json` (Umrechnung auf den Tag, Rangliste, Kennzahlen), `posts/010-studierende.json` (Reihe in Rohwerten, zwei Reihen) und `posts/011-erwerbstaetige.json` (Achse beginnt nicht bei null). `render/charts.js` beschreibt im Kopf jeder Funktion die Optionen der Diagramme.
 
-- Dateiname `<nr>-<kurzname>.json`, Kurzname nur aus `a–z`, `0–9` und Bindestrich (ä → ae, ß → ss). Felder: `nr`, `titel` (höchstens 24 Zeichen), `reel`, `slides`, `quellen`, `caption`, `hashtags`.
-- `"reel": { "frage": "…" }`: die Frage, die das Reel oben zeigt und die die Zahl des Titelblatts beantwortet, höchstens 48 Zeichen, endet mit Fragezeichen („Wie viele Menschen sind arbeitslos?"). Sie fragt genau nach dem, was gemessen wird (Absatz ist nicht Verbrauch). Das Reel nimmt Zahl, Überschrift und Text vom Titelblatt und das Diagramm vom zweiten Blatt; dieses muss deshalb ein `diagramm` mit `linie` sein.
-- **Musik:** Jedes Reel bekommt beim Rendern automatisch Musik (`tools/musik.py`, selbst berechnet, keine Rechte Dritter); dafür ist nichts zu tun. Nur bei Themen, zu denen ein heller Schluss nicht passt (Tod, Krankheit, Unfälle, Arbeitslosigkeit, Insolvenzen, Armut), zusätzlich `"stimmung": "ernst"` in `reel` setzen: `"reel": { "frage": "…", "stimmung": "ernst" }`. Sonst das Feld weglassen. Die Bilder des Carousels haben keinen Ton; die Schnittstelle von Instagram lässt Musik nur an Reels zu.
+### Der Aufmacher: Aussage mit Alltagsanker
+
+Titelblatt und Reel sagen, was herauskommt, und zwar so, dass man es auf sich oder seinen Alltag beziehen kann. Ein Etikett wie „Verkehrstote im Jahr 2025" ist kein Aufmacher. Diese Formen der Reihe nach prüfen und die erste nehmen, die die Zahlen tragen:
+
+1. **Auf den Alltag gerechnet:** pro Tag, je Einwohner, je Haushalt, „jeder siebte" („Knapp 8 / Menschen sterben jeden Tag im Verkehr").
+2. **Die Veränderung:** „28,7 % / weniger Energie als 1990", „7,0 Mio. / mehr Menschen arbeiten als 1991".
+3. **Der Rang in der Reihe:** „so wenige wie nie seit 1950".
+4. Trägt nichts davon: die amtliche Zahl mit einem Verb und dem Menschen als Subjekt („2,86 Mio. / Menschen studieren in Deutschland").
+
+Dafür gilt ohne Ausnahme:
+
+- **Belegt:** Die amtliche Zahl, aus der die Aussage folgt, steht mit Jahr im Satz des Titelblatts, die ganze Reihe auf Blatt 2. Die Aussage ist mit Python nachgerechnet.
+- **Umrechnungen** („pro Tag", „je Einwohner", „jeder siebte", „verdoppelt") sind einfache Rechnungen aus Zahlen des Posts. Ihre Grundlage steht im Satz des Titelblatts („Das ist der Schnitt aus 2 832 Verkehrstoten im Jahr 2025"), der Rechenweg im `fuss` von Blatt 2 („2 832 : 365 Tage = 7,76 am Tag."). Bei einer bloßen Differenz genügen beide Werte im Satz des Titelblatts. Auf ganze Zahlen gerundete Ergebnisse tragen „knapp", „rund", „gut" oder „etwa" und sind nie günstiger gerundet als gerechnet (7,76 ist „knapp 8", nicht „8"). Braucht die Rechnung eine Zahl von außen (Einwohner, Haushalte), stammt sie aus einer erlaubten Quelle und steht mit Wert im Post und in `quellen`.
+- **Sachlich:** keine Wertung, keine Übertreibung, kein „nur noch", „dramatisch", „explodiert", kein „Rekord" ohne Beleg aus der Reihe. „Jeden Tag" steht nur für einen Schnitt, den der Satz darunter als Schnitt benennt. Keine Ursache, die nicht in der Quelle steht.
+- Titelblatt, Reel und Blatt 2 nennen dieselbe Zahl in derselben Rundung.
+
+### Felder
+
+- Dateiname `<nr>-<kurzname>.json`, Kurzname nur aus `a–z`, `0–9` und Bindestrich (ä → ae, ß → ss). Felder: `nr`, `titel` (höchstens 26 Zeichen, steht in der Leiste jedes Blatts), `reel`, `slides`, `quellen`, `caption`, `hashtags`.
+- **`reel`**, zum Beispiel `{ "frage": "Wie viele Menschen sterben jeden Tag im Verkehr?", "unter": "Menschen am Tag", "lauf": { "was": "Verkehrstote im Jahr" }, "stimmung": "ernst" }`:
+  - `frage` (Pflicht): höchstens 48 Zeichen und drei Zeilen, endet mit Fragezeichen. Sie fragt genau nach dem, was die Kernzahl beantwortet (Absatz ist nicht Verbrauch), und zwar nach dem Alltagswert oder der Veränderung statt nach der bloßen Menge: „Wie viele Menschen sterben jeden Tag im Verkehr?" statt „Wie viele Menschen sterben im Verkehr?". Keine Frage, die eine Antwort nahelegt.
+  - `unter` (Pflicht): die Zeile unter der Kernzahl im Reel, höchstens 16 Zeichen („Menschen am Tag", „weniger als 1990").
+  - `lauf` (Pflicht): `was` sagt, was der Wert zählt, der beim Zeichnen neben dem Jahr mitläuft (höchstens 30 Zeichen, mit Einheit: „Verkehrstote im Jahr", „Petajoule im Jahr"). Stehen in der Reihe Rohwerte, zusätzlich `teiler`, `stellen` und `nach`: `{ "was": "Studierende", "teiler": 1000000, "stellen": 2, "nach": "Mio." }` zeigt 2864160 als „2,86 Mio.".
+  - Das Reel nimmt Thema, Kernzahl und Satz vom Titelblatt und das Diagramm vom zweiten Blatt; dieses muss deshalb ein `diagramm` mit `linie` sein. Als Marken zeigt es von selbst Anfangs- und Endwert der Reihe. Nur wenn die Vorschau damit nicht sauber ist, unter `reel` ersetzen: `thema`, `zahl`, `satz` oder `figur` (etwa `{ "marken": [ … ] }`).
+  - **Musik:** Jedes Reel bekommt beim Rendern automatisch Musik (`tools/musik.py`, selbst berechnet, keine Rechte Dritter). Nur bei Themen, zu denen ein heller Schluss nicht passt (Tod, Krankheit, Unfälle, Arbeitslosigkeit, Insolvenzen, Armut), `"stimmung": "ernst"` setzen; sonst das Feld weglassen.
 - **5 oder 6 Blätter** in dieser Reihenfolge:
-  1. `cover`: `kicker` genau `Schaubild Nr. <nr>`, `zahl` (höchstens 8 Zeichen, z. B. `654 241`, `2,2 %`, `7,8 Mrd.`), `headline` setzt die Zahl fort (2 bis 5 Wörter, kein Wort über 12 Buchstaben), ein Absatz `text` (höchstens 110 Zeichen), darunter die Reihe als `linie` ohne Achsenbeschriftung (wie in 003).
+  1. `cover` (Titelblatt):
+     - `kicker`: das Thema, höchstens 30 Zeichen („Verkehrstote in Deutschland"), nie „Schaubild Nr. …".
+     - `zahl`: die Kernzahl der Aussage, höchstens 9 Zeichen, eine Zeile („Knapp 8", „28,7 %", „1,15 Mio.").
+     - `headline`: setzt die Zahl zur Aussage fort, höchstens 40 Zeichen und 6 Wörter, zwei Zeilen („Menschen sterben jeden Tag im Verkehr").
+     - `text`: genau ein Satz, höchstens 110 Zeichen. Er nennt die amtliche Zahl mit Jahr (in `<em>`) und die Grundlage der Aussage: „Das ist der Schnitt aus <em>2 832</em> Verkehrstoten im Jahr 2025 – drei Viertel weniger als 1991."
+     - `figur`: die Reihe als `linie`, `jahre` nur Anfangs- und Endjahr, `achse` nur die Grundlinie, und genau zwei `marken`: Anfangs- und Endjahr mit `"gross": true` und dem Wert als `text` („11 300", „2 832"), die zweite zusätzlich mit `"akzent": true`.
   2. `diagramm`: die ganze Reihe mit Achse, Jahren und zwei bis drei Marken; `headline` sagt die Entwicklung, `text` ein Absatz (höchstens 160 Zeichen), `fuss` nennt, was genau gemessen wird.
-  3. `balken` oder ein zweites `diagramm`: Rangliste, Vergleich oder zweite Reihe.
-  4. `punkte`: drei Kennzahlen (`wert` höchstens 8 Zeichen, `name` höchstens 26, `zusatz` höchstens 50), `fuss` ein Satz.
+  3. `balken` oder ein zweites `diagramm`: Rangliste, Vergleich oder zweite Reihe, nicht noch einmal die Reihe von Blatt 2.
+  4. `punkte`: drei Kennzahlen (`wert` höchstens 8 Zeichen, `name` höchstens 26, `zusatz` höchstens 31 Zeichen für eine Zeile und höchstens 60 für zwei), `fuss` ein Satz.
   5. `outro`, immer genau: `{ "typ": "outro", "headline": "Deutschland in Grafiken", "text": ["Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."] }`
-- Überschriften erscheinen in Großbuchstaben, höchstens 32 Zeichen, zwei Zeilen. ß wird dabei zu SS; solche Wörter umgehen.
+- **Mindestschrift:** Kein Text ist im Blatt kleiner als 30 px und im Reel kleiner als 40 px; das erledigt die Vorlage. Sie macht nichts kleiner: Was zu lang ist, läuft über oder entfällt, und `tools/pruefen.py` meldet es. Dann den Text kürzen. Längen: `kicker` der Blätter 2 bis 4 höchstens 44 Zeichen, `fuss` höchstens 52 Zeichen für eine Zeile und höchstens 100 für zwei.
+- **Achse:** Die Werteachse beginnt bei null. Nur wenn die Kurve sonst nicht zu lesen ist (Reihe fern der Null), `ymin` setzen. Dann trägt **jedes** Blatt mit dieser Achse, auch das Titelblatt, im `fuss` den Hinweis („Die Achse beginnt bei 35 Millionen.") und in `achse` die Grundlinie mit Beschriftung (`{ "wert": 35000, "text": "35 Mio." }`). Titelblatt und Reel zeichnen die Reihe möglichst ab null (im Reel über `reel.figur` mit eigenem `ymin`, `ymax` und `achse`); der Ausschnitt gehört auf Blatt 2. `ymax` liegt knapp über dem Höchstwert; den Platz für Marken schafft die Zeichnung selbst.
+- Überschriften der Blätter 2 bis 4 erscheinen in Großbuchstaben, höchstens 32 Zeichen, zwei Zeilen. ß wird dabei zu SS; solche Wörter umgehen.
 - Pro Blatt höchstens eine Hervorhebung mit `<em>…</em>` (erscheint golden).
-- `caption`: zwei kurze Absätze mit dem Kern und zuletzt genau die Frage `Welche Zahl sollen wir als Nächstes zeichnen?`, zusammen 200 bis 320 Zeichen, keine Emojis. Quellen und Hashtags hängt das Veröffentlichungsskript selbst an.
+- `caption`: zwei kurze Absätze mit dem Kern (der erste nennt die amtliche Zahl) und zuletzt genau die Frage `Welche Zahl sollen wir als Nächstes zeichnen?`, zusammen 200 bis 320 Zeichen, keine Emojis. Quellen und Hashtags hängt das Veröffentlichungsskript selbst an.
 - `hashtags`: genau 10, klein geschrieben, ohne `#`: immer `deutschland`, `statistik`, `datenvisualisierung`, `infografik`, `zahlen`, `wissen`, dazu vier zum Thema.
 - **Ton:** Präsens, kurze Hauptsätze, konkrete Zahlen, keine Wertung, keine Ausrufezeichen, keine Emojis, keine Ursachenbehauptung, die nicht in der Quelle steht („sinkt seit 1993" ja, „weil die Jugend …" nein).
 
@@ -107,16 +136,16 @@ Vor dem Schreiben lesen: `posts/003-inflation.json` (eine Reihe, Rangliste, Kenn
 Ein Blatt, das nur den dunklen Grund zeigt, bedeutet einen Fehler im Post (meist eine Marke auf einem Jahr außerhalb der Reihe); dann den Post berichtigen.
 
 1. Kein Text läuft aus dem Blatt, über die Leiste unten oder in das Diagramm. Kein Wort ist abgeschnitten.
-2. Die Zahl auf dem Titelblatt steht vollständig in einer Zeile.
-3. Marken und Achsenbeschriftungen überlappen weder einander noch die Kurve so, dass etwas unlesbar wird. Abhilfe: `anker` (`start`/`end`), `seite` (`oben`/`unten`), `ymax` höher setzen oder eine Marke streichen.
-4. Die Kurve füllt die Fläche (passendes `ymax`, bei Reihen fern der Null auch `ymin`; dann steht im `fuss`, dass die Achse nicht bei null beginnt).
+2. Titelblatt: Die Kernzahl steht vollständig in einer Zeile, die Überschrift in höchstens zwei. Anfangs- und Endwert stehen groß an der Kurve und verdecken sie nicht. Wer nur dieses Blatt sieht, kennt Thema, Aussage und amtliche Zahl.
+3. Marken und Achsenbeschriftungen überlappen weder einander noch die Kurve so, dass etwas unlesbar wird. Abhilfe: `anker` (`start`/`end`), `seite` (`oben`/`unten`) oder eine Marke streichen.
+4. Die Kurve füllt die Fläche (`ymax` knapp über dem Höchstwert). Beginnt die Achse nicht bei null, steht der Hinweis lesbar auf jedem betroffenen Blatt, auch auf dem Titelblatt.
 5. Auf Blättern mit Balken und Kennzahlen bricht kein Wert um.
-6. Die Leiste zeigt „Nr. <nr>", das Thema und „nn/nn" vollständig.
-   Story: Im Bild `story.jpg` steht die goldene Zeile „Neu im Profil …" vollständig über der roten Linie und überdeckt nichts.
-   Reel-Vorschau: Die Frage hat höchstens zwei Zeilen; Zahl, Überschrift und Satz im letzten Bild überlappen sich nicht und enden über der roten Linie; die Marken im Diagramm sind lesbar.
-7. Jede Zahl auf den Blättern und in der Bildunterschrift stimmt mit der Reihe überein; Zahlen widersprechen sich nicht.
+6. Die Leiste zeigt den Titel und „nn/nn" vollständig.
+   Reel-Vorschau (vier Bilder bei 0, 3, 6 und 10,5 Sekunden): Die Frage hat höchstens drei Zeilen. Im zweiten Bild stehen Jahr und Wert groß unter dem Diagramm, darunter, was gezählt wird. Im dritten stehen Kernzahl, die Zeile darunter und der Satz, im vierten „Jeden Tag eine Zahl". Nichts überlappt, nichts ragt rechts über das Diagramm hinaus, alles Wichtige endet über der roten Linie; die Marken im Diagramm sind lesbar.
+   Story: Im Bild `story.jpg` steht „Neu im Profil" vollständig über der roten Linie und überdeckt nichts.
+7. Jede Zahl auf den Blättern, im Reel und in der Bildunterschrift stimmt mit der Reihe überein; Zahlen widersprechen sich nicht. Die Aussage des Titelblatts und die Frage des Reels sind nachgerechnet, ihre Grundlage steht im Satz des Titelblatts, und sie sind nicht schärfer als die Zahlen.
 8. Rechtschreibung, Umlaute, Gedankenstriche (–) stimmen.
-9. Wer nur die Überschriften liest, versteht die Aussage.
+9. Wer nur die Überschriften liest, versteht die Aussage. Kein Kleintext ist abgeschnitten: Fußzeilen, Zusätze und Quellen stehen vollständig da.
 
 Nach drei Runden ohne sauberes Ergebnis das betroffene Blatt einfacher aufbauen statt weiter zu flicken.
 
