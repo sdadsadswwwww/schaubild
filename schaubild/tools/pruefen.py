@@ -36,6 +36,7 @@ RAND = 60               # px, Rand links und rechts
 REEL_OBEN, REEL_UNTEN, REEL_RECHTS = 160, 1536, 920   # frei für Instagram: oben, die unteren 20 %, rechts neben Diagramm und Bühne
 REEL_ZEITEN = (0.0, 3.0, 6.0, 10.5)
 DIAGRAMM_MIN = 300      # px, kleinste Höhe eines Diagrammfelds
+SCHRUMPFEN = 0.85       # Texte des Reels dürfen höchstens um 15 % kleiner werden, damit sie passen
 FRAGE_ENDE = 'Welche Zahl sollen wir als Nächstes zeichnen?'
 FESTE_HASHTAGS = ('deutschland', 'statistik', 'datenvisualisierung', 'infografik', 'zahlen', 'wissen')
 OUTRO = {'typ': 'outro', 'headline': 'Deutschland in Grafiken', 'text': ['Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag.']}
@@ -276,6 +277,10 @@ def pruefe_blatt(messung, typ, alt):
         h2 = block(messung, 'h2')
         if h2 and h2['zeilen'] > 2:
             f.append(f'Die Überschrift hat {h2["zeilen"]} Zeilen, erlaubt sind 2.')
+    if not alt:
+        for b in messung['bloecke']:
+            if b['rolle'].endswith(('div.fuss', 'div.zusatz')) and b['zeilen'] > 2:
+                f.append(f'{"Die Fußzeile" if b["rolle"].endswith("fuss") else "Ein Zusatz"} hat {b["zeilen"]} Zeilen, erlaubt sind 2: kürzen.')
     return f, kleinste
 
 
@@ -321,7 +326,9 @@ def pruefe_reel(messung, wann, alt):
         if b['deckkraft'] > 0.05 and b['sw'] > b['cw'] + 1 and b['umbruch'] == 'nowrap':
             f.append(f'Zeile ist zu lang und wird abgeschnitten: {b["rolle"].split(" > ")[-1]}')
         if b['geschrumpft'] and not alt:
-            immer.append(f'{b["rolle"].split(" > ")[-1]} passt nicht in voller Größe und wurde auf {b["geschrumpft"]} px verkleinert: Text kürzen.')
+            ist, soll = (float(x) for x in b['geschrumpft'].split('/'))
+            if ist < SCHRUMPFEN * soll:      # ein paar Pixel weniger sind in Ordnung
+                immer.append(f'{b["rolle"].split(" > ")[-1]} passt nicht und wurde von {soll:g} auf {ist:g} px verkleinert: Text kürzen.')
     frage = block(messung, 'div.frage')
     if frage and frage['deckkraft'] > 0.05 and frage['zeilen'] > 3:
         f.append(f'Die Frage hat {frage["zeilen"]} Zeilen, erlaubt sind 3.')

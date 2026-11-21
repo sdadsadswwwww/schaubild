@@ -81,7 +81,8 @@
   const weich = x => x * x * (3 - 2 * x);
 
   // Verkleinert die Schrift eines Elements in Schritten, bis es passt, aber nie unter die Mindestschrift.
-  // Am Element steht dann data-geschrumpft; tools/pruefen.py meldet das bei neuen Posts als Fehler.
+  // Am Element steht dann data-geschrumpft ("150/160"); tools/pruefen.py meldet bei neuen Posts einen Fehler,
+  // wenn mehr als 15 % fehlen.
   function passe(el, passt, min = KLEINSTE) {
     const start = parseFloat(getComputedStyle(el).fontSize);
     let gr = start;
@@ -89,7 +90,7 @@
       gr = Math.max(min, gr - 2);
       el.style.fontSize = gr + 'px';
     }
-    if (gr < start) el.dataset.geschrumpft = gr;
+    if (gr < start) el.dataset.geschrumpft = gr + '/' + start;
   }
   const inBreite = el => el.scrollWidth <= el.clientWidth;
 
