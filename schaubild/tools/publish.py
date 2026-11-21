@@ -66,10 +66,28 @@ def anfrage(methode, url, token=None, daten=None):
         sys.exit(f'Instagram meldet einen Fehler ({fehler.code}): {text}')
 
 
+MAX_HASHTAGS = 5  # Instagram erlaubt seit 18.12.2025 höchstens 5 Hashtags je Beitrag oder Reel
+FESTE_HASHTAGS = ('deutschland', 'statistik', 'datenvisualisierung', 'infografik', 'zahlen', 'wissen')
+
+
+def hashtag_zeile(post):
+    """Höchstens 5 Hashtags: zuerst drei zum Thema, dann statistik und deutschland.
+    Die Beitragsdateien führen weiter 10; die allgemeinen übrigen entfallen hier."""
+    tags = post['hashtags']
+    thema = [t for t in tags if t not in FESTE_HASHTAGS]
+    auswahl = thema[:MAX_HASHTAGS - 2] + [t for t in ('statistik', 'deutschland') if t in tags]
+    for t in tags:  # falls zu wenige Themen-Tags da sind, auffüllen
+        if len(auswahl) >= MAX_HASHTAGS:
+            break
+        if t not in auswahl:
+            auswahl.append(t)
+    return ' '.join('#' + h for h in auswahl[:MAX_HASHTAGS])
+
+
 def baue_caption(post):
     teile = list(post['caption'])
     teile.append('Quellen: ' + ' · '.join(post['quellen']))
-    teile.append(' '.join('#' + h for h in post['hashtags']))
+    teile.append(hashtag_zeile(post))
     return '\n\n'.join(teile)
 
 
@@ -94,7 +112,7 @@ def baue_reel_caption(post):
     # Bewusst ein anderer Text als beim Carousel: Der Schutz vor Doppelposts vergleicht die Texte.
     teile = [post['caption'][0], 'Die ganze Geschichte mit allen Zahlen steht im Beitrag auf dem Profil.']
     teile.append('Quellen: ' + ' · '.join(post['quellen']))
-    teile.append(' '.join('#' + h for h in post['hashtags']))
+    teile.append(hashtag_zeile(post))
     return '\n\n'.join(teile)
 
 

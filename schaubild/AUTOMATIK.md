@@ -128,7 +128,7 @@ Dafür gilt ohne Ausnahme:
 - Überschriften der Blätter 2 bis 4 erscheinen in Großbuchstaben, höchstens 32 Zeichen, zwei Zeilen. ß wird dabei zu SS; solche Wörter umgehen.
 - Pro Blatt höchstens eine Hervorhebung mit `<em>…</em>` (erscheint golden).
 - `caption`: zwei kurze Absätze mit dem Kern (der erste nennt die amtliche Zahl) und zuletzt genau die Frage `Welche Zahl sollen wir als Nächstes zeichnen?`, zusammen 200 bis 320 Zeichen, keine Emojis. Quellen und Hashtags hängt das Veröffentlichungsskript selbst an.
-- `hashtags`: genau 10, klein geschrieben, ohne `#`: immer `deutschland`, `statistik`, `datenvisualisierung`, `infografik`, `zahlen`, `wissen`, dazu vier zum Thema.
+- `hashtags`: genau 10, klein geschrieben, ohne `#`: immer `deutschland`, `statistik`, `datenvisualisierung`, `infografik`, `zahlen`, `wissen`, dazu vier zum Thema. Veröffentlicht werden nur 5 (Instagram erlaubt seit 18.12.2025 höchstens 5 je Beitrag): die ersten drei Themen-Tags, dazu `statistik` und `deutschland`. Die genauesten Themen-Tags deshalb zuerst, so wie Menschen danach suchen.
 - **Ton:** Präsens, kurze Hauptsätze, konkrete Zahlen, keine Wertung, keine Ausrufezeichen, keine Emojis, keine Ursachenbehauptung, die nicht in der Quelle steht („sinkt seit 1993" ja, „weil die Jugend …" nein).
 
 ## Durchsicht
