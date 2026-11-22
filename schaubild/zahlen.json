@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-21T06:34",
+  "stand": "2026-11-22T06:35",
   "konto": {
-    "follower": 4,
-    "beitraege": 13
+    "follower": 5,
+    "beitraege": 15
   },
   "medien": [
     {
@@ -105,6 +105,22 @@
       "post": "007-wohnungsbau",
       "art": "carousel",
       "datum": "2026-11-20",
+      "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "008-hochzeiten",
+      "art": "reel",
+      "datum": "2026-11-21",
+      "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "008-hochzeiten",
+      "art": "carousel",
+      "datum": "2026-11-21",
       "likes": 0,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
