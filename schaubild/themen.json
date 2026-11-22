@@ -12,7 +12,7 @@
   { "thema": "Studierende", "bereich": "Bildung", "quelle": "Destatis 21311", "post": "010-studierende" },
   { "thema": "Erwerbstätige", "bereich": "Arbeit", "quelle": "Destatis 13321", "post": "011-erwerbstaetige" },
   { "thema": "Lebenserwartung bei Geburt", "bereich": "Bevölkerung", "quelle": "Destatis 12621", "post": "015-lebenserwartung" },
-  { "thema": "Jahresmitteltemperatur", "bereich": "Umwelt", "quelle": "Deutscher Wetterdienst" },
+  { "thema": "Jahresmitteltemperatur", "bereich": "Umwelt", "quelle": "Deutscher Wetterdienst", "post": "016-temperatur" },
   { "thema": "Staatsschulden", "bereich": "Finanzen", "quelle": "Destatis 71321 / Bundesbank", "post": "012-staatsschulden" },
   { "thema": "Fluggäste", "bereich": "Verkehr", "quelle": "Destatis 46421" },
   { "thema": "Ehescheidungen", "bereich": "Bevölkerung", "quelle": "Destatis 12631" },

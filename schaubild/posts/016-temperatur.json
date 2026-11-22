@@ -1,0 +1,518 @@
+{
+ "nr": "016",
+ "titel": "Temperatur seit 1881",
+ "reel": {
+  "frage": "Wie viel wärmer ist es als 1961 bis 1990?",
+  "unter": "Grad wärmer",
+  "lauf": {
+   "was": "Grad im Jahresmittel",
+   "stellen": 1
+  },
+  "figur": {
+   "ymin": 0,
+   "ymax": 11.5,
+   "achse": [
+    {
+     "wert": 0,
+     "text": "0"
+    },
+    {
+     "wert": 5,
+     "text": "5 Grad"
+    },
+    {
+     "wert": 10,
+     "text": "10"
+    }
+   ]
+  },
+  "zahl": "1,8"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Temperatur in Deutschland",
+   "zahl": "1,8 Grad",
+   "headline": "wärmer als 1961 bis 1990",
+   "text": [
+    "2025 liegt das Jahresmittel bei <em>10,0 Grad</em>. Im Schnitt der Jahre 1961 bis 1990 waren es 8,2 Grad."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 11.5,
+    "reihen": [
+     {
+      "von": 1881,
+      "werte": [
+       7.31,
+       8.34,
+       7.88,
+       8.57,
+       7.74,
+       8.02,
+       6.95,
+       6.85,
+       7.38,
+       7.31,
+       7.43,
+       7.5,
+       7.91,
+       8.13,
+       7.31,
+       7.58,
+       7.95,
+       8.5,
+       8.09,
+       8.35,
+       7.64,
+       7.17,
+       8.35,
+       8.36,
+       7.95,
+       8.29,
+       7.8,
+       7.47,
+       7.35,
+       8.41,
+       9.05,
+       7.86,
+       8.53,
+       8.52,
+       7.91,
+       8.45,
+       7.54,
+       8.53,
+       7.32,
+       8.63,
+       9.0,
+       7.19,
+       7.99,
+       7.53,
+       8.32,
+       8.74,
+       8.04,
+       8.35,
+       7.36,
+       8.76,
+       7.55,
+       8.33,
+       7.62,
+       9.54,
+       8.42,
+       8.38,
+       8.59,
+       8.6,
+       8.3,
+       6.63,
+       7.16,
+       7.28,
+       8.88,
+       8.29,
+       8.98,
+       8.38,
+       8.51,
+       9.05,
+       9.14,
+       8.6,
+       8.72,
+       7.94,
+       8.94,
+       7.7,
+       7.54,
+       6.84,
+       8.58,
+       8.21,
+       9.03,
+       8.41,
+       8.94,
+       7.15,
+       7.1,
+       8.13,
+       7.48,
+       8.51,
+       8.89,
+       8.15,
+       7.75,
+       7.71,
+       8.43,
+       7.82,
+       8.21,
+       8.82,
+       8.93,
+       8.47,
+       8.67,
+       7.79,
+       7.72,
+       7.63,
+       8.19,
+       8.9,
+       9.04,
+       7.97,
+       7.42,
+       7.93,
+       7.44,
+       9.06,
+       9.47,
+       9.49,
+       8.35,
+       9.37,
+       8.47,
+       9.7,
+       8.9,
+       7.2,
+       8.89,
+       9.06,
+       9.49,
+       9.87,
+       9.02,
+       9.56,
+       9.38,
+       8.94,
+       8.99,
+       9.54,
+       9.85,
+       9.48,
+       9.18,
+       7.85,
+       9.64,
+       9.09,
+       8.71,
+       10.33,
+       9.94,
+       9.55,
+       9.58,
+       10.45,
+       10.28,
+       10.43,
+       9.16,
+       10.52,
+       10.63,
+       10.89,
+       10.03
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1881,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1881,
+      "text": "7,3",
+      "gross": true,
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "10,0",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Jahresmitteltemperatur · 1881 bis 2025",
+   "headline": "Die wärmsten Jahre sind jung",
+   "text": [
+    "Am kältesten ist 1940 mit 6,6 Grad. Alle acht Jahre mit 10 Grad und mehr liegen nach 2013, am wärmsten ist <em>2024</em> mit 10,9 Grad."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymin": 6,
+    "ymax": 11.2,
+    "reihen": [
+     {
+      "von": 1881,
+      "werte": [
+       7.31,
+       8.34,
+       7.88,
+       8.57,
+       7.74,
+       8.02,
+       6.95,
+       6.85,
+       7.38,
+       7.31,
+       7.43,
+       7.5,
+       7.91,
+       8.13,
+       7.31,
+       7.58,
+       7.95,
+       8.5,
+       8.09,
+       8.35,
+       7.64,
+       7.17,
+       8.35,
+       8.36,
+       7.95,
+       8.29,
+       7.8,
+       7.47,
+       7.35,
+       8.41,
+       9.05,
+       7.86,
+       8.53,
+       8.52,
+       7.91,
+       8.45,
+       7.54,
+       8.53,
+       7.32,
+       8.63,
+       9.0,
+       7.19,
+       7.99,
+       7.53,
+       8.32,
+       8.74,
+       8.04,
+       8.35,
+       7.36,
+       8.76,
+       7.55,
+       8.33,
+       7.62,
+       9.54,
+       8.42,
+       8.38,
+       8.59,
+       8.6,
+       8.3,
+       6.63,
+       7.16,
+       7.28,
+       8.88,
+       8.29,
+       8.98,
+       8.38,
+       8.51,
+       9.05,
+       9.14,
+       8.6,
+       8.72,
+       7.94,
+       8.94,
+       7.7,
+       7.54,
+       6.84,
+       8.58,
+       8.21,
+       9.03,
+       8.41,
+       8.94,
+       7.15,
+       7.1,
+       8.13,
+       7.48,
+       8.51,
+       8.89,
+       8.15,
+       7.75,
+       7.71,
+       8.43,
+       7.82,
+       8.21,
+       8.82,
+       8.93,
+       8.47,
+       8.67,
+       7.79,
+       7.72,
+       7.63,
+       8.19,
+       8.9,
+       9.04,
+       7.97,
+       7.42,
+       7.93,
+       7.44,
+       9.06,
+       9.47,
+       9.49,
+       8.35,
+       9.37,
+       8.47,
+       9.7,
+       8.9,
+       7.2,
+       8.89,
+       9.06,
+       9.49,
+       9.87,
+       9.02,
+       9.56,
+       9.38,
+       8.94,
+       8.99,
+       9.54,
+       9.85,
+       9.48,
+       9.18,
+       7.85,
+       9.64,
+       9.09,
+       8.71,
+       10.33,
+       9.94,
+       9.55,
+       9.58,
+       10.45,
+       10.28,
+       10.43,
+       9.16,
+       10.52,
+       10.63,
+       10.89,
+       10.03
+      ],
+      "akzent": true
+     }
+    ],
+    "jahre": [
+     1881,
+     1900,
+     1950,
+     2000,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 6,
+      "text": "6 Grad"
+     },
+     {
+      "wert": 8,
+      "text": "8"
+     },
+     {
+      "wert": 10,
+      "text": "10"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1940,
+      "text": "1940: 6,6",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2024,
+      "text": "2024: 10,9",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Mittel über Deutschland. 10,03 − 8,24 (Schnitt 1961–1990) = 1,79. Die Achse beginnt bei 6 Grad."
+  },
+  {
+   "typ": "balken",
+   "kicker": "Durchschnitt über mehrere Jahre",
+   "headline": "Seit 2016 am wärmsten",
+   "text": [
+    "Von 1881 bis 1910 liegt das Mittel bei 7,8 Grad. In den zehn Jahren seit 2016 sind es <em>10,2 Grad</em>."
+   ],
+   "balken": [
+    {
+     "wert": 7.8,
+     "anzeige": "7,8 Grad",
+     "name": "1881 bis 1910",
+     "akzent": false
+    },
+    {
+     "wert": 8.27,
+     "anzeige": "8,3 Grad",
+     "name": "1931 bis 1960",
+     "akzent": false
+    },
+    {
+     "wert": 8.24,
+     "anzeige": "8,2 Grad",
+     "name": "1961 bis 1990",
+     "akzent": false
+    },
+    {
+     "wert": 9.3,
+     "anzeige": "9,3 Grad",
+     "name": "1991 bis 2020",
+     "akzent": false
+    },
+    {
+     "wert": 10.15,
+     "anzeige": "10,2 Grad",
+     "name": "2016 bis 2025",
+     "akzent": true
+    }
+   ],
+   "fuss": "Mittel der Jahreswerte im jeweiligen Zeitraum."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Jahresmittel seit 1881",
+   "headline": "Die Wärme in drei Zahlen",
+   "punkte": [
+    {
+     "wert": "10,9",
+     "name": "Grad im Jahr 2024",
+     "zusatz": "wärmstes Jahr seit 1881"
+    },
+    {
+     "wert": "8",
+     "name": "Jahre mit 10 Grad und mehr",
+     "zusatz": "alle seit 2014"
+    },
+    {
+     "wert": "Platz 8",
+     "name": "für das Jahr 2025",
+     "zusatz": "unter 145 Jahren seit 1881"
+    }
+   ],
+   "fuss": "Kältestes Jahr der Reihe ist 1940 mit 6,6 Grad."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Deutscher Wetterdienst (DWD): Climate Data Center, Gebietsmittel Deutschland, Lufttemperatur Jahresmittel 1881 bis 2025, Stand 2.11.2026",
+  "DWD: Pressemitteilung zur Klimapressekonferenz vom 31.3.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "10,0 Grad beträgt die mittlere Temperatur in Deutschland im Jahr 2025. Das sind 1,8 Grad mehr als im Schnitt der Jahre 1961 bis 1990.",
+  "Alle acht Jahre mit mindestens 10 Grad seit 1881 liegen nach 2013. Am wärmsten war 2024 mit 10,9 Grad.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "klima",
+  "klimawandel",
+  "wetter",
+  "temperatur",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}

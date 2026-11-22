@@ -16,6 +16,7 @@
     { "datum": "2026-11-25", "post": "012-staatsschulden", "freigabe": true, "erstellt": "2026-11-18T05:43" },
     { "datum": "2026-11-26", "post": "013-verkehrstote", "freigabe": true, "erstellt": "2026-11-19T05:44" },
     { "datum": "2026-11-27", "post": "014-energieverbrauch", "freigabe": true, "erstellt": "2026-11-20T05:45" },
-    { "datum": "2026-11-28", "post": "015-lebenserwartung", "freigabe": true, "erstellt": "2026-11-22T05:46" }
+    { "datum": "2026-11-28", "post": "015-lebenserwartung", "freigabe": true, "erstellt": "2026-11-22T05:46" },
+    { "datum": "2026-11-29", "post": "016-temperatur", "freigabe": true, "erstellt": "2026-11-22T05:48" }
   ]
 }
