@@ -1,0 +1,389 @@
+{
+ "nr": "015",
+ "titel": "Lebenserwartung seit 1993",
+ "reel": {
+  "frage": "Wie viel länger leben Frauen als Männer?",
+  "unter": "Jahre länger",
+  "lauf": {
+   "was": "Jahre Vorsprung der Frauen",
+   "stellen": 1
+  },
+  "zahl": "4,6"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Lebenserwartung in Deutschland",
+   "zahl": "4,6 Jahre",
+   "headline": "länger leben Frauen als Männer",
+   "text": [
+    "Die Lebenserwartung bei Geburt liegt 2023/2025 bei <em>83,4 Jahren</em> für Mädchen und 78,8 für Jungen."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 7,
+    "reihen": [
+     {
+      "von": 1993,
+      "werte": [
+       6.54,
+       6.53,
+       6.5,
+       6.43,
+       6.36,
+       6.23,
+       6.13,
+       6.04,
+       5.96,
+       5.84,
+       5.75,
+       5.66,
+       5.57,
+       5.44,
+       5.36,
+       5.23,
+       5.2,
+       5.08,
+       5.01,
+       5.08,
+       4.98,
+       4.92,
+       4.88,
+       4.89,
+       4.82,
+       4.79,
+       4.73,
+       4.76,
+       4.84,
+       4.85,
+       4.82,
+       4.72,
+       4.61
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1993,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1993,
+      "text": "6,5",
+      "gross": true,
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "4,6",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Vorsprung der Frauen · 1993 bis 2025",
+   "headline": "Der Abstand wird kleiner",
+   "text": [
+    "1991/1993 liegt die Lebenserwartung der Frauen 6,5 Jahre über der der Männer. 2023/2025 sind es <em>4,6 Jahre</em>, so wenig wie nie in der Reihe."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 7,
+    "reihen": [
+     {
+      "von": 1993,
+      "werte": [
+       6.54,
+       6.53,
+       6.5,
+       6.43,
+       6.36,
+       6.23,
+       6.13,
+       6.04,
+       5.96,
+       5.84,
+       5.75,
+       5.66,
+       5.57,
+       5.44,
+       5.36,
+       5.23,
+       5.2,
+       5.08,
+       5.01,
+       5.08,
+       4.98,
+       4.92,
+       4.88,
+       4.89,
+       4.82,
+       4.79,
+       4.73,
+       4.76,
+       4.84,
+       4.85,
+       4.82,
+       4.72,
+       4.61
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1993,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 2,
+      "text": "2 Jahre"
+     },
+     {
+      "wert": 4,
+      "text": "4"
+     },
+     {
+      "wert": 6,
+      "text": "6"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1993,
+      "text": "1993: 6,5",
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "2025: 4,6",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Bei Geburt, Frauen minus Männer. 2025 = Sterbetafel 2023/2025: 83,43 − 78,82 = 4,61."
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Lebenserwartung bei Geburt · 1993 bis 2025",
+   "headline": "Beide so hoch wie nie",
+   "text": [
+    "Seit 1991/1993 gewinnen Jungen gut 6 Jahre hinzu, Mädchen gut 4 Jahre. 2023/2025 erreichen beide den <em>höchsten Wert</em> der Reihe."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymin": 70,
+    "ymax": 85,
+    "reihen": [
+     {
+      "von": 1993,
+      "werte": [
+       79.01,
+       79.3,
+       79.49,
+       79.72,
+       79.98,
+       80.27,
+       80.57,
+       80.82,
+       81.07,
+       81.22,
+       81.34,
+       81.55,
+       81.78,
+       82.08,
+       82.25,
+       82.4,
+       82.53,
+       82.59,
+       82.73,
+       82.8,
+       82.88,
+       83.05,
+       83.06,
+       83.2,
+       83.18,
+       83.27,
+       83.36,
+       83.4,
+       83.38,
+       83.18,
+       82.99,
+       83.19,
+       83.43
+      ],
+      "akzent": true,
+      "name": "Frauen",
+      "nameBei": {
+       "jahr": 2008,
+       "dy": -30
+      }
+     },
+     {
+      "von": 1993,
+      "werte": [
+       72.47,
+       72.77,
+       72.99,
+       73.29,
+       73.62,
+       74.04,
+       74.44,
+       74.78,
+       75.11,
+       75.38,
+       75.59,
+       75.89,
+       76.21,
+       76.64,
+       76.89,
+       77.17,
+       77.33,
+       77.51,
+       77.72,
+       77.72,
+       77.9,
+       78.13,
+       78.18,
+       78.31,
+       78.36,
+       78.48,
+       78.63,
+       78.64,
+       78.54,
+       78.33,
+       78.17,
+       78.47,
+       78.82
+      ],
+      "name": "Männer",
+      "nameBei": {
+       "jahr": 2008,
+       "dy": -30
+      }
+     }
+    ],
+    "jahre": [
+     1993,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 70,
+      "text": "70 Jahre"
+     },
+     {
+      "wert": 75,
+      "text": "75"
+     },
+     {
+      "wert": 80,
+      "text": "80"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1993,
+      "text": "79,0",
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "83,4",
+      "anker": "end"
+     },
+     {
+      "reihe": 1,
+      "jahr": 1993,
+      "text": "72,5",
+      "anker": "start",
+      "seite": "unten"
+     },
+     {
+      "reihe": 1,
+      "jahr": 2025,
+      "text": "78,8",
+      "anker": "end",
+      "seite": "unten"
+     }
+    ]
+   },
+   "fuss": "Die Achse beginnt bei 70 Jahren. 2025 = Sterbetafel 2023/2025."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Die Sterbetafel 2023/2025",
+   "headline": "Das Alter in drei Zahlen",
+   "punkte": [
+    {
+     "wert": "21,1",
+     "name": "Jahre für Frauen ab 65",
+     "zusatz": "weitere Lebenserwartung, Männer: 18,0"
+    },
+    {
+     "wert": "1,4",
+     "name": "Jahre mehr im Westen",
+     "zusatz": "Männer: West 79,1 · Ost 77,6"
+    },
+    {
+     "wert": "3,9",
+     "name": "Jahre Abstand der Länder",
+     "zusatz": "Männer: Baden-Württemberg 80,3, Sachsen-Anhalt 76,4"
+    }
+   ],
+   "fuss": "Ost und West jeweils ohne Berlin."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Statistischer Bericht Sterbetafeln 2023/2025, Statistik 12621, Tabellen 12613-b13, b15 und b16, Stand 7.7.2026",
+  "Destatis: Themenseite Entwicklung der Lebenserwartung in Deutschland",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "Mädchen haben in Deutschland eine Lebenserwartung von 83,4 Jahren, Jungen von 78,8 Jahren (Sterbetafel 2023/2025). Der Abstand beträgt 4,6 Jahre.",
+  "1991/1993 waren es 6,5 Jahre. Für beide Geschlechter ist der Wert so hoch wie nie seit Beginn der Reihe.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "lebenserwartung",
+  "demografie",
+  "gesundheit",
+  "bevölkerung",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}
