@@ -1,5 +1,39 @@
 # Themenwahl Schaubild
 
+<!-- ideen-pool anfang: wird von ideen.py geschrieben, nicht von Hand ändern -->
+## Reihenfolge aus dem Ideen-Pool
+
+Stand 22.11.2026 09:08. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook (Bewertung und Begründung je Idee, mein Votum als Inhaber). Dieser Abschnitt geht der übrigen Themenliste vor (bei Bauriss auch dem Vorschlag aus `stand`); die Regeln für Recherche, Quellen, Belege und Abstand gelten weiter. Scheitert ein Thema an ihnen, das nächste nehmen und den Grund im Bericht nennen. Ein Jahrestag oder eine neue amtliche Zahl genau am Tag geht weiterhin vor. Der Wochenbericht ändert diesen Abschnitt nicht; er wird bei jedem Abgleich neu geschrieben.
+
+**Feste Tage** (an diesem Tag dieses Thema):
+
+- 19.12.2026: **Fluggäste**. Wie viele Menschen fliegen, und ob es wieder so viele sind wie vor 2020
+- 30.12.2026: **Sonnenscheindauer**. Wie viele Sonnenstunden das Jahr 2026 hatte, im Vergleich seit 1951
+
+**Als Nächstes, in dieser Reihenfolge** (für freie Tage ohne festes Thema):
+
+1. **Fleischverzehr pro Kopf**: So wenig Fleisch wie seit Jahrzehnten nicht
+2. **Einpersonenhaushalte**: Wie viele Menschen allein wohnen
+3. **Neu zugelassene Elektroautos**: Jedes wievielte neue Auto fährt elektrisch
+4. **Zigarettenabsatz**: So wenige Zigaretten wie nie
+5. **Unternehmensinsolvenzen**: Wie viele Firmen aufgeben
+6. **Landwirtschaftliche Betriebe**: Nur noch ein Bruchteil der Höfe von früher
+
+**Jetzt nicht nehmen** (auch nicht, wenn die Liste sie vorschlägt):
+
+- Haushaltsabfälle pro Kopf (später)
+- Ehescheidungen (später)
+- Sterbefälle (später)
+- Durchschnittsalter der Bevölkerung (später)
+- Bevölkerung ab 65 Jahren (verworfen)
+- Stromverbrauch (später)
+- Bruttoinlandsprodukt, reale Veränderung (später)
+- Feinstaub durch Silvesterfeuerwerk (nicht jetzt)
+- Verkaufte Weihnachtsbäume (verworfen)
+
+Ist die Reihe abgearbeitet, gilt wieder die Themenliste.
+<!-- ideen-pool ende -->
+
 Stand: 22.11.2026 (Wochenbericht)
 
 Noch keine belastbaren Hinweise für die Themenwahl.
