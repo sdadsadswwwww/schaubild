@@ -1,0 +1,292 @@
+{
+ "nr": "017",
+ "titel": "Fleischverzehr seit 2010",
+ "reel": {
+  "frage": "Wie viel Fleisch isst man im Schnitt pro Woche?",
+  "unter": "Fleisch je Woche",
+  "lauf": {
+   "was": "kg Fleisch je Einwohner",
+   "stellen": 1
+  }
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Fleischverzehr in Deutschland",
+   "zahl": "Gut 1 kg",
+   "headline": "Fleisch je Einwohner und Woche",
+   "text": [
+    "Das ist der Schnitt aus <em>54,9 kg</em> Fleischverzehr je Einwohner 2025 – knapp 8 kg weniger als 2010."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 66,
+    "reihen": [
+     {
+      "von": 2010,
+      "werte": [
+       62.91,
+       63.77,
+       61.48,
+       61.06,
+       61.59,
+       61.27,
+       60.61,
+       61.06,
+       61.42,
+       59.15,
+       57.81,
+       57.18,
+       52.83,
+       52.94,
+       53.47,
+       54.94
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     2010,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2010,
+      "text": "62,9 kg",
+      "gross": true,
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "54,9 kg",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Fleischverzehr · 2010 bis 2025",
+   "headline": "Weniger Fleisch als 2010",
+   "text": [
+    "Am meisten ist es 2011 mit 63,8 kg je Einwohner, am wenigsten 2022 mit 52,8 kg. Seitdem steigt der Wert wieder, 2025 auf <em>54,9 kg</em>."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 66,
+    "reihen": [
+     {
+      "von": 2010,
+      "werte": [
+       62.91,
+       63.77,
+       61.48,
+       61.06,
+       61.59,
+       61.27,
+       60.61,
+       61.06,
+       61.42,
+       59.15,
+       57.81,
+       57.18,
+       52.83,
+       52.94,
+       53.47,
+       54.94
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     2010,
+     2015,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 20,
+      "text": "20 kg"
+     },
+     {
+      "wert": 40,
+      "text": "40 kg"
+     },
+     {
+      "wert": 60,
+      "text": "60 kg"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2011,
+      "text": "2011: 63,8",
+      "anker": "start"
+     },
+     {
+      "jahr": 2022,
+      "text": "2022: 52,8",
+      "seite": "unten"
+     }
+    ]
+   },
+   "fuss": "Verzehr je Einwohner, ohne Knochen. 54,9 kg : 52,1 Wochen = 1,05 kg. 2025 vorläufig."
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Schwein und Geflügel · 2010 bis 2025",
+   "headline": "Weniger Schwein, mehr Geflügel",
+   "text": [
+    "2010 isst jeder im Schnitt 39,0 kg Schweinefleisch, 2025 sind es 28,3 kg. Geflügel steigt von 11,5 auf <em>14,7 kg</em>."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 42,
+    "reihen": [
+     {
+      "von": 2010,
+      "werte": [
+       38.99,
+       38.91,
+       37.51,
+       37.21,
+       36.94,
+       35.95,
+       34.46,
+       34.72,
+       34.34,
+       32.19,
+       30.82,
+       31.04,
+       28.54,
+       28.47,
+       28.21,
+       28.33
+      ],
+      "name": "Schwein",
+      "nameBei": {
+       "jahr": 2013,
+       "dy": -30
+      }
+     },
+     {
+      "von": 2010,
+      "werte": [
+       11.48,
+       11.9,
+       11.36,
+       11.56,
+       11.78,
+       12.03,
+       12.55,
+       12.62,
+       13.48,
+       13.32,
+       13.71,
+       13.51,
+       12.38,
+       13.1,
+       13.72,
+       14.66
+      ],
+      "akzent": true,
+      "name": "Geflügel",
+      "nameBei": {
+       "jahr": 2013,
+       "dy": -30
+      }
+     }
+    ],
+    "jahre": [
+     2010,
+     2015,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 20,
+      "text": "20 kg"
+     },
+     {
+      "wert": 40,
+      "text": "40 kg"
+     }
+    ],
+    "marken": []
+   },
+   "fuss": "Verzehr je Einwohner, 2025 vorläufig. Rind und Kalb 2025: 9,7 kg."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Fleischverzehr in drei Zahlen",
+   "headline": "Was sich seit 2010 tut",
+   "punkte": [
+    {
+     "wert": "−13 %",
+     "name": "weniger als 2010",
+     "zusatz": "2010: 62,9 kg · 2025: 54,9 kg"
+    },
+    {
+     "wert": "+1,5 kg",
+     "name": "mehr als 2024",
+     "zusatz": "2024: 53,5 kg je Einwohner"
+    },
+    {
+     "wert": "52 %",
+     "name": "davon Schweinefleisch",
+     "zusatz": "2010 waren es 62 %"
+    }
+   ],
+   "fuss": "Am wenigsten Fleisch gab es 2022 mit 52,8 kg je Einwohner."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Bundesanstalt für Landwirtschaft und Ernährung (BLE): Versorgung mit Fleisch in Deutschland 2010 bis 2025, Neuberechnung, Datenstand 7.4.2026 (2025 vorläufig)",
+  "BLE: Bericht zur Markt- und Versorgungslage mit Fleisch 2026, Juli 2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "54,9 kg Fleisch isst jeder Einwohner in Deutschland 2025 im Schnitt, nach vorläufigen Zahlen. Das ist gut 1 kg pro Woche und knapp 8 kg weniger als 2010.",
+  "Schweinefleisch geht seit 2010 um gut ein Viertel zurück, Geflügel legt zu.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "fleisch",
+  "ernaehrung",
+  "fleischkonsum",
+  "lebensmittel",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}

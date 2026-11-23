@@ -23,7 +23,7 @@
   { "thema": "Landwirtschaftliche Betriebe", "bereich": "Landwirtschaft", "quelle": "Destatis 41141" },
   { "thema": "Auszubildende", "bereich": "Bildung", "quelle": "Destatis 21211" },
   { "thema": "Haushaltsabfälle pro Kopf", "bereich": "Umwelt", "quelle": "Destatis 32121" },
-  { "thema": "Fleischverzehr pro Kopf", "bereich": "Konsum", "quelle": "Bundesanstalt für Landwirtschaft und Ernährung" },
+  { "thema": "Fleischverzehr pro Kopf", "bereich": "Konsum", "quelle": "Bundesanstalt für Landwirtschaft und Ernährung", "post": "017-fleischverzehr" },
   { "thema": "Einpersonenhaushalte", "bereich": "Bevölkerung", "quelle": "Destatis Mikrozensus 12211" },
   { "thema": "Stromverbrauch", "bereich": "Energie", "quelle": "AG Energiebilanzen" },
   { "thema": "Unternehmensinsolvenzen", "bereich": "Wirtschaft", "quelle": "Destatis 52411" },
