@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-22T06:35",
+  "stand": "2026-11-23T06:44",
   "konto": {
     "follower": 5,
-    "beitraege": 15
+    "beitraege": 17
   },
   "medien": [
     {
@@ -122,6 +122,22 @@
       "art": "carousel",
       "datum": "2026-11-21",
       "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "009-treibhausgase",
+      "art": "reel",
+      "datum": "2026-11-22",
+      "likes": 1,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "009-treibhausgase",
+      "art": "carousel",
+      "datum": "2026-11-22",
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
