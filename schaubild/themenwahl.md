@@ -3,7 +3,7 @@
 <!-- ideen-pool anfang: wird von ideen.py geschrieben, nicht von Hand ändern -->
 ## Reihenfolge aus dem Ideen-Pool
 
-Stand 23.11.2026 04:21. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook (Bewertung und Begründung je Idee, mein Votum als Inhaber). Dieser Abschnitt geht der übrigen Themenliste vor (bei Bauriss auch dem Vorschlag aus `stand`); die Regeln für Recherche, Quellen, Belege und Abstand gelten weiter. Scheitert ein Thema an ihnen, das nächste nehmen und den Grund im Bericht nennen. Ein Jahrestag oder eine neue amtliche Zahl genau am Tag geht weiterhin vor. Der Wochenbericht ändert diesen Abschnitt nicht; er wird bei jedem Abgleich neu geschrieben.
+Stand 24.11.2026 04:23. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook (Bewertung und Begründung je Idee, mein Votum als Inhaber). Dieser Abschnitt geht der übrigen Themenliste vor (bei Bauriss auch dem Vorschlag aus `stand`); die Regeln für Recherche, Quellen, Belege und Abstand gelten weiter. Scheitert ein Thema an ihnen, das nächste nehmen und den Grund im Bericht nennen. Ein Jahrestag oder eine neue amtliche Zahl genau am Tag geht weiterhin vor. Der Wochenbericht ändert diesen Abschnitt nicht; er wird bei jedem Abgleich neu geschrieben.
 
 **Feste Tage** (an diesem Tag dieses Thema):
 
@@ -12,14 +12,14 @@ Stand 23.11.2026 04:21. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook 
 
 **Als Nächstes, in dieser Reihenfolge** (für freie Tage ohne festes Thema):
 
-1. **Fleischverzehr pro Kopf**: So wenig Fleisch wie seit Jahrzehnten nicht
-2. **Einpersonenhaushalte**: Wie viele Menschen allein wohnen
-3. **Neu zugelassene Elektroautos**: Jedes wievielte neue Auto fährt elektrisch
-4. **Zigarettenabsatz**: So wenige Zigaretten wie nie
-5. **Unternehmensinsolvenzen**: Wie viele Firmen aufgeben
-6. **Landwirtschaftliche Betriebe**: Nur noch ein Bruchteil der Höfe von früher
-7. **Baugenehmigungen für Wohnungen**: Wie viele neue Wohnungen genehmigt werden
-8. **Krankenhausbetten**: Wie viele Betten die Krankenhäuser noch haben
+1. **Einpersonenhaushalte**: Wie viele Menschen allein wohnen
+2. **Neu zugelassene Elektroautos**: Jedes wievielte neue Auto fährt elektrisch
+3. **Zigarettenabsatz**: So wenige Zigaretten wie nie
+4. **Unternehmensinsolvenzen**: Wie viele Firmen aufgeben
+5. **Landwirtschaftliche Betriebe**: Nur noch ein Bruchteil der Höfe von früher
+6. **Baugenehmigungen für Wohnungen**: Wie viele neue Wohnungen genehmigt werden
+7. **Krankenhausbetten**: Wie viele Betten die Krankenhäuser noch haben
+8. **Auszubildende**: Wie viele junge Menschen eine Lehre beginnen
 
 **Jetzt nicht nehmen** (auch nicht, wenn die Liste sie vorschlägt):
 
