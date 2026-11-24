@@ -26,7 +26,7 @@
   { "thema": "Fleischverzehr pro Kopf", "bereich": "Konsum", "quelle": "Bundesanstalt für Landwirtschaft und Ernährung", "post": "017-fleischverzehr" },
   { "thema": "Einpersonenhaushalte", "bereich": "Bevölkerung", "quelle": "Destatis Mikrozensus 12211" },
   { "thema": "Stromverbrauch", "bereich": "Energie", "quelle": "AG Energiebilanzen" },
-  { "thema": "Unternehmensinsolvenzen", "bereich": "Wirtschaft", "quelle": "Destatis 52411" },
+  { "thema": "Unternehmensinsolvenzen", "bereich": "Wirtschaft", "quelle": "Destatis 52411", "post": "018-insolvenzen" },
   { "thema": "Sterbefälle", "bereich": "Bevölkerung", "quelle": "Destatis 12613" },
   { "thema": "Milchkühe", "bereich": "Landwirtschaft", "quelle": "Destatis 41311" },
   { "thema": "Bruttoinlandsprodukt, reale Veränderung", "bereich": "Wirtschaft", "quelle": "Destatis 81000" },

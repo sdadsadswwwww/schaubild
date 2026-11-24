@@ -1,0 +1,302 @@
+{
+ "nr": "018",
+ "titel": "Insolvenzen seit 1999",
+ "reel": {
+  "frage": "Wie viele Firmen beantragen jeden Tag Insolvenz?",
+  "unter": "Firmen am Tag",
+  "lauf": {
+   "was": "Insolvenzen im Jahr"
+  },
+  "stimmung": "ernst",
+  "figur": {
+   "ymin": 0,
+   "ymax": 41000,
+   "achse": [
+    {
+     "wert": 0,
+     "text": "0"
+    },
+    {
+     "wert": 10000,
+     "text": ""
+    },
+    {
+     "wert": 20000,
+     "text": ""
+    },
+    {
+     "wert": 30000,
+     "text": ""
+    }
+   ],
+   "marken": [
+    {
+     "jahr": 1999,
+     "text": "1999: 26 476",
+     "anker": "start",
+     "seite": "unten"
+    },
+    {
+     "jahr": 2025,
+     "text": "2025: 24 064",
+     "anker": "end"
+    }
+   ]
+  }
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Insolvenzen in Deutschland",
+   "zahl": "Knapp 66",
+   "headline": "Firmen beantragen jeden Tag Insolvenz",
+   "text": [
+    "Das ist der Schnitt aus <em>24 064</em> Unternehmensinsolvenzen 2025 – mehr gab es zuletzt 2014."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 41000,
+    "reihen": [
+     {
+      "von": 1999,
+      "werte": [
+       26476,
+       28235,
+       32278,
+       37579,
+       39320,
+       39213,
+       36843,
+       34137,
+       29160,
+       29291,
+       32687,
+       31998,
+       30099,
+       28297,
+       25995,
+       24085,
+       23101,
+       21518,
+       20093,
+       19302,
+       18749,
+       15841,
+       13993,
+       14590,
+       17814,
+       21812,
+       24064
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1999,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1999,
+      "text": "26 476",
+      "gross": true,
+      "anker": "start",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2025,
+      "text": "24 064",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Unternehmensinsolvenzen · 1999 bis 2025",
+   "headline": "Vierter Anstieg in Folge",
+   "text": [
+    "Am meisten sind es 2003 mit 39 320. Seit 2021 steigt die Zahl jedes Jahr, von 13 993 auf <em>24 064</em>."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 41000,
+    "reihen": [
+     {
+      "von": 1999,
+      "werte": [
+       26476,
+       28235,
+       32278,
+       37579,
+       39320,
+       39213,
+       36843,
+       34137,
+       29160,
+       29291,
+       32687,
+       31998,
+       30099,
+       28297,
+       25995,
+       24085,
+       23101,
+       21518,
+       20093,
+       19302,
+       18749,
+       15841,
+       13993,
+       14590,
+       17814,
+       21812,
+       24064
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1999,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 10000,
+      "text": ""
+     },
+     {
+      "wert": 20000,
+      "text": ""
+     },
+     {
+      "wert": 30000,
+      "text": "30 000"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 2003,
+      "text": "2003: 39 320"
+     },
+     {
+      "jahr": 2021,
+      "text": "2021: 13 993",
+      "seite": "unten",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Beantragte Verfahren nach der Insolvenzordnung von 1999. 24 064 : 365 Tage = 65,9 am Tag."
+  },
+  {
+   "typ": "balken",
+   "kicker": "Insolvenzen je 10 000 Unternehmen 2025",
+   "headline": "Verkehr und Lagerei vorn",
+   "text": [
+    "Im Schnitt aller Bereiche sind es <em>69</em> Insolvenzen je 10 000 Unternehmen. In Verkehr und Lagerei sind es fast doppelt so viele."
+   ],
+   "balken": [
+    {
+     "wert": 133,
+     "anzeige": "133",
+     "name": "Verkehr und Lagerei",
+     "akzent": true
+    },
+    {
+     "wert": 108,
+     "anzeige": "108",
+     "name": "Gastgewerbe",
+     "akzent": false
+    },
+    {
+     "wert": 104,
+     "anzeige": "104",
+     "name": "Baugewerbe",
+     "akzent": false
+    },
+    {
+     "wert": 100,
+     "anzeige": "100",
+     "name": "Sonstige Dienstleistungen",
+     "akzent": false
+    },
+    {
+     "wert": 69,
+     "anzeige": "69",
+     "name": "Alle Bereiche",
+     "akzent": false
+    }
+   ],
+   "fuss": "Sonstige Dienstleistungen: etwa Zeitarbeit."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Die Insolvenzen in drei Zahlen",
+   "headline": "Was sich seit 2021 tut",
+   "punkte": [
+    {
+     "wert": "+10,3 %",
+     "name": "mehr als 2024",
+     "zusatz": "2024: 21 812 · 2025: 24 064"
+    },
+    {
+     "wert": "+72 %",
+     "name": "mehr als 2021",
+     "zusatz": "2021: 13 993 Insolvenzen"
+    },
+    {
+     "wert": "−39 %",
+     "name": "weniger als 2003",
+     "zusatz": "Höchststand 2003: 39 320"
+    }
+   ],
+   "fuss": "Seit 2022 steigt die Zahl jedes Jahr."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Insolvenzen nach Jahren, Deutschland, Statistik 52411, Stand 13.3.2026",
+  "Destatis: Pressemitteilung Nr. 085 vom 13.3.2026, Unternehmensinsolvenzen im Jahr 2025",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "24 064 Unternehmen beantragen 2025 in Deutschland Insolvenz, 10,3 Prozent mehr als im Jahr davor. Mehr waren es zuletzt 2014.",
+  "Seit 2021 steigt die Zahl jedes Jahr. Den Höchststand gab es 2003 mit 39 320 Unternehmensinsolvenzen.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "insolvenz",
+  "insolvenzen",
+  "unternehmen",
+  "deutschland",
+  "statistik",
+  "wirtschaft",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}
