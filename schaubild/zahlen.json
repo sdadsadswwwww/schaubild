@@ -1,15 +1,15 @@
 {
-  "stand": "2026-11-23T06:44",
+  "stand": "2026-11-24T06:36",
   "konto": {
     "follower": 5,
-    "beitraege": 17
+    "beitraege": 19
   },
   "medien": [
     {
       "post": "001-geburten",
       "art": "carousel",
       "datum": "2026-11-14",
-      "likes": 2,
+      "likes": 3,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -17,7 +17,7 @@
       "post": "001-geburten",
       "art": "reel",
       "datum": "2026-11-14",
-      "likes": 2,
+      "likes": 3,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -25,7 +25,7 @@
       "post": "002-oekostrom",
       "art": "reel",
       "datum": "2026-11-15",
-      "likes": 1,
+      "likes": 2,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -33,7 +33,7 @@
       "post": "003-inflation",
       "art": "reel",
       "datum": "2026-11-16",
-      "likes": 1,
+      "likes": 3,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -41,7 +41,7 @@
       "post": "003-inflation",
       "art": "carousel",
       "datum": "2026-11-16",
-      "likes": 1,
+      "likes": 2,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -49,7 +49,7 @@
       "post": "004-arbeitslose",
       "art": "reel",
       "datum": "2026-11-17",
-      "likes": 0,
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -57,23 +57,23 @@
       "post": "004-arbeitslose",
       "art": "carousel",
       "datum": "2026-11-17",
-      "likes": 0,
-      "kommentare": 0,
-      "fehler": "(#10) Application does not have permission for this action"
-    },
-    {
-      "post": "005-bier",
-      "art": "reel",
-      "datum": "2026-11-18",
       "likes": 2,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
     {
       "post": "005-bier",
+      "art": "reel",
+      "datum": "2026-11-18",
+      "likes": 3,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "005-bier",
       "art": "carousel",
       "datum": "2026-11-18",
-      "likes": 1,
+      "likes": 2,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -81,7 +81,7 @@
       "post": "006-pkw",
       "art": "reel",
       "datum": "2026-11-19",
-      "likes": 0,
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -89,7 +89,7 @@
       "post": "006-pkw",
       "art": "carousel",
       "datum": "2026-11-19",
-      "likes": 0,
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -97,7 +97,7 @@
       "post": "007-wohnungsbau",
       "art": "reel",
       "datum": "2026-11-20",
-      "likes": 0,
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -105,7 +105,7 @@
       "post": "007-wohnungsbau",
       "art": "carousel",
       "datum": "2026-11-20",
-      "likes": 0,
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -113,7 +113,7 @@
       "post": "008-hochzeiten",
       "art": "reel",
       "datum": "2026-11-21",
-      "likes": 0,
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -121,7 +121,7 @@
       "post": "008-hochzeiten",
       "art": "carousel",
       "datum": "2026-11-21",
-      "likes": 0,
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -129,7 +129,7 @@
       "post": "009-treibhausgase",
       "art": "reel",
       "datum": "2026-11-22",
-      "likes": 1,
+      "likes": 2,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -137,7 +137,23 @@
       "post": "009-treibhausgase",
       "art": "carousel",
       "datum": "2026-11-22",
-      "likes": 1,
+      "likes": 2,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "010-studierende",
+      "art": "reel",
+      "datum": "2026-11-23",
+      "likes": 2,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "010-studierende",
+      "art": "carousel",
+      "datum": "2026-11-23",
+      "likes": 2,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
