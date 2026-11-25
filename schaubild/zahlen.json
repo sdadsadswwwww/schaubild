@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-24T06:36",
+  "stand": "2026-11-25T06:37",
   "konto": {
     "follower": 5,
-    "beitraege": 19
+    "beitraege": 21
   },
   "medien": [
     {
@@ -154,6 +154,22 @@
       "art": "carousel",
       "datum": "2026-11-23",
       "likes": 2,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "011-erwerbstaetige",
+      "art": "reel",
+      "datum": "2026-11-24",
+      "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "011-erwerbstaetige",
+      "art": "carousel",
+      "datum": "2026-11-24",
+      "likes": 1,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
