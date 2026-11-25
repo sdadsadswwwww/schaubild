@@ -1,0 +1,401 @@
+{
+ "nr": "019",
+ "titel": "Baugenehmigungen seit 1991",
+ "reel": {
+  "frage": "Wie viele Wohnungen werden jeden Tag genehmigt?",
+  "unter": "Wohnungen am Tag",
+  "lauf": {
+   "was": "genehmigte Wohnungen im Jahr"
+  },
+  "figur": {
+   "ymin": 0,
+   "ymax": 750000,
+   "achse": [
+    {
+     "wert": 0,
+     "text": "0"
+    },
+    {
+     "wert": 250000,
+     "text": "250 000"
+    },
+    {
+     "wert": 500000,
+     "text": "500 000"
+    }
+   ],
+   "marken": [
+    {
+     "jahr": 1994,
+     "text": "1994: 712 636",
+     "anker": "start"
+    },
+    {
+     "jahr": 2025,
+     "text": "2025: 238 063",
+     "anker": "end"
+    }
+   ]
+  }
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Baugenehmigungen für Wohnungen",
+   "zahl": "Gut 650",
+   "headline": "Wohnungen werden jeden Tag genehmigt",
+   "text": [
+    "Das ist der Schnitt aus <em>238 063</em> genehmigten Wohnungen im Jahr 2025 – ein Drittel so viele wie 1994."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 760000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       406091,
+       485365,
+       606612,
+       712636,
+       638630,
+       576238,
+       528096,
+       475711,
+       437084,
+       348340,
+       290978,
+       274117,
+       296823,
+       268679,
+       240571,
+       247793,
+       182771,
+       174691,
+       177570,
+       187632,
+       228311,
+       241090,
+       272433,
+       285079,
+       313296,
+       375388,
+       347882,
+       346810,
+       360493,
+       368589,
+       380736,
+       354162,
+       259639,
+       215289,
+       238063
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "406 091",
+      "gross": true,
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "238 063",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Genehmigte Wohnungen · 1991 bis 2025",
+   "headline": "Zwei Drittel weniger als 1994",
+   "text": [
+    "1994 werden 712 636 Wohnungen genehmigt, so viele wie nie seit 1991. 2024 sind es 215 289, 2025 dann <em>238 063</em>."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 750000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       406091,
+       485365,
+       606612,
+       712636,
+       638630,
+       576238,
+       528096,
+       475711,
+       437084,
+       348340,
+       290978,
+       274117,
+       296823,
+       268679,
+       240571,
+       247793,
+       182771,
+       174691,
+       177570,
+       187632,
+       228311,
+       241090,
+       272433,
+       285079,
+       313296,
+       375388,
+       347882,
+       346810,
+       360493,
+       368589,
+       380736,
+       354162,
+       259639,
+       215289,
+       238063
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 250000,
+      "text": "250 000"
+     },
+     {
+      "wert": 500000,
+      "text": "500 000"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1994,
+      "text": "1994: 712 636",
+      "anker": "start"
+     },
+     {
+      "jahr": 2008,
+      "text": "2008: 174 691",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2025,
+      "text": "2025: 238 063",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Wohnungen in Wohn- und Nichtwohngebäuden, auch durch Umbau. 238 063 : 365 Tage = 652 am Tag."
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Genehmigt und gebaut · 1991 bis 2025",
+   "headline": "Wieder mehr genehmigt als gebaut",
+   "text": [
+    "2025 werden <em>238 063</em> Wohnungen genehmigt und 206 586 fertiggestellt. 2023 und 2024 war es umgekehrt."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 750000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       331178,
+       386052,
+       455451,
+       572883,
+       602757,
+       559488,
+       578179,
+       500690,
+       472638,
+       423044,
+       326187,
+       289590,
+       268103,
+       278008,
+       242316,
+       249436,
+       210729,
+       175927,
+       158987,
+       159832,
+       183110,
+       200466,
+       214817,
+       245325,
+       247722,
+       277691,
+       284816,
+       287352,
+       293002,
+       306376,
+       293393,
+       295275,
+       294399,
+       251937,
+       206586
+      ],
+      "name": "fertiggestellt",
+      "nameBei": {
+       "jahr": 2012,
+       "dy": 56
+      }
+     },
+     {
+      "von": 1991,
+      "werte": [
+       406091,
+       485365,
+       606612,
+       712636,
+       638630,
+       576238,
+       528096,
+       475711,
+       437084,
+       348340,
+       290978,
+       274117,
+       296823,
+       268679,
+       240571,
+       247793,
+       182771,
+       174691,
+       177570,
+       187632,
+       228311,
+       241090,
+       272433,
+       285079,
+       313296,
+       375388,
+       347882,
+       346810,
+       360493,
+       368589,
+       380736,
+       354162,
+       259639,
+       215289,
+       238063
+      ],
+      "akzent": true,
+      "name": "genehmigt",
+      "nameBei": {
+       "jahr": 2002,
+       "dy": -30
+      }
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 250000,
+      "text": "250 000"
+     },
+     {
+      "wert": 500000,
+      "text": "500 000"
+     }
+    ],
+    "marken": []
+   },
+   "fuss": "Fertiggestellte Wohnungen in Wohn- und Nichtwohngebäuden, auch durch Umbau."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Die Baugenehmigungen 2025",
+   "headline": "Das Bauen in drei Zahlen",
+   "punkte": [
+    {
+     "wert": "−67 %",
+     "name": "weniger als 1994",
+     "zusatz": "1994: 712 636 · 2025: 238 063"
+    },
+    {
+     "wert": "+10,6 %",
+     "name": "mehr als 2024",
+     "zusatz": "erster Anstieg seit 2021"
+    },
+    {
+     "wert": "760 700",
+     "name": "genehmigt, nicht fertig",
+     "zusatz": "Bauüberhang Ende 2025"
+    }
+   ],
+   "fuss": "2008 werden 174 691 Wohnungen genehmigt, so wenige wie nie seit 1991."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Baugenehmigungen / Baufertigstellungen, Lange Reihen z. T. ab 1949, Statistik 31111, Tabelle 1, Berichtsjahr 2021",
+  "Destatis: Tabellen Baugenehmigungen im Hochbau und Baufertigstellungen im Hochbau, Stand 18.2.2026 und 22.5.2026",
+  "Destatis: Pressemitteilung Nr. 174 vom 22.5.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "238 063 Wohnungen werden 2025 in Deutschland genehmigt, 22 774 mehr als 2024. Es ist der erste Anstieg seit 2021.",
+  "1994 waren es 712 636, fast dreimal so viele. Erstmals seit 2022 liegen die Genehmigungen wieder über den Fertigstellungen.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "wohnungsbau",
+  "baugenehmigung",
+  "wohnen",
+  "bauen",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}
