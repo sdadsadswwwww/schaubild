@@ -3,7 +3,7 @@
 <!-- ideen-pool anfang: wird von ideen.py geschrieben, nicht von Hand ändern -->
 ## Reihenfolge aus dem Ideen-Pool
 
-Stand 25.11.2026 04:22. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook (Bewertung und Begründung je Idee, mein Votum als Inhaber). Dieser Abschnitt geht der übrigen Themenliste vor (bei Bauriss auch dem Vorschlag aus `stand`); die Regeln für Recherche, Quellen, Belege und Abstand gelten weiter. Scheitert ein Thema an ihnen, das nächste nehmen und den Grund im Bericht nennen. Ein Jahrestag oder eine neue amtliche Zahl genau am Tag geht weiterhin vor. Der Wochenbericht ändert diesen Abschnitt nicht; er wird bei jedem Abgleich neu geschrieben.
+Stand 26.11.2026 04:22. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook (Bewertung und Begründung je Idee, mein Votum als Inhaber). Dieser Abschnitt geht der übrigen Themenliste vor (bei Bauriss auch dem Vorschlag aus `stand`); die Regeln für Recherche, Quellen, Belege und Abstand gelten weiter. Scheitert ein Thema an ihnen, das nächste nehmen und den Grund im Bericht nennen. Ein Jahrestag oder eine neue amtliche Zahl genau am Tag geht weiterhin vor. Der Wochenbericht ändert diesen Abschnitt nicht; er wird bei jedem Abgleich neu geschrieben.
 
 **Feste Tage** (an diesem Tag dieses Thema):
 
@@ -16,10 +16,10 @@ Stand 25.11.2026 04:22. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook 
 2. **Neu zugelassene Elektroautos**: Jedes wievielte neue Auto fährt elektrisch
 3. **Zigarettenabsatz**: So wenige Zigaretten wie nie
 4. **Landwirtschaftliche Betriebe**: Nur noch ein Bruchteil der Höfe von früher
-5. **Baugenehmigungen für Wohnungen**: Wie viele neue Wohnungen genehmigt werden
-6. **Krankenhausbetten**: Wie viele Betten die Krankenhäuser noch haben
-7. **Auszubildende**: Wie viele junge Menschen eine Lehre beginnen
-8. **Übernachtungen im Tourismus**: Wie viele Nächte Gäste in Deutschland verbringen, und ob es wieder so viele sind wie vor 2020
+5. **Krankenhausbetten**: Wie viele Betten die Krankenhäuser noch haben
+6. **Auszubildende**: Wie viele junge Menschen eine Lehre beginnen
+7. **Übernachtungen im Tourismus**: Wie viele Nächte Gäste in Deutschland verbringen, und ob es wieder so viele sind wie vor 2020
+8. **Fahrgäste im Linienverkehr**: Wie viele Fahrten Busse und Bahnen im Jahr zählen, und was das Deutschlandticket daran geändert hat
 
 **Jetzt nicht nehmen** (auch nicht, wenn die Liste sie vorschlägt):
 
