@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-25T06:37",
+  "stand": "2026-11-26T06:37",
   "konto": {
     "follower": 5,
-    "beitraege": 21
+    "beitraege": 23
   },
   "medien": [
     {
@@ -170,6 +170,22 @@
       "art": "carousel",
       "datum": "2026-11-24",
       "likes": 1,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "012-staatsschulden",
+      "art": "reel",
+      "datum": "2026-11-25",
+      "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "012-staatsschulden",
+      "art": "carousel",
+      "datum": "2026-11-25",
+      "likes": 0,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     }
