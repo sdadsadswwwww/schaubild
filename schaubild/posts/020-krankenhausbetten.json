@@ -1,0 +1,273 @@
+{
+ "nr": "020",
+ "titel": "Klinikbetten seit 1991",
+ "reel": {
+  "frage": "Auf wie viele Menschen kommt ein Klinikbett?",
+  "unter": "Menschen je Bett",
+  "lauf": {
+   "was": "Krankenhausbetten"
+  },
+  "stimmung": "ernst"
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Krankenhausbetten",
+   "zahl": "Rund 178",
+   "headline": "Menschen kommen auf ein Krankenhausbett",
+   "text": [
+    "Das ist der Schnitt aus <em>468 803</em> Betten und 83,5 Mio. Einwohnern 2025; 1991 gab es 665 565 Betten."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 700000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       665565,
+       646995,
+       628658,
+       618176,
+       609123,
+       593743,
+       580425,
+       571629,
+       565268,
+       559651,
+       552680,
+       547284,
+       541901,
+       531333,
+       523824,
+       510767,
+       506954,
+       503360,
+       503341,
+       502749,
+       502029,
+       501475,
+       500671,
+       500680,
+       499351,
+       498718,
+       497182,
+       498192,
+       494326,
+       487783,
+       483606,
+       480382,
+       476924,
+       472851,
+       468803
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "665 565",
+      "gross": true,
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "468 803",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Krankenhausbetten · 1991 bis 2025",
+   "headline": "Knapp 200 000 Betten weniger",
+   "text": [
+    "1991 stehen 665 565 Betten in den Krankenhäusern. 2025 sind es <em>468 803</em>, so wenige wie nie seit Beginn der Statistik."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 700000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       665565,
+       646995,
+       628658,
+       618176,
+       609123,
+       593743,
+       580425,
+       571629,
+       565268,
+       559651,
+       552680,
+       547284,
+       541901,
+       531333,
+       523824,
+       510767,
+       506954,
+       503360,
+       503341,
+       502749,
+       502029,
+       501475,
+       500671,
+       500680,
+       499351,
+       498718,
+       497182,
+       498192,
+       494326,
+       487783,
+       483606,
+       480382,
+       476924,
+       472851,
+       468803
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 200000,
+      "text": "200 000"
+     },
+     {
+      "wert": 400000,
+      "text": "400 000"
+     },
+     {
+      "wert": 600000,
+      "text": "600 000"
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "1991: 665 565",
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "2025: 468 803",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Aufgestellte Betten im Jahresschnitt. 83 467 117 Einwohner (Ende 2025) : 468 803 = 178,0."
+  },
+  {
+   "typ": "balken",
+   "kicker": "Betten 2025 nach Träger",
+   "headline": "Fast die Hälfte öffentlich",
+   "text": [
+    "Öffentliche Träger stellen 222 343 Betten. Private betreiben mit <em>729</em> die meisten Kliniken, aber nur 21,0 % der Betten."
+   ],
+   "balken": [
+    {
+     "wert": 222343,
+     "anzeige": "222 343",
+     "name": "öffentlich · 529 Häuser",
+     "akzent": true
+    },
+    {
+     "wert": 148206,
+     "anzeige": "148 206",
+     "name": "freigemeinnützig · 549 Häuser",
+     "akzent": false
+    },
+    {
+     "wert": 98254,
+     "anzeige": "98 254",
+     "name": "privat · 729 Häuser",
+     "akzent": false
+    }
+   ],
+   "fuss": "Aufgestellte Betten im Jahresdurchschnitt 2025."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Die Krankenhäuser in drei Zahlen",
+   "headline": "Was sich seit 1991 tut",
+   "punkte": [
+    {
+     "wert": "−29,6 %",
+     "name": "Betten weniger als 1991",
+     "zusatz": "1991: 665 565 · 2025: 468 803"
+    },
+    {
+     "wert": "1 807",
+     "name": "Krankenhäuser 2025",
+     "zusatz": "604 weniger als 1991 (2 411)"
+    },
+    {
+     "wert": "7,0 Tage",
+     "name": "dauert ein Aufenthalt",
+     "zusatz": "im Schnitt · 1991: 14,0 Tage"
+    }
+   ],
+   "fuss": "Die Betten sind 2025 zu 72,6 Prozent ausgelastet."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Krankenhäuser, Einrichtungen, Betten und Patientenbewegung 1991 bis 2025, Statistik 23111, Stand 10.9.2026",
+  "Destatis: Krankenhäuser 2025 nach Trägern und Bundesländern, Stand 10.9.2026",
+  "Destatis: Pressemitteilung Nr. 376 vom 28.10.2026",
+  "Destatis: Bevölkerung nach dem Gebietsstand 1990 bis 2025, Bevölkerungsfortschreibung",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "468 803 Betten stehen 2025 im Jahresschnitt in den 1 807 Krankenhäusern in Deutschland, so wenige wie nie seit 1991. Rechnerisch kommen rund 178 Menschen auf ein Bett.",
+  "1991 waren es 665 565 Betten. Ein Aufenthalt dauert heute im Schnitt 7,0 Tage, halb so lang wie damals.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "krankenhaus",
+  "gesundheit",
+  "klinik",
+  "gesundheitswesen",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}

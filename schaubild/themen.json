@@ -36,7 +36,7 @@
   { "thema": "Sonnenscheindauer", "bereich": "Umwelt", "quelle": "Deutscher Wetterdienst" },
   { "thema": "Baugenehmigungen für Wohnungen", "bereich": "Wohnen", "quelle": "Destatis 31111", "post": "019-baugenehmigungen" },
   { "thema": "Exporte", "bereich": "Wirtschaft", "quelle": "Destatis 51000" },
-  { "thema": "Krankenhausbetten", "bereich": "Gesundheit", "quelle": "Destatis 23111" },
+  { "thema": "Krankenhausbetten", "bereich": "Gesundheit", "quelle": "Destatis 23111", "post": "020-krankenhausbetten" },
   { "thema": "Waldfläche und Waldbrände", "bereich": "Umwelt", "quelle": "Bundesanstalt für Landwirtschaft und Ernährung" },
   { "thema": "Weinerzeugung", "bereich": "Landwirtschaft", "quelle": "Destatis 41255" }
 ]
