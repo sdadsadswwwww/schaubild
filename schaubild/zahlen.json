@@ -1,8 +1,8 @@
 {
-  "stand": "2026-11-26T06:37",
+  "stand": "2026-11-27T06:39",
   "konto": {
     "follower": 5,
-    "beitraege": 23
+    "beitraege": 25
   },
   "medien": [
     {
@@ -17,7 +17,7 @@
       "post": "001-geburten",
       "art": "reel",
       "datum": "2026-11-14",
-      "likes": 3,
+      "likes": 4,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -33,7 +33,7 @@
       "post": "003-inflation",
       "art": "reel",
       "datum": "2026-11-16",
-      "likes": 3,
+      "likes": 4,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -73,7 +73,7 @@
       "post": "005-bier",
       "art": "carousel",
       "datum": "2026-11-18",
-      "likes": 2,
+      "likes": 3,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -129,7 +129,7 @@
       "post": "009-treibhausgase",
       "art": "reel",
       "datum": "2026-11-22",
-      "likes": 2,
+      "likes": 3,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
     },
@@ -185,6 +185,22 @@
       "post": "012-staatsschulden",
       "art": "carousel",
       "datum": "2026-11-25",
+      "likes": 1,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "013-verkehrstote",
+      "art": "reel",
+      "datum": "2026-11-26",
+      "likes": 0,
+      "kommentare": 0,
+      "fehler": "(#10) Application does not have permission for this action"
+    },
+    {
+      "post": "013-verkehrstote",
+      "art": "carousel",
+      "datum": "2026-11-26",
       "likes": 0,
       "kommentare": 0,
       "fehler": "(#10) Application does not have permission for this action"
