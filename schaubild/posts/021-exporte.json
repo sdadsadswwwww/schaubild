@@ -1,0 +1,305 @@
+{
+ "nr": "021",
+ "titel": "Exporte seit 1991",
+ "reel": {
+  "frage": "Für wie viel Geld exportiert Deutschland am Tag?",
+  "unter": "Euro am Tag",
+  "lauf": {
+   "was": "Exporte im Jahr in Euro",
+   "teiler": 1000,
+   "stellen": 0,
+   "nach": "Mrd."
+  },
+  "figur": {
+   "marken": [
+    {
+     "jahr": 1991,
+     "text": "340 Mrd.",
+     "anker": "start",
+     "seite": "unten"
+    },
+    {
+     "jahr": 2025,
+     "text": "2025: 1 564 Mrd.",
+     "anker": "end"
+    }
+   ]
+  }
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Exporte aus Deutschland",
+   "zahl": "4,29 Mrd.",
+   "headline": "Euro Warenexporte jeden Tag",
+   "text": [
+    "Das ist der Schnitt aus <em>1 564 Mrd. Euro</em> Warenexporten im Jahr 2025 – gut viereinhalbmal so viel wie 1991."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 1650000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       340425,
+       343180,
+       321289,
+       353084,
+       383232,
+       403377,
+       454342,
+       488371,
+       510008,
+       597440,
+       638268,
+       651320,
+       664455,
+       731544,
+       786266,
+       893042,
+       965236,
+       984140,
+       803312,
+       951959,
+       1061225,
+       1092627,
+       1088025,
+       1123746,
+       1193555,
+       1203833,
+       1278876,
+       1317440,
+       1328152,
+       1206928,
+       1371397,
+       1594342,
+       1575527,
+       1550144,
+       1564192
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "340 Mrd.",
+      "gross": true,
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "1 564 Mrd.",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Warenexporte · 1991 bis 2025",
+   "headline": "Der Gipfel liegt im Jahr 2022",
+   "text": [
+    "2009 sinken die Exporte um 18,4 Prozent. Den Höchststand gibt es 2022 mit <em>1 594 Mrd. Euro</em>, 2025 sind es 1,9 Prozent weniger."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 1650000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       340425,
+       343180,
+       321289,
+       353084,
+       383232,
+       403377,
+       454342,
+       488371,
+       510008,
+       597440,
+       638268,
+       651320,
+       664455,
+       731544,
+       786266,
+       893042,
+       965236,
+       984140,
+       803312,
+       951959,
+       1061225,
+       1092627,
+       1088025,
+       1123746,
+       1193555,
+       1203833,
+       1278876,
+       1317440,
+       1328152,
+       1206928,
+       1371397,
+       1594342,
+       1575527,
+       1550144,
+       1564192
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 500000,
+      "text": "500 Mrd."
+     },
+     {
+      "wert": 1000000,
+      "text": "1 Bio."
+     },
+     {
+      "wert": 1500000,
+      "text": "1,5 Bio."
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "1991: 340 Mrd.",
+      "anker": "start"
+     },
+     {
+      "jahr": 2009,
+      "text": "2009: 803 Mrd.",
+      "seite": "unten"
+     },
+     {
+      "jahr": 2022,
+      "text": "2022: 1 594 Mrd.",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "1 564 Mrd. Euro : 365 Tage = 4,29 Mrd. am Tag. In jeweiligen Preisen, 2025 vorläufig."
+  },
+  {
+   "typ": "balken",
+   "kicker": "Die größten Abnehmer 2025",
+   "headline": "Die USA kaufen am meisten",
+   "text": [
+    "Waren für <em>147 Mrd. Euro</em> gehen in die USA, 8,9 Prozent weniger als 2024. Dahinter folgen Frankreich und die Niederlande."
+   ],
+   "balken": [
+    {
+     "wert": 147049,
+     "anzeige": "147,0 Mrd.",
+     "name": "Vereinigte Staaten",
+     "akzent": true
+    },
+    {
+     "wert": 117337,
+     "anzeige": "117,3 Mrd.",
+     "name": "Frankreich",
+     "akzent": false
+    },
+    {
+     "wert": 112373,
+     "anzeige": "112,4 Mrd.",
+     "name": "Niederlande",
+     "akzent": false
+    },
+    {
+     "wert": 100115,
+     "anzeige": "100,1 Mrd.",
+     "name": "Polen",
+     "akzent": false
+    },
+    {
+     "wert": 83476,
+     "anzeige": "83,5 Mrd.",
+     "name": "Italien",
+     "akzent": false
+    }
+   ],
+   "fuss": "Exporte in Euro nach Bestimmungsland, 2025 vorläufig."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Der Export in drei Zahlen",
+   "headline": "Was sich seit 1991 tut",
+   "punkte": [
+    {
+     "wert": "+359 %",
+     "name": "mehr als 1991",
+     "zusatz": "1991: 340 · 2025: 1 564 Mrd."
+    },
+    {
+     "wert": "+0,9 %",
+     "name": "mehr als 2024",
+     "zusatz": "2024: 1 550 Mrd. Euro"
+    },
+    {
+     "wert": "202 Mrd.",
+     "name": "Exportüberschuss 2025",
+     "zusatz": "Exporte minus Importe"
+    }
+   ],
+   "fuss": "Seit 1991 sinken die Exporte in sechs Jahren, zuletzt 2023 und 2024."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Statistischer Bericht Außenhandelsrangfolge, Tabellen 51000-b01 und 51000-02, Juli 2026",
+  "Destatis: Pressemitteilung Nr. 042 vom 6. Februar 2026, Außenhandel Dezember und Jahr 2025",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "Waren im Wert von 1 564 Milliarden Euro exportiert Deutschland 2025, 0,9 Prozent mehr als im Jahr davor. Im Schnitt sind das 4,29 Milliarden Euro am Tag.",
+  "1991 waren es 340 Milliarden Euro. Wichtigster Abnehmer bleiben die USA.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "export",
+  "aussenhandel",
+  "wirtschaft",
+  "handel",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}

@@ -35,7 +35,7 @@
   { "thema": "Bevölkerung ab 65 Jahren", "bereich": "Bevölkerung", "quelle": "Destatis 12411" },
   { "thema": "Sonnenscheindauer", "bereich": "Umwelt", "quelle": "Deutscher Wetterdienst" },
   { "thema": "Baugenehmigungen für Wohnungen", "bereich": "Wohnen", "quelle": "Destatis 31111", "post": "019-baugenehmigungen" },
-  { "thema": "Exporte", "bereich": "Wirtschaft", "quelle": "Destatis 51000" },
+  { "thema": "Exporte", "bereich": "Wirtschaft", "quelle": "Destatis 51000", "post": "021-exporte" },
   { "thema": "Krankenhausbetten", "bereich": "Gesundheit", "quelle": "Destatis 23111", "post": "020-krankenhausbetten" },
   { "thema": "Waldfläche und Waldbrände", "bereich": "Umwelt", "quelle": "Bundesanstalt für Landwirtschaft und Ernährung" },
   { "thema": "Weinerzeugung", "bereich": "Landwirtschaft", "quelle": "Destatis 41255" }
