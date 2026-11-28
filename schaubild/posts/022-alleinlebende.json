@@ -1,0 +1,279 @@
+{
+ "nr": "022",
+ "titel": "Alleinlebende seit 1991",
+ "reel": {
+  "frage": "Welcher Anteil der Menschen lebt allein?",
+  "unter": "leben allein",
+  "lauf": {
+   "was": "Alleinlebende",
+   "teiler": 1000,
+   "stellen": 1,
+   "nach": "Mio."
+  }
+ },
+ "slides": [
+  {
+   "typ": "cover",
+   "kicker": "Alleinlebende in Deutschland",
+   "zahl": "20,9 %",
+   "headline": "der Menschen leben allein",
+   "text": [
+    "Das sind <em>17,3 Millionen</em> von 82,7 Millionen Menschen in Privathaushalten im Jahr 2025."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 18000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       11378,
+       11561,
+       11886,
+       12220,
+       12384,
+       12686,
+       12760,
+       12794,
+       12955,
+       13202,
+       13502,
+       13657,
+       13848,
+       13996,
+       14173,
+       14926,
+       14930,
+       15319,
+       15504,
+       15718,
+       15428,
+       15545,
+       15757,
+       15996,
+       16460,
+       16378,
+       16788,
+       16873,
+       17066,
+       16472,
+       16885,
+       16859,
+       17012,
+       17448,
+       17327
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": ""
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "11,4 Mio.",
+      "gross": true,
+      "anker": "start"
+     },
+     {
+      "jahr": 2025,
+      "text": "17,3 Mio.",
+      "gross": true,
+      "akzent": true,
+      "anker": "end"
+     }
+    ]
+   }
+  },
+  {
+   "typ": "diagramm",
+   "kicker": "Alleinlebende · 1991 bis 2025",
+   "headline": "Gut die Hälfte mehr als 1991",
+   "text": [
+    "1991 leben 11,4 Millionen Menschen allein. Am meisten sind es 2024 mit <em>17,4 Millionen</em>, 2025 sind es 17,3 Millionen."
+   ],
+   "figur": {
+    "fn": "linie",
+    "ymax": 18000,
+    "reihen": [
+     {
+      "von": 1991,
+      "werte": [
+       11378,
+       11561,
+       11886,
+       12220,
+       12384,
+       12686,
+       12760,
+       12794,
+       12955,
+       13202,
+       13502,
+       13657,
+       13848,
+       13996,
+       14173,
+       14926,
+       14930,
+       15319,
+       15504,
+       15718,
+       15428,
+       15545,
+       15757,
+       15996,
+       16460,
+       16378,
+       16788,
+       16873,
+       17066,
+       16472,
+       16885,
+       16859,
+       17012,
+       17448,
+       17327
+      ],
+      "akzent": true,
+      "flaeche": true
+     }
+    ],
+    "jahre": [
+     1991,
+     2000,
+     2010,
+     2020,
+     2025
+    ],
+    "achse": [
+     {
+      "wert": 0,
+      "text": "0"
+     },
+     {
+      "wert": 5000,
+      "text": "5 Mio."
+     },
+     {
+      "wert": 10000,
+      "text": "10 Mio."
+     },
+     {
+      "wert": 15000,
+      "text": "15 Mio."
+     }
+    ],
+    "marken": [
+     {
+      "jahr": 1991,
+      "text": "1991: 11,4 Mio.",
+      "anker": "start"
+     },
+     {
+      "jahr": 2024,
+      "text": "2024: 17,4 Mio.",
+      "anker": "end"
+     }
+    ]
+   },
+   "fuss": "Menschen in Einpersonenhaushalten, 2025 vorläufig. 17,33 : 82,74 Mio. Menschen = 20,9 %."
+  },
+  {
+   "typ": "balken",
+   "kicker": "Anteil der Einpersonenhaushalte 2025",
+   "headline": "Jeder zweite Haushalt in Berlin",
+   "text": [
+    "In Berlin lebt in <em>50,0 Prozent</em> der Haushalte nur eine Person, in Rheinland-Pfalz in 38,6 Prozent."
+   ],
+   "balken": [
+    {
+     "wert": 50.0,
+     "anzeige": "50,0 %",
+     "name": "Berlin",
+     "akzent": true
+    },
+    {
+     "wert": 49.8,
+     "anzeige": "49,8 %",
+     "name": "Hamburg",
+     "akzent": false
+    },
+    {
+     "wert": 47.6,
+     "anzeige": "47,6 %",
+     "name": "Bremen",
+     "akzent": false
+    },
+    {
+     "wert": 42.1,
+     "anzeige": "42,1 %",
+     "name": "Deutschland insgesamt",
+     "akzent": false
+    }
+   ],
+   "fuss": "Einpersonenhaushalte je 100 Haushalte, 2025 vorläufig."
+  },
+  {
+   "typ": "punkte",
+   "kicker": "Allein wohnen im Jahr 2025",
+   "headline": "Das Alleinleben in drei Zahlen",
+   "punkte": [
+    {
+     "wert": "42,1 %",
+     "name": "Einpersonenhaushalte",
+     "zusatz": "aller Haushalte, 1991: 32,9 %"
+    },
+    {
+     "wert": "36,5 %",
+     "name": "der Alleinlebenden ab 65",
+     "zusatz": "6,33 Millionen Menschen"
+    },
+    {
+     "wert": "2,01",
+     "name": "Personen je Haushalt",
+     "zusatz": "1991 waren es 2,29"
+    }
+   ],
+   "fuss": "Methodenwechsel 2005, 2011 und 2020 schränken den Vergleich über die Jahre ein."
+  },
+  {
+   "typ": "outro",
+   "headline": "Deutschland in Grafiken",
+   "text": [
+    "Eine Zahl, ein Schaubild, eine Quelle. Jeden Tag."
+   ]
+  }
+ ],
+ "quellen": [
+  "Statistisches Bundesamt (Destatis): Statistischer Bericht Mikrozensus – Haushalte und Familien, Erstergebnisse 2025, Statistik 12211, Tabellen 12211-03, 12211-08 und 12211-09, Stand 13.4.2026",
+  "Destatis: Tabellen Haushalte und Haushaltsmitglieder sowie Alleinstehende im Zeitvergleich, Stand 13.4.2026",
+  "Abruf 11/2026"
+ ],
+ "caption": [
+  "17,3 Millionen Menschen leben 2025 in Deutschland allein. Das ist gut jeder Fünfte der 82,7 Millionen Menschen in Privathaushalten.",
+  "1991 waren es 11,4 Millionen. Heute bestehen 42 Prozent aller Haushalte aus nur einer Person, in Berlin jeder zweite.",
+  "Welche Zahl sollen wir als Nächstes zeichnen?"
+ ],
+ "hashtags": [
+  "deutschland",
+  "statistik",
+  "alleinleben",
+  "singlehaushalt",
+  "wohnen",
+  "gesellschaft",
+  "datenvisualisierung",
+  "infografik",
+  "zahlen",
+  "wissen"
+ ]
+}

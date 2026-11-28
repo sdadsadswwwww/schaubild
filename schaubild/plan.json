@@ -22,6 +22,7 @@
     { "datum": "2026-12-01", "post": "018-insolvenzen", "freigabe": true, "erstellt": "2026-11-24T05:44" },
     { "datum": "2026-12-02", "post": "019-baugenehmigungen", "freigabe": true, "erstellt": "2026-11-25T05:45" },
     { "datum": "2026-12-03", "post": "020-krankenhausbetten", "freigabe": true, "erstellt": "2026-11-26T05:45" },
-    { "datum": "2026-12-04", "post": "021-exporte", "freigabe": true, "erstellt": "2026-11-27T05:52" }
+    { "datum": "2026-12-04", "post": "021-exporte", "freigabe": true, "erstellt": "2026-11-27T05:52" },
+    { "datum": "2026-12-05", "post": "022-alleinlebende", "freigabe": true, "erstellt": "2026-11-28T05:44" }
   ]
 }
