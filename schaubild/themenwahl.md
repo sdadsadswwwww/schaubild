@@ -3,7 +3,7 @@
 <!-- ideen-pool anfang: wird von ideen.py geschrieben, nicht von Hand ändern -->
 ## Reihenfolge aus dem Ideen-Pool
 
-Stand 27.11.2026 04:23. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook (Bewertung und Begründung je Idee, mein Votum als Inhaber). Dieser Abschnitt geht der übrigen Themenliste vor (bei Bauriss auch dem Vorschlag aus `stand`); die Regeln für Recherche, Quellen, Belege und Abstand gelten weiter. Scheitert ein Thema an ihnen, das nächste nehmen und den Grund im Bericht nennen. Ein Jahrestag oder eine neue amtliche Zahl genau am Tag geht weiterhin vor. Der Wochenbericht ändert diesen Abschnitt nicht; er wird bei jedem Abgleich neu geschrieben.
+Stand 28.11.2026 04:22. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook (Bewertung und Begründung je Idee, mein Votum als Inhaber). Dieser Abschnitt geht der übrigen Themenliste vor (bei Bauriss auch dem Vorschlag aus `stand`); die Regeln für Recherche, Quellen, Belege und Abstand gelten weiter. Scheitert ein Thema an ihnen, das nächste nehmen und den Grund im Bericht nennen. Ein Jahrestag oder eine neue amtliche Zahl genau am Tag geht weiterhin vor. Der Wochenbericht ändert diesen Abschnitt nicht; er wird bei jedem Abgleich neu geschrieben.
 
 **Feste Tage** (an diesem Tag dieses Thema):
 
@@ -19,7 +19,7 @@ Stand 27.11.2026 04:23. Quelle: Blatt „Ideen-Pool“ im Unternehmens-Playbook 
 5. **Auszubildende**: Wie viele junge Menschen eine Lehre beginnen
 6. **Übernachtungen im Tourismus**: Wie viele Nächte Gäste in Deutschland verbringen, und ob es wieder so viele sind wie vor 2020
 7. **Fahrgäste im Linienverkehr**: Wie viele Fahrten Busse und Bahnen im Jahr zählen, und was das Deutschlandticket daran geändert hat
-8. **Exporte**: Wie viel Deutschland ins Ausland verkauft, und ob der Export noch wächst
+8. **Waldfläche und Waldbrände**: Wie viel Wald jedes Jahr brennt, und ob es mehr wird
 
 **Jetzt nicht nehmen** (auch nicht, wenn die Liste sie vorschlägt):
 
